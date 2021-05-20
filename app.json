@@ -1,0 +1,12 @@
+{
+  "name": "storybook",
+  "displayName": "storybook",
+  "expo": {
+    "name": "storybook",
+    "slug": "storybook",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
