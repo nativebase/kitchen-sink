@@ -1,6 +1,6 @@
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
-import { Home, Alert, Avatar, Badge } from "../screens";
+import { Home, Alert, Avatar, Badge, ActionSheet } from "../screens";
 
 const Stack = createStackNavigator();
 
@@ -14,6 +14,21 @@ export function DashboardStack() {
 					headerShown: false,
 				}}
 			/>
+			<Stack.Screen
+				name="actionsheet"
+				component={ActionSheet}
+				options={{
+					headerShown: false,
+				}}
+			/>
+			<Stack.Screen
+				name="actionsheet.usage"
+				component={ActionSheet}
+				options={{
+					headerShown: false,
+				}}
+			/>
+
 			<Stack.Screen
 				name="alert"
 				component={Alert}

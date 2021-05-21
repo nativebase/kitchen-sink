@@ -69,7 +69,7 @@ export function Home({ navigation }: { navigation: StackNavigationProp<any> }) {
 	const { colorMode, toggleColorMode } = useColorMode();
 	return (
 		<Box bg={colorMode === "dark" ? "black" : "white"} pt={12}>
-			<ScrollView>
+			<ScrollView contentContainerStyle={{ width: "100%" }}>
 				<Heading p={3} mx={2}>
 					NativeBase@3.0.0
 				</Heading>
@@ -84,24 +84,49 @@ export function Home({ navigation }: { navigation: StackNavigationProp<any> }) {
 					/>
 				</HStack>
 				<Divider />
-				<List divider={<Divider ml={16} />} px={3} mt={12} py={0}>
-					{components.map((comp) => (
-						<List.Item onPress={() => navigation.navigate(comp.url)}>
-							<HStack w="100%" space={3} py={1} alignItems="center">
+				<List
+					divider={<Divider ml={16} /*opacity=".4" */ />}
+					px={3}
+					mt={12}
+					py={0}
+					// borderColor="red.200"
+					borderLeftWidth={0}
+					borderRightWidth={0}
+					w="100%"
+				>
+					{components.map((comp, index) => (
+						<Box
+							bg="pink.200"
+							key={index}
+							onPress={() => navigation.navigate(comp.url)}
+							w="100%"
+						>
+							<HStack
+								w="100%"
+								space={3}
+								py={1}
+								alignItems="center"
+								bg="red.200"
+							>
 								<Box mr={4}>
-									<Entypo name="circular-graph" size={32} color="black" />
+									<Entypo
+										name="circular-graph"
+										size={32}
+										color={colorMode === "dark" ? "white" : "black"}
+									/>
 								</Box>
 
 								<Text>{comp.name}</Text>
-								<Icon
-									ml="auto"
-									mr={2}
-									size="sm"
-									as={<MaterialCommunityIcons name="chevron-right" />}
-									color="coolGray.500"
-								/>
+								<Box ml="auto">
+									<Icon
+										mr={2}
+										size="sm"
+										as={<MaterialCommunityIcons name="chevron-right" />}
+										color="coolGray.500"
+									/>
+								</Box>
 							</HStack>
-						</List.Item>
+						</Box>
 					))}
 				</List>
 			</ScrollView>

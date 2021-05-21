@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Text, IconButton, Icon, HStack } from "native-base";
+import { Box, IconButton, Icon, HStack, Heading } from "native-base";
 
 import { Ionicons } from "@expo/vector-icons";
 import { StackNavigationProp } from "@react-navigation/stack";
@@ -10,7 +10,7 @@ export function Alert({
 }) {
 	return (
 		<Box>
-			<HStack>
+			<HStack alignItems="center">
 				<IconButton
 					icon={
 						<Icon
@@ -23,7 +23,7 @@ export function Alert({
 					colorScheme="coolGray"
 					onPress={() => navigation.navigate("home")}
 				/>
-				<Text>Alert</Text>
+				<Heading alignSelf="center">Alert</Heading>
 			</HStack>
 		</Box>
 	);
