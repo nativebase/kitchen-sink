@@ -95,19 +95,11 @@ export function Home({ navigation }: { navigation: StackNavigationProp<any> }) {
 					w="100%"
 				>
 					{components.map((comp, index) => (
-						<Box
-							bg="pink.200"
+						<List.Item
 							key={index}
 							onPress={() => navigation.navigate(comp.url)}
-							w="100%"
 						>
-							<HStack
-								w="100%"
-								space={3}
-								py={1}
-								alignItems="center"
-								bg="red.200"
-							>
+							<HStack space={3} py={1} alignItems="center" w="100%">
 								<Box mr={4}>
 									<Entypo
 										name="circular-graph"
@@ -126,7 +118,7 @@ export function Home({ navigation }: { navigation: StackNavigationProp<any> }) {
 									/>
 								</Box>
 							</HStack>
-						</Box>
+						</List.Item>
 					))}
 				</List>
 			</ScrollView>
