@@ -1,6 +1,13 @@
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
-import { Home, Alert, Avatar, Badge, ActionSheet } from "../screens";
+import {
+	Home,
+	Alert,
+	Avatar,
+	Badge,
+	ActionSheet,
+	BoxExamples,
+} from "../screens";
 
 const Stack = createStackNavigator();
 
@@ -14,6 +21,14 @@ export function DashboardStack() {
 					headerShown: false,
 				}}
 			/>
+			<Stack.Screen
+				name="box"
+				component={BoxExamples}
+				options={{
+					headerShown: false,
+				}}
+			/>
+
 			<Stack.Screen
 				name="actionsheet"
 				component={ActionSheet}

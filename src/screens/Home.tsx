@@ -1,5 +1,6 @@
 import React from "react";
 import { StackNavigationProp } from "@react-navigation/stack";
+
 import {
 	Box,
 	Button,
@@ -14,6 +15,7 @@ import {
 } from "native-base";
 import { MaterialCommunityIcons, Entypo, Ionicons } from "@expo/vector-icons";
 import { ScrollView } from "react-native";
+
 export function Home({ navigation }: { navigation: StackNavigationProp<any> }) {
 	const components = [
 		{
@@ -35,6 +37,10 @@ export function Home({ navigation }: { navigation: StackNavigationProp<any> }) {
 		{
 			name: "Button",
 			url: "button",
+		},
+		{
+			name: "Box",
+			url: "box",
 		},
 		{
 			name: "Card",
