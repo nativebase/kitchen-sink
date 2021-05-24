@@ -6,23 +6,30 @@ import { mapping } from "../../config/map";
 import { StackNavigationProp } from "@react-navigation/stack";
 import { Divider } from "native-base";
 
-const box = mapping.Box;
+// const box = mapping.Box;
 
-export function BoxExamples({
+export function Examples({
+	route,
 	navigation,
 }: {
+	route: any;
 	navigation: StackNavigationProp<any>;
 }) {
+	let name: string = route.params.name;
+
+	const component = mapping[name];
+
 	return (
 		<Box bg="white">
-			<Header title="Box" navigation={navigation} />
+			<Header title={component.title} navigation={navigation} />
+			<Text my={1}>{component.description}</Text>
 			<ScrollView>
 				<VStack space={6} p={2}>
-					{box.components.map((element: any, index: number) => (
-						<VStack space={2}>
+					{component.components.map((element: any, index: number) => (
+						<VStack space={2} key={index}>
 							<Heading>{element.title}</Heading>
 							<Divider />
-							<element.Component.Example />
+							<element.component.Example />
 							<Text>{element.description}</Text>
 						</VStack>
 					))}

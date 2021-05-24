@@ -6,33 +6,79 @@ export const mapping = {
 		description: "",
 		components: [
 			{
-				Component: require("../../nb/NativeBase/example/storybook/stories/components/primitives/Box/basic"),
+				component: require("../../nb/NativeBase/example/storybook/stories/components/primitives/Box/basic"),
 				title: "Basic",
 				description: "",
 			},
 			{
-				Component: require("../../nb/NativeBase/example/storybook/stories/components/primitives/Box/composition-card"),
+				component: require("../../nb/NativeBase/example/storybook/stories/components/primitives/Box/composition-card"),
 				title: "Composition Card",
 				description: "",
 			},
 			{
-				Component: require("../../nb/NativeBase/example/storybook/stories/components/primitives/Box/composition-card1"),
+				component: require("../../nb/NativeBase/example/storybook/stories/components/primitives/Box/composition-card1"),
 				title: "Composition Card 1",
 				description: "",
 			},
 			{
-				Component: require("../../nb/NativeBase/example/storybook/stories/components/primitives/Box/composition-card2"),
+				component: require("../../nb/NativeBase/example/storybook/stories/components/primitives/Box/composition-card2"),
 				title: "Composition Card 2",
 				description: "",
 			},
 			{
-				Component: require("../../nb/NativeBase/example/storybook/stories/components/primitives/Box/composition-card3"),
+				component: require("../../nb/NativeBase/example/storybook/stories/components/primitives/Box/composition-card3"),
 				title: "Composition Card 3",
 				description: "",
 			},
 			{
-				Component: require("../../nb/NativeBase/example/storybook/stories/components/primitives/Box/composition-shoes-card"),
+				component: require("../../nb/NativeBase/example/storybook/stories/components/primitives/Box/composition-shoes-card"),
 				title: "Composition ShoesCard",
+				description: "",
+			},
+		],
+	},
+	Button: {
+		title: "Button",
+		description: "Primitive Element",
+		components: [
+			{
+				component: require("../../nb/NativeBase/example/storybook/stories/components/primitives/Button/basic"),
+				title: "Basic",
+				description: "",
+			},
+			{
+				component: require("../../nb/NativeBase/example/storybook/stories/components/primitives/Button/ButtonGroup"),
+				title: "ButtonGroup",
+				description: "",
+			},
+			{
+				component: require("../../nb/NativeBase/example/storybook/stories/components/primitives/Button/Composition"),
+				title: "Composition",
+				description: "",
+			},
+			{
+				component: require("../../nb/NativeBase/example/storybook/stories/components/primitives/Button/icons"),
+				title: "Icons",
+				description: "",
+			},
+			{
+				component: require("../../nb/NativeBase/example/storybook/stories/components/primitives/Button/loading"),
+				title: "Loading button",
+				description: "",
+			},
+			{
+				component: require("../../nb/NativeBase/example/storybook/stories/components/primitives/Button/sizes"),
+				title: "Sizes",
+				description: "",
+			},
+			{
+				component: require("../../nb/NativeBase/example/storybook/stories/components/primitives/Button/variants"),
+				title: "variants",
+				description: "",
+			},
+			{
+				component: require("../../nb/NativeBase/example/storybook/stories/components/primitives/Button/WithRef"),
+				title: "With References",
 				description: "",
 			},
 		],

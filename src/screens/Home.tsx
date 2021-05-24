@@ -3,7 +3,6 @@ import { StackNavigationProp } from "@react-navigation/stack";
 
 import {
 	Box,
-	Button,
 	Divider,
 	Heading,
 	HStack,
@@ -103,7 +102,9 @@ export function Home({ navigation }: { navigation: StackNavigationProp<any> }) {
 					{components.map((comp, index) => (
 						<List.Item
 							key={index}
-							onPress={() => navigation.navigate(comp.url)}
+							onPress={() =>
+								navigation.navigate("component", { name: comp.name })
+							}
 						>
 							<HStack space={3} py={1} alignItems="center" w="100%">
 								<Box mr={4}>
