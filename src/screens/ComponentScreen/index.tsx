@@ -6,8 +6,6 @@ import { mapping } from "../../config/map";
 import { StackNavigationProp } from "@react-navigation/stack";
 import { Divider } from "native-base";
 
-// const box = mapping.Box;
-
 export function Examples({
 	route,
 	navigation,
@@ -17,6 +15,7 @@ export function Examples({
 }) {
 	let name: string = route.params.name;
 
+	//@ts-ignore
 	const component = mapping[name];
 
 	return (
