@@ -6,6 +6,7 @@ import {
 	HStack,
 	Heading,
 	Divider,
+	Text,
 } from "../../nb/NativeBase/src";
 
 import { Ionicons } from "@expo/vector-icons";
@@ -20,12 +21,10 @@ export function Header({
 }) {
 	return (
 		<>
-			<HStack
-				alignItems="center"
-				// justifyContent="space-between"
-				w="100%"
-			>
+			<HStack alignItems="center" w="100%" py={2}>
 				<IconButton
+					position="absolute"
+					// left={0}
 					icon={
 						<Icon
 							as={<Ionicons name="arrow-back-outline" />}
@@ -38,10 +37,11 @@ export function Header({
 					onPress={() => navigation.navigate("home")}
 				></IconButton>
 
-				<Heading alignSelf="center" justifyContent="center">
+				<Heading alignSelf="center" justifyContent="center" mx="auto">
 					{title}
 				</Heading>
 			</HStack>
+
 			<Divider />
 		</>
 	);

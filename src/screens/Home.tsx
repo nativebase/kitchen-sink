@@ -18,56 +18,112 @@ import { ScrollView } from "react-native";
 export function Home({ navigation }: { navigation: StackNavigationProp<any> }) {
 	const components = [
 		{
-			name: "ActionSheet",
-			url: "actionsheet",
-		},
-		{
 			name: "Alert",
-			url: "alert",
 		},
 		{
 			name: "Avatar",
-			url: "avatar",
 		},
 		{
 			name: "Badge",
-			url: "badge",
-		},
-		{
-			name: "Button",
-			url: "button",
 		},
 		{
 			name: "Box",
-			url: "box",
-		},
-		{
-			name: "Card",
-			url: "card",
-		},
-		{
-			name: "",
-			url: "",
-		},
-		{
-			name: "Alert",
-			url: "alert",
-		},
-		{
-			name: "Avatar",
-			url: "avatar",
-		},
-		{
-			name: "Badge",
-			url: "badge",
 		},
 		{
 			name: "Button",
-			url: "button",
 		},
 		{
-			name: "Card",
-			url: "card",
+			name: "Center",
+		},
+		{
+			name: "CheckBox",
+		},
+		{
+			name: "Column",
+		},
+		{
+			name: "Divider",
+		},
+		{
+			name: "Fab",
+		},
+		{
+			name: "Flex",
+		},
+		{
+			name: "Heading",
+		},
+		{
+			name: "HStack",
+		},
+		{
+			name: "Icon",
+		},
+		{
+			name: "IconButton",
+		},
+		{
+			name: "Image",
+		},
+		{
+			name: "Input",
+		},
+		{
+			name: "Link",
+		},
+		{
+			name: "List",
+		},
+		{
+			name: "Menu",
+		},
+		{
+			name: "Modal",
+		},
+		{
+			name: "Popover",
+		},
+		{
+			name: "Progress",
+		},
+		{
+			name: "Radio",
+		},
+		{
+			name: "Select",
+		},
+		{
+			name: "Slider",
+		},
+		{
+			name: "Spinner",
+		},
+		{
+			name: "Switch",
+		},
+		{
+			name: "Tabs",
+		},
+		{
+			name: "Text",
+		},
+		{
+			name: "TextArea",
+		},
+		{
+			name: "Toast",
+		},
+		{
+			name: "Tooltip",
+		},
+		{
+			name: "Transitions",
+		},
+		{
+			name: "VStack",
+		},
+		{
+			name: "ZStack",
 		},
 	];
 
@@ -78,9 +134,13 @@ export function Home({ navigation }: { navigation: StackNavigationProp<any> }) {
 				<Heading p={3} mx={2}>
 					NativeBase@3.0.0
 				</Heading>
-				<Divider />
+				<Divider opacity={colorMode == "dark" ? "0.4" : "1"} />
 				<HStack alignItems="center" space={6} py={4} px={3} mx={2}>
-					<Ionicons name="moon-sharp" size={24} color="black" />
+					<Ionicons
+						name="moon-sharp"
+						size={24}
+						color={colorMode == "dark" ? "white" : "black"}
+					/>
 					<Text>Dark Mode</Text>
 					<Switch
 						ml="auto"
@@ -88,14 +148,17 @@ export function Home({ navigation }: { navigation: StackNavigationProp<any> }) {
 						isChecked={colorMode === "dark"}
 					/>
 				</HStack>
-				<Divider />
+				<Divider opacity={colorMode == "dark" ? "0.4" : "1"} />
+				<Divider mt={12} opacity={colorMode == "dark" ? "0.4" : "1"} />
 				<List
-					divider={<Divider ml={16} /*opacity=".4" */ />}
+					divider={
+						<Divider ml={16} opacity={colorMode == "dark" ? "0.4" : "1"} />
+					}
 					px={3}
-					mt={12}
+					// mt={12}
 					py={0}
 					// borderColor="red.200"
-					borderLeftWidth={0}
+					borderWidth={0}
 					borderRightWidth={0}
 					w="100%"
 				>
@@ -105,6 +168,7 @@ export function Home({ navigation }: { navigation: StackNavigationProp<any> }) {
 							onPress={() =>
 								navigation.navigate("component", { name: comp.name })
 							}
+							_hover={{ bg: "coolGray.300" }}
 						>
 							<HStack space={3} py={1} alignItems="center" w="100%">
 								<Box mr={4}>
