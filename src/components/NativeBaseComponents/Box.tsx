@@ -4,9 +4,10 @@ export const Example = () => {
 	return (
 		<Box
 			mt={3}
-			w="90%"
+			// w="90%"
 			bg="primary.400"
-			p={4}
+			py={4}
+			px={2}
 			_text={{ fontSize: "md", fontWeight: "bold", color: "white" }}
 		>
 			This is a Box

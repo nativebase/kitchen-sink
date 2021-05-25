@@ -6,7 +6,7 @@ export const Example = () => {
 	return (
 		<>
 			<Button onPress={() => setIsOpen(!isOpen)} mt={4}>
-				Click Me to {isOpen ? "hide" : "show"}
+				{isOpen ? "hide" : "show"}
 			</Button>
 			<Fade in={isOpen}>
 				<Box

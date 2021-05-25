@@ -73,7 +73,9 @@ export function MasonLayout({
 		"indigo.500",
 		"red.200",
 	];
+	//@ts-ignore
 	const leftElements = [];
+	//@ts-ignore
 	const rightElements = [];
 	Object.keys(mapping).map((key, index) => {
 		if (index % 2 !== 0) {
