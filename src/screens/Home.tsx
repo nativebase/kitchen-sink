@@ -18,9 +18,6 @@ import { ScrollView } from "react-native";
 export function Home({ navigation }: { navigation: StackNavigationProp<any> }) {
 	const components = [
 		{
-			name: "ActionSheet",
-		},
-		{
 			name: "Alert",
 		},
 		{
@@ -30,17 +27,25 @@ export function Home({ navigation }: { navigation: StackNavigationProp<any> }) {
 			name: "Badge",
 		},
 		{
+			name: "Box",
+		},
+		{
 			name: "Button",
 		},
 		{
-			name: "Box",
+			name: "Center",
 		},
-
 		{
 			name: "CheckBox",
 		},
 		{
 			name: "Column",
+		},
+		{
+			name: "Divider",
+		},
+		{
+			name: "Fab",
 		},
 		{
 			name: "Flex",
@@ -55,6 +60,9 @@ export function Home({ navigation }: { navigation: StackNavigationProp<any> }) {
 			name: "Icon",
 		},
 		{
+			name: "IconButton",
+		},
+		{
 			name: "Image",
 		},
 		{
@@ -67,46 +75,55 @@ export function Home({ navigation }: { navigation: StackNavigationProp<any> }) {
 			name: "List",
 		},
 		{
+			name: "Menu",
+		},
+		{
+			name: "Modal",
+		},
+		{
+			name: "Popover",
+		},
+		{
+			name: "Progress",
+		},
+		{
 			name: "Radio",
 		},
 		{
-			name: "",
+			name: "Select",
 		},
 		{
-			name: "",
+			name: "Slider",
 		},
 		{
-			name: "",
+			name: "Spinner",
 		},
 		{
-			name: "",
+			name: "Switch",
 		},
 		{
-			name: "",
+			name: "Tabs",
 		},
 		{
-			name: "",
+			name: "Text",
 		},
 		{
-			name: "",
+			name: "TextArea",
 		},
 		{
-			name: "",
+			name: "Toast",
 		},
 		{
-			name: "Alert",
+			name: "Tooltip",
 		},
 		{
-			name: "Avatar",
+			name: "Transitions",
 		},
 		{
-			name: "Badge",
+			name: "VStack",
 		},
 		{
-			name: "Button",
-		},
-		{
-			name: "Card",
+			name: "ZStack",
 		},
 	];
 
