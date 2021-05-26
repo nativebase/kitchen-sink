@@ -58,7 +58,16 @@ export function MasonLayout({
 		}
 	});
 	return (
-		<Box bg={colorMode === "dark" ? "black" : "white"} pt={12}>
+		<Box
+			bg={colorMode === "dark" ? "black" : "white"}
+			pt={12}
+			// bg={{
+			// 	linearGradient: {
+			// 		colors: ["violet.800", "lightBlue.300"],
+			// 	},
+			// }}
+			_text={{ color: "white", bg: "transparent" }}
+		>
 			<ScrollView contentContainerStyle={{ width: "100%" }}>
 				<Row /* space={2}  mx={2}*/>
 					<Column w="50%">

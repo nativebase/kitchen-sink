@@ -7,6 +7,7 @@ import {
 	VStack,
 	Box,
 	useColorMode,
+	Divider,
 } from "../../../nb/NativeBase/src";
 import { mapping } from "../../config/map";
 import { StackNavigationProp } from "@react-navigation/stack";
@@ -25,21 +26,29 @@ export function Examples({
 	console.log(component);
 	const { colorMode, toggleColorMode } = useColorMode();
 	return (
-		<Box bg="white">
+		<Box bg="warmGray.100">
 			<Header title={component.title} navigation={navigation} />
 
 			<ScrollView>
 				<VStack space={2} p={2} mb={24}>
-					<Text my={10} fontSize="xl">
-						{component.description}
-					</Text>
+					<Text fontSize="xl">{component.description}</Text>
 					{component.components.map((element: any, index: number) => (
-						<VStack space={2} key={index}>
-							<Heading>{element.title}</Heading>
-							{/* <Divider /> */}
-							<element.component.Example />
-							<Text>{element.description}</Text>
-						</VStack>
+						<Box
+							shadow={6}
+							bg="white"
+							py={6}
+							my={6}
+							mx={2}
+							px={2}
+							borderRadius="xl"
+						>
+							<VStack space={4} key={index} p={2}>
+								<Heading>{element.title}</Heading>
+								<Divider />
+								<element.component.Example />
+								<Text>{element.description}</Text>
+							</VStack>
+						</Box>
 					))}
 				</VStack>
 			</ScrollView>
