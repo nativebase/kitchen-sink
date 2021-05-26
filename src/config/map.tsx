@@ -1,10 +1,11 @@
-import { Example as BoxCompositionCard } from "../nb/components/primitives/Box/composition-card";
+import {} from "../components/NativeBaseComponents/Alert";
 const baseUrl = "../nb/components";
 
 export const mapping = {
 	Alert: {
 		title: "Alert",
 		description: "",
+		basic: require("../components/NativeBaseComponents/Alert"),
 		components: [
 			{
 				component: require(`${baseUrl}/composites/Alert/basic`),
@@ -56,6 +57,7 @@ export const mapping = {
 	Avatar: {
 		title: "Avatar",
 		description: "",
+		basic: require("../components/NativeBaseComponents/Avatar"),
 		components: [
 			{
 				component: require(`${baseUrl}/composites/Avatar/AvatarBadge`),
@@ -92,6 +94,7 @@ export const mapping = {
 	Badge: {
 		title: "Badge",
 		description: "",
+		basic: require("../components/NativeBaseComponents/Badge"),
 		components: [
 			{
 				component: require(`${baseUrl}/composites/Badge/color`),
@@ -118,6 +121,7 @@ export const mapping = {
 	Button: {
 		title: "Button",
 		description: "Primitive Element",
+		basic: require("../components/NativeBaseComponents/Button"),
 		components: [
 			{
 				component: require(`${baseUrl}/primitives/Button/basic`),
@@ -164,6 +168,7 @@ export const mapping = {
 	Box: {
 		title: "Box",
 		description: "",
+		basic: require("../components/NativeBaseComponents/Box"),
 		components: [
 			{
 				component: require(`${baseUrl}/primitives/Box/basic`),
@@ -221,6 +226,7 @@ export const mapping = {
 	CheckBox: {
 		title: "CheckBox",
 		description: "Primitive Element",
+		basic: require("../components/NativeBaseComponents/CheckBox"),
 		components: [
 			{
 				component: require(`${baseUrl}/primitives/Checkbox/basic`),
@@ -287,6 +293,7 @@ export const mapping = {
 	Column: {
 		title: "Column",
 		description: "Renders your data vertically",
+		basic: require("../components/NativeBaseComponents/Column"),
 		components: [
 			{
 				component: require(`${baseUrl}/primitives/Column/Basic`),
@@ -298,6 +305,7 @@ export const mapping = {
 	Divider: {
 		title: "Divider",
 		description: "",
+		basic: require("../components/NativeBaseComponents/Divider"),
 		components: [
 			{
 				component: require(`${baseUrl}/composites/Divider/Basic`),
@@ -319,6 +327,7 @@ export const mapping = {
 	Fab: {
 		title: "Fab",
 		description: "",
+		// basic: require("../components/NativeBaseComponents/"),
 		components: [
 			{
 				component: require(`${baseUrl}/composites/Fab/Basic`),
@@ -340,6 +349,7 @@ export const mapping = {
 	Flex: {
 		title: "Flex",
 		description: "Box with display='Flex'",
+		basic: require("../components/NativeBaseComponents/Flex"),
 		components: [
 			{
 				component: require(`${baseUrl}/primitives/Flex/basic`),
@@ -356,6 +366,7 @@ export const mapping = {
 	Heading: {
 		title: "Heading",
 		description: "It shows the Title",
+		basic: require("../components/NativeBaseComponents/Heading"),
 		components: [
 			{
 				component: require(`${baseUrl}/primitives/Heading/Basic`),
@@ -387,6 +398,7 @@ export const mapping = {
 	HStack: {
 		title: "HStack",
 		description: "Rows structure",
+		basic: require("../components/NativeBaseComponents/HStack"),
 		components: [
 			{
 				component: require(`${baseUrl}/primitives/HStack/basic`),
@@ -398,6 +410,7 @@ export const mapping = {
 	Icon: {
 		title: "Icon",
 		description: "Show Icon in NativeBase",
+		basic: require("../components/NativeBaseComponents/Icon"),
 		components: [
 			{
 				component: require(`${baseUrl}/primitives/Icon/AllIcons`),
@@ -424,6 +437,7 @@ export const mapping = {
 	IconButton: {
 		title: "IconButton",
 		description: "",
+		basic: require("../components/NativeBaseComponents/IconButton"),
 		components: [
 			{
 				component: require(`${baseUrl}/composites/IconButton/Basic`),
@@ -450,6 +464,7 @@ export const mapping = {
 	Image: {
 		title: "Image",
 		description: "Show image in NativeBase",
+		basic: require("../components/NativeBaseComponents/Image"),
 		components: [
 			{
 				component: require(`${baseUrl}/primitives/Image/Basic`),
@@ -480,8 +495,8 @@ export const mapping = {
 	},
 	Input: {
 		title: "Input",
-
 		description: "",
+		basic: require("../components/NativeBaseComponents/Input"),
 		components: [
 			{
 				component: require(`${baseUrl}/primitives/Input/Basic`),
@@ -528,6 +543,7 @@ export const mapping = {
 	Link: {
 		title: "Link",
 		description: "Used to navigate",
+		basic: require("../components/NativeBaseComponents/Link"),
 		components: [
 			{
 				component: require(`${baseUrl}/primitives/Link/Basic`),
@@ -559,6 +575,7 @@ export const mapping = {
 	List: {
 		title: "List",
 		description: "",
+		basic: require("../components/NativeBaseComponents/List"),
 		components: [
 			{
 				component: require(`${baseUrl}/primitives/List/Basic`),
@@ -600,6 +617,7 @@ export const mapping = {
 	Menu: {
 		title: "Menu",
 		description: "",
+		basic: require("../components/NativeBaseComponents/Menu"),
 		components: [
 			{
 				component: require(`${baseUrl}/composites/Menu/Basic`),
@@ -626,6 +644,7 @@ export const mapping = {
 	Modal: {
 		title: "Modal",
 		description: "",
+		basic: require("../components/NativeBaseComponents/Modal"),
 		components: [
 			{
 				component: require(`${baseUrl}/composites/Modal/Basic`),
@@ -662,6 +681,7 @@ export const mapping = {
 	Popover: {
 		title: "Popover",
 		description: "",
+		basic: require("../components/NativeBaseComponents/Popover"),
 		components: [
 			{
 				component: require(`${baseUrl}/composites/Popover/Basic`),
@@ -683,6 +703,7 @@ export const mapping = {
 	Progress: {
 		title: "Progress",
 		description: "",
+		basic: require("../components/NativeBaseComponents/Progress"),
 		components: [
 			{
 				component: require(`${baseUrl}/composites/Progress/Basic`),
@@ -719,6 +740,7 @@ export const mapping = {
 	Radio: {
 		title: "Radio",
 		description: "",
+		basic: require("../components/NativeBaseComponents/Radio"),
 		components: [
 			{
 				component: require(`${baseUrl}/primitives/Radio/controlledRadio`),
@@ -775,6 +797,7 @@ export const mapping = {
 	Select: {
 		title: "Select",
 		description: "",
+		basic: require("../components/NativeBaseComponents/Select"),
 		components: [
 			{
 				component: require(`${baseUrl}/primitives/Select/Basic`),
@@ -791,6 +814,7 @@ export const mapping = {
 	Slider: {
 		title: "Slider",
 		description: "",
+		basic: require("../components/NativeBaseComponents/Slider"),
 		components: [
 			{
 				component: require(`${baseUrl}/primitives/Slider/color`),
@@ -837,6 +861,7 @@ export const mapping = {
 	Spinner: {
 		title: "Spinner",
 		description: "",
+		basic: require("../components/NativeBaseComponents/Spinner"),
 		components: [
 			{
 				component: require(`${baseUrl}/primitives/Spinner/color`),
@@ -868,6 +893,7 @@ export const mapping = {
 	Switch: {
 		title: "Switch",
 		description: "",
+		basic: require("../components/NativeBaseComponents/Switch"),
 		components: [
 			{
 				component: require(`${baseUrl}/primitives/Switch/Basic`),
@@ -904,6 +930,7 @@ export const mapping = {
 	Tabs: {
 		title: "Tabs",
 		description: "",
+		basic: require("../components/NativeBaseComponents/Tabs"),
 		components: [
 			{
 				component: require(`${baseUrl}/composites/Tabs/Colors`),
@@ -991,6 +1018,7 @@ export const mapping = {
 	TextArea: {
 		title: "TextArea",
 		description: "",
+		basic: require("../components/NativeBaseComponents/TextArea"),
 		components: [
 			{
 				component: require(`${baseUrl}/primitives/TextArea/basic`),
@@ -1017,6 +1045,7 @@ export const mapping = {
 	Toast: {
 		title: "Toast",
 		description: "",
+		basic: require("../components/NativeBaseComponents/Toast"),
 		components: [
 			{
 				component: require(`${baseUrl}/composites/Toast/Basic`),
@@ -1058,6 +1087,7 @@ export const mapping = {
 	Tooltip: {
 		title: "Tooltip",
 		description: "",
+		basic: require("../components/NativeBaseComponents/ToolTip"),
 		components: [
 			{
 				component: require(`${baseUrl}/composites/Tooltip/Basic`),
@@ -1079,6 +1109,7 @@ export const mapping = {
 	Transitions: {
 		title: "Transitions",
 		description: "",
+		basic: require("../components/NativeBaseComponents/Transitions"),
 		components: [
 			{
 				component: require(`${baseUrl}/composites/Transitions/Fade`),
@@ -1112,20 +1143,21 @@ export const mapping = {
 			},
 		],
 	},
-	VStack: {
-		title: "VStack",
-		description: "",
-		components: [
-			// {
-			// 	component: require(`${baseUrl}/primitives/VStack/basic`),
-			// 	title: "Basic",
-			// 	description: "",
-			// },
-		],
-	},
+	// VStack: {
+	// 	title: "VStack",
+	// 	description: "",
+	// 	components: [
+	// 		// {
+	// 		// 	component: require(`${baseUrl}/primitives/VStack/basic`),
+	// 		// 	title: "Basic",
+	// 		// 	description: "",
+	// 		// },
+	// 	],
+	// },
 	ZStack: {
 		title: "ZStack",
 		description: "",
+		basic: require("../components/NativeBaseComponents/ZStack"),
 		components: [
 			{
 				component: require(`${baseUrl}/primitives/ZStack/CenterStack`),
