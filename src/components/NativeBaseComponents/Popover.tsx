@@ -6,7 +6,7 @@ export function Example() {
 		<Popover
 			trigger={(triggerProps) => {
 				return (
-					<Button mt={4} {...triggerProps}>
+					<Button mt={4} {...triggerProps} shadow={6}>
 						Trigger
 					</Button>
 				);

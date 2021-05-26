@@ -3,7 +3,7 @@ import { Badge } from "native-base";
 
 export function Example() {
 	return (
-		<Badge mt={3} bg="green.500">
+		<Badge mt={3} bg="yellow.500" shadow={6}>
 			NEW FEATURE
 		</Badge>
 	);

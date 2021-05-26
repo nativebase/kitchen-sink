@@ -205,6 +205,7 @@ export const mapping = {
 	Center: {
 		title: "Center",
 		description: "",
+		basic: require("../components/NativeBaseComponents/Center"),
 		components: [
 			{
 				component: require(`${baseUrl}/composites/Center/Basic`),
@@ -987,6 +988,7 @@ export const mapping = {
 	Text: {
 		title: "Text",
 		description: "",
+		basic: require("../components/NativeBaseComponents/Text"),
 		components: [
 			{
 				component: require(`${baseUrl}/primitives/Text/Basic`),

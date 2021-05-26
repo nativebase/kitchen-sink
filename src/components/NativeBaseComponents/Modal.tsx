@@ -7,7 +7,9 @@ export const Example = () => {
 
 	return (
 		<>
-			<Button onPress={() => setShowModal(true)}>Button</Button>
+			<Button mt={4} shadow={6} onPress={() => setShowModal(true)}>
+				Button
+			</Button>
 			<Modal isOpen={showModal} onClose={() => setShowModal(false)}>
 				<Modal.Content maxWidth="400px">
 					<Modal.CloseButton />

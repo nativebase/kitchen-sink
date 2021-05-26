@@ -3,6 +3,7 @@ import { Box } from "native-base";
 export const Example = () => {
 	return (
 		<Box
+			shadow={6}
 			mt={3}
 			// w="90%"
 			bg="primary.400"

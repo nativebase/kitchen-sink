@@ -3,10 +3,10 @@ import { Column, Box } from "native-base";
 
 export const Example = () => {
 	return (
-		<Column mt={3}>
-			<Box w="100" h={"100"} flexGrow={1} bg="green.500" />
-			<Box bg="blue.300" h={"100"} flexGrow={2} w="100" />
-			<Box flexGrow={1} w="100" h={"100"} bg="tomato" />
+		<Column mt={3} shadow={6}>
+			<Box w={100} h={10} bg="teal.500" />
+			<Box h={10} bg="blue.300" />
+			<Box h={10} bg="tomato" />
 		</Column>
 	);
 };
