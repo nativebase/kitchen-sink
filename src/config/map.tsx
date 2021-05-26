@@ -464,6 +464,7 @@ export const mapping = {
 	Image: {
 		title: "Image",
 		description: "Show image in NativeBase",
+		basic: require("../components/NativeBaseComponents/Image"),
 		components: [
 			{
 				component: require(`${baseUrl}/primitives/Image/Basic`),
