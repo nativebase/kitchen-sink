@@ -6,6 +6,7 @@ export const Example = () => {
 
 	return (
 		<Select
+			shadow={6}
 			mt={4}
 			selectedValue={language}
 			minWidth={120}
@@ -16,6 +17,8 @@ export const Example = () => {
 				bg: "cyan.600",
 				endIcon: <CheckIcon size={4} />,
 			}}
+			placeholderTextColor="white"
+			color="white"
 		>
 			<Select.Item label="JavaScript" value="js" />
 			<Select.Item label="TypeScript" value="ts" />

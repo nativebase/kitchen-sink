@@ -1,27 +1,23 @@
 import React from "react";
-import { HStack, Stack, Center, Heading } from "native-base";
+import { HStack, Box, Divider } from "native-base";
 
 export function Example() {
 	return (
-		<HStack space={2} alignItems="center" mt={3}>
-			<Center
-				// size={16}
-				bg="primary.400"
-				rounded="md"
-				_text={{ color: "white" }}
-				shadow={3}
-			>
+		<HStack
+			alignItems="center"
+			mt={3}
+			shadow={6}
+			divider={<Divider />}
+			space={2}
+			bg="primary.600"
+			px={2}
+		>
+			<Box rounded="md" _text={{ color: "white" }} shadow={3}>
 				Box 1
-			</Center>
-			<Center
-				bg="secondary.400"
-				// size={16}
-				rounded="md"
-				_text={{ color: "white" }}
-				shadow={3}
-			>
+			</Box>
+			<Box rounded="md" _text={{ color: "white" }} shadow={3}>
 				Box 2
-			</Center>
+			</Box>
 		</HStack>
 	);
 }

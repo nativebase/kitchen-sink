@@ -3,7 +3,7 @@ import { Link } from "native-base";
 
 export const Example = () => {
 	return (
-		<Link mt={4} fontSize="xl" href="https://nativebase.io">
+		<Link mt={4} fontSize="xl" href="https://nativebase.io" shadow={8}>
 			Default Link
 		</Link>
 	);

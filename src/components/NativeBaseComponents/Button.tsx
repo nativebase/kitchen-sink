@@ -3,7 +3,7 @@ import { Button } from "native-base";
 
 export const Example = () => {
 	return (
-		<Button mt={2} onPress={() => console.log("hello world")}>
+		<Button mt={2} onPress={() => console.log("hello world")} shadow={6}>
 			PRIMARY
 		</Button>
 	);

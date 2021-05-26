@@ -8,7 +8,7 @@ export function Example() {
 			trigger={(triggerProps) => {
 				return (
 					<Pressable {...triggerProps}>
-						<HamburgerIcon mt={4} />
+						<HamburgerIcon mt={4} shadow={6} />
 					</Pressable>
 				);
 			}}
