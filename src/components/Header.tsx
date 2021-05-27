@@ -20,29 +20,25 @@ export function Header({
 	navigation: StackNavigationProp<any>;
 }) {
 	return (
-		<>
-			<HStack alignItems="center" w="100%" py={2} backgroundColor="white">
-				<IconButton
-					position="absolute"
-					// left={0}
-					icon={
-						<Icon
-							as={<Ionicons name="arrow-back-outline" />}
-							color="blueGray.400"
-							size="sm"
-						/>
-					}
-					_pressed={{ bg: "transparent" }}
-					colorScheme="coolGray"
-					onPress={() => navigation.navigate("masonlayout")}
-				></IconButton>
+		<HStack alignItems="center" w="100%" py={2} backgroundColor="white" mb={8}>
+			<IconButton
+				position="absolute"
+				// left={0}
+				icon={
+					<Icon
+						as={<Ionicons name="arrow-back-outline" />}
+						color="blueGray.400"
+						size="sm"
+					/>
+				}
+				_pressed={{ bg: "transparent" }}
+				colorScheme="coolGray"
+				onPress={() => navigation.navigate("masonlayout")}
+			></IconButton>
 
-				<Heading alignSelf="center" justifyContent="center" mx="auto">
-					{title}
-				</Heading>
-			</HStack>
-
-			<Divider />
-		</>
+			<Heading alignSelf="center" justifyContent="center" mx="auto">
+				{title}
+			</Heading>
+		</HStack>
 	);
 }

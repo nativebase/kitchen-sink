@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StatusBar, StyleSheet, Text, View } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { Box, NativeBaseProvider } from "native-base";
 import { DashboardTheme } from "./src/theme";
@@ -13,6 +13,7 @@ export default function App() {
 					<DashboardStack />
 				</Box>
 			</NativeBaseProvider>
+			<StatusBar backgroundColor="black" />
 		</NavigationContainer>
 	);
 }

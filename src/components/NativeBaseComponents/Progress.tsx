@@ -4,9 +4,9 @@ import { Progress, Box } from "native-base";
 export const Example = () => {
 	return (
 		<>
-			{/* <Box bg="white"> */}
-			<Progress value={45} mx={4} mt={4} bg="red.200" />
-			{/* </Box> */}
+			<Box w="100%" h="30">
+				<Progress value={45} mx={4} bg="white" />
+			</Box>
 		</>
 	);
 };

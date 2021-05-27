@@ -33,7 +33,8 @@ export function Examples({
 
 			<ScrollView>
 				<VStack mx={2} space={2} p={2} mb={24}>
-					<Text fontSize="xl">{component.description}</Text>
+					{/* <Text fontSize="xl">{component.description}</Text> */}
+					{/* <Text></Text> */}
 					{component.components.map((element: any, index: number) => (
 						<Box
 							shadow={1}
@@ -45,11 +46,21 @@ export function Examples({
 							borderRadius={16}
 						>
 							<VStack key={index}>
-								<Heading p={4}>{element.title}</Heading>
+								<Heading p={6}>{element.title}</Heading>
 								<Divider />
 								{/* <Box flexWrap="wrap" bg="red.200"> */}
-								<Flex alignItems="center" p={4} justifyContent="center">
+								{/* mx={{ base: "auto", md: 0 }} */}
+								<Flex
+									nativeID="1111"
+									//@ts-ignore
+									align={{ base: "center", md: "flex-start" }}
+									p={6}
+									justify="center"
+									d="flex"
+								>
+									{/* <Center p={4}> */}
 									<element.component.Example />
+									{/* </Center> */}
 								</Flex>
 							</VStack>
 						</Box>

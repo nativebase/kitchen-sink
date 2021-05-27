@@ -414,23 +414,23 @@ export const mapping = {
 		basic: require("../components/NativeBaseComponents/Icon"),
 		components: [
 			{
-				component: require("../nb/components/primitives/Icon/AllIcons"),
-				title: "Basic",
-				description: "",
-			},
-			{
 				component: require("../nb/components/primitives/Icon/Basic"),
 				title: "Basic",
 				description: "",
 			},
 			{
 				component: require("../nb/components/primitives/Icon/CreateIcon"),
-				title: "Basic",
+				title: "Create Icon",
 				description: "",
 			},
 			{
 				component: require("../nb/components/primitives/Icon/CustomIcon"),
-				title: "Basic",
+				title: "Custom Icon",
+				description: "",
+			},
+			{
+				component: require("../nb/components/primitives/Icon/AllIcons"),
+				title: "All Icons",
 				description: "",
 			},
 		],
@@ -576,7 +576,7 @@ export const mapping = {
 	List: {
 		title: "List",
 		description: "",
-		basic: require("../components/NativeBaseComponents/List"),
+		// basic: require("../components/NativeBaseComponents/List"),
 		components: [
 			{
 				component: require("../nb/components/primitives/List/Basic"),
@@ -626,6 +626,11 @@ export const mapping = {
 				description: "",
 			},
 			{
+				component: require("../nb/components/composites/Menu/MenuPositions"),
+				title: "Menu Positions",
+				description: "",
+			},
+			{
 				component: require("../nb/components/composites/Menu/Group"),
 				title: "Menu Group",
 				description: "",
@@ -633,11 +638,6 @@ export const mapping = {
 			{
 				component: require("../nb/components/composites/Menu/MenuOptionsGroup"),
 				title: "Menu options Group",
-				description: "",
-			},
-			{
-				component: require("../nb/components/composites/Menu/MenuPositions"),
-				title: "Menu Positions",
 				description: "",
 			},
 		],
@@ -953,11 +953,11 @@ export const mapping = {
 				title: "Fitted Tab",
 				description: "",
 			},
-			{
-				component: require("../nb/components/composites/Tabs/IconTabs"),
-				title: "Icon Tabs",
-				description: "",
-			},
+			// {
+			// 	component: require("../nb/components/composites/Tabs/IconTabs"),
+			// 	title: "Icon Tabs",
+			// 	description: "",
+			// },
 			{
 				component: require("../nb/components/composites/Tabs/Size"),
 				title: "Sizes",
@@ -1161,16 +1161,16 @@ export const mapping = {
 		description: "",
 		basic: require("../components/NativeBaseComponents/ZStack"),
 		components: [
-			{
-				component: require("../nb/components/primitives/ZStack/CenterStack"),
-				title: "Center Stack",
-				description: "",
-			},
 			// {
-			// 	component: require("../nb/components/primitives/ZStack/example"),
-			// 	title: "example",
+			// 	component: require("../nb/components/primitives/ZStack/CenterStack"),
+			// 	title: "Center Stack",
 			// 	description: "",
 			// },
+			{
+				component: require("../nb/components/primitives/ZStack/example"),
+				title: "example",
+				description: "",
+			},
 		],
 	},
 };

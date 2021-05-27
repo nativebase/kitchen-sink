@@ -13,7 +13,7 @@ import { Feather, AntDesign } from "@expo/vector-icons";
 
 export const Example = () => {
 	return (
-		<Box rounded="pill" w={64} shadow={4}>
+		<Box rounded="pill" w={64} shadow={4} mx={{ base: "auto", md: 0 }}>
 			<Image
 				h={64}
 				rounded="pill"
