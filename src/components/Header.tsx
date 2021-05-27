@@ -21,7 +21,7 @@ export function Header({
 }) {
 	return (
 		<>
-			<HStack alignItems="center" w="100%" py={2}>
+			<HStack alignItems="center" w="100%" py={2} backgroundColor="white">
 				<IconButton
 					position="absolute"
 					// left={0}

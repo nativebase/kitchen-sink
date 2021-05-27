@@ -7,10 +7,10 @@ export function Example() {
 			shadow={6}
 			bg="green.800"
 			_text={{ color: "white", fontWeight: "bold" }}
-			height={200}
-			width={200}
+			height={100}
+			width={150}
 		>
-			This is the Center
+			This is Center
 		</Center>
 	);
 }

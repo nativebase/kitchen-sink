@@ -1,5 +1,5 @@
 import React from "react";
-import { Avatar } from "native-base";
+import { Avatar, Box } from "native-base";
 
 export const Example = () => {
 	return (

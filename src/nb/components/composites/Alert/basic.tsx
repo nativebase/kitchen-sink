@@ -3,7 +3,7 @@ import { Alert, Box } from 'native-base';
 
 export const Example = () => {
   return (
-    <Box mx={3} w="90%">
+    <Box >
       <Alert>
         <Alert.Icon />
         <Alert.Title>Alert Title</Alert.Title>

@@ -8,47 +8,47 @@ export const mapping = {
 		basic: require("../components/NativeBaseComponents/Alert"),
 		components: [
 			{
-				component: require(`${baseUrl}/composites/Alert/basic`),
+				component: require("../nb/components/composites/Alert/basic"),
 				title: "Basic",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/composites/Alert/action`),
+				component: require("../nb/components/composites/Alert/action"),
 				title: "Action",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/composites/Alert/colorScheme`),
+				component: require("../nb/components/composites/Alert/colorScheme"),
 				title: "Color Scheme",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/composites/Alert/composition`),
+				component: require("../nb/components/composites/Alert/composition"),
 				title: "Composition",
 				description: "",
 			},
 			// {
-			// 	component: require(`${baseUrl}/composites/Alert/knobEnabled`),
+			// 	component: require("../nb/components/composites/Alert/knobEnabled"),
 			// 	title: "Knob Enabled",
 			// 	description: "",
 			// },
 			// {
-			// 	component: require(`${baseUrl}/composites/Alert/`),
+			// 	component: require("../nb/components/composites/Alert/"),
 			// 	title: "",
 			// 	description: "",
 			// },
 			{
-				component: require(`${baseUrl}/composites/Alert/status`),
+				component: require("../nb/components/composites/Alert/status"),
 				title: "Status",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/composites/Alert/variant`),
+				component: require("../nb/components/composites/Alert/variant"),
 				title: "Variant",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/composites/Alert/usage`),
+				component: require("../nb/components/composites/Alert/usage"),
 				title: "Usage",
 				description: "",
 			},
@@ -60,32 +60,32 @@ export const mapping = {
 		basic: require("../components/NativeBaseComponents/Avatar"),
 		components: [
 			{
-				component: require(`${baseUrl}/composites/Avatar/AvatarBadge`),
+				component: require("../nb/components/composites/Avatar/AvatarBadge"),
 				title: "Avatar Badge",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/composites/Avatar/AvatarGroup`),
+				component: require("../nb/components/composites/Avatar/AvatarGroup"),
 				title: "Avatar Group",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/composites/Avatar/Fallback`),
+				component: require("../nb/components/composites/Avatar/Fallback"),
 				title: "Fallback",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/composites/Avatar/size`),
+				component: require("../nb/components/composites/Avatar/size"),
 				title: "Size",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/composites/Avatar/usage`),
+				component: require("../nb/components/composites/Avatar/usage"),
 				title: "Usage",
 				description: "",
 			},
 			// {
-			// 	component: require(`${baseUrl}/composites/Avatar/knobEnabled`),
+			// 	component: require("../nb/components/composites/Avatar/knobEnabled"),
 			// 	title: "Knob Enabled",
 			// 	description: "",
 			// },
@@ -97,22 +97,22 @@ export const mapping = {
 		basic: require("../components/NativeBaseComponents/Badge"),
 		components: [
 			{
-				component: require(`${baseUrl}/composites/Badge/color`),
+				component: require("../nb/components/composites/Badge/color"),
 				title: "Color",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/composites/Badge/composition`),
+				component: require("../nb/components/composites/Badge/composition"),
 				title: "Composition",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/composites/Badge/variants`),
+				component: require("../nb/components/composites/Badge/variants"),
 				title: "Variants",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/composites/Badge/usage`),
+				component: require("../nb/components/composites/Badge/usage"),
 				title: "Usage",
 				description: "",
 			},
@@ -124,42 +124,42 @@ export const mapping = {
 		basic: require("../components/NativeBaseComponents/Button"),
 		components: [
 			{
-				component: require(`${baseUrl}/primitives/Button/basic`),
+				component: require("../nb/components/primitives/Button/basic"),
 				title: "Basic",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/primitives/Button/ButtonGroup`),
+				component: require("../nb/components/primitives/Button/ButtonGroup"),
 				title: "ButtonGroup",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/primitives/Button/Composition`),
+				component: require("../nb/components/primitives/Button/Composition"),
 				title: "Composition",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/primitives/Button/icons`),
+				component: require("../nb/components/primitives/Button/icons"),
 				title: "Icons",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/primitives/Button/loading`),
+				component: require("../nb/components/primitives/Button/loading"),
 				title: "Loading button",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/primitives/Button/sizes`),
+				component: require("../nb/components/primitives/Button/sizes"),
 				title: "Sizes",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/primitives/Button/variants`),
+				component: require("../nb/components/primitives/Button/variants"),
 				title: "variants",
 				description: "",
 			},
 			// {
-			// 	component: require(`${baseUrl}/primitives/Button/WithRef`),
+			// 	component: require("../nb/components/primitives/Button/WithRef"),
 			// 	title: "With References",
 			// 	description: "",
 			// },
@@ -171,32 +171,32 @@ export const mapping = {
 		basic: require("../components/NativeBaseComponents/Box"),
 		components: [
 			{
-				component: require(`${baseUrl}/primitives/Box/basic`),
+				component: require("../nb/components/primitives/Box/basic"),
 				title: "Basic",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/primitives/Box/composition-card`),
+				component: require("../nb/components/primitives/Box/composition-card"),
 				title: "Composition Card",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/primitives/Box/composition-card1`),
+				component: require("../nb/components/primitives/Box/composition-card1"),
 				title: "Composition Card 1",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/primitives/Box/composition-card2`),
+				component: require("../nb/components/primitives/Box/composition-card2"),
 				title: "Composition Card 2",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/primitives/Box/composition-card3`),
+				component: require("../nb/components/primitives/Box/composition-card3"),
 				title: "Composition Card 3",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/primitives/Box/composition-shoes-card`),
+				component: require("../nb/components/primitives/Box/composition-shoes-card"),
 				title: "Composition ShoesCard",
 				description: "",
 			},
@@ -208,17 +208,17 @@ export const mapping = {
 		basic: require("../components/NativeBaseComponents/Center"),
 		components: [
 			{
-				component: require(`${baseUrl}/composites/Center/Basic`),
+				component: require("../nb/components/composites/Center/Basic"),
 				title: "Basic",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/composites/Center/SquareCircle`),
+				component: require("../nb/components/composites/Center/SquareCircle"),
 				title: "Square Circle",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/composites/Center/WithIcons`),
+				component: require("../nb/components/composites/Center/WithIcons"),
 				title: "With Icons",
 				description: "",
 			},
@@ -230,62 +230,62 @@ export const mapping = {
 		basic: require("../components/NativeBaseComponents/CheckBox"),
 		components: [
 			{
-				component: require(`${baseUrl}/primitives/Checkbox/basic`),
+				component: require("../nb/components/primitives/Checkbox/basic"),
 				title: "Basic",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/primitives/Checkbox/checkboxGroup`),
+				component: require("../nb/components/primitives/Checkbox/checkboxGroup"),
 				title: "CheckboxGroup",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/primitives/Checkbox/controlledCheckbox`),
+				component: require("../nb/components/primitives/Checkbox/controlledCheckbox"),
 				title: "Controlled Checkbox",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/primitives/Checkbox/customColor`),
+				component: require("../nb/components/primitives/Checkbox/customColor"),
 				title: "CustomColor CheckBox",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/primitives/Checkbox/customIcon`),
+				component: require("../nb/components/primitives/Checkbox/customIcon"),
 				title: "CustomIcon CheckBox",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/primitives/Checkbox/disabled`),
+				component: require("../nb/components/primitives/Checkbox/disabled"),
 				title: "Disabled CheckBox",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/primitives/Checkbox/FormControlled`),
+				component: require("../nb/components/primitives/Checkbox/FormControlled"),
 				title: "FormControlled CheckBox",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/primitives/Checkbox/invalid`),
+				component: require("../nb/components/primitives/Checkbox/invalid"),
 				title: "Invalid CheckBox",
 				description: "",
 			},
 			// {
-			// 	component: require(`${baseUrl}/primitives/Checkbox/playground`),
+			// 	component: require("../nb/components/primitives/Checkbox/playground"),
 			// 	title: "CheckBox",
 			// 	description: "",
 			// },
 			{
-				component: require(`${baseUrl}/primitives/Checkbox/size`),
+				component: require("../nb/components/primitives/Checkbox/size"),
 				title: "CheckBox",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/primitives/Checkbox/uncontrolledCheckbox`),
+				component: require("../nb/components/primitives/Checkbox/uncontrolledCheckbox"),
 				title: "CheckBox",
 				description: "",
 			},
 			// {
-			// 	component: require(`${baseUrl}/primitives/Checkbox/withRef`),
+			// 	component: require("../nb/components/primitives/Checkbox/withRef"),
 			// 	title: "CheckBox",
 			// 	description: "",
 			// },
@@ -297,7 +297,7 @@ export const mapping = {
 		basic: require("../components/NativeBaseComponents/Column"),
 		components: [
 			{
-				component: require(`${baseUrl}/primitives/Column/Basic`),
+				component: require("../nb/components/primitives/Column/Basic"),
 				title: "Basic",
 				description: "",
 			},
@@ -309,17 +309,17 @@ export const mapping = {
 		basic: require("../components/NativeBaseComponents/Divider"),
 		components: [
 			{
-				component: require(`${baseUrl}/composites/Divider/Basic`),
+				component: require("../nb/components/composites/Divider/Basic"),
 				title: "Basic",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/composites/Divider/Composition`),
+				component: require("../nb/components/composites/Divider/Composition"),
 				title: "Composition",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/composites/Divider/Orientation`),
+				component: require("../nb/components/composites/Divider/Orientation"),
 				title: "Orientation",
 				description: "",
 			},
@@ -331,17 +331,17 @@ export const mapping = {
 		// basic: require("../components/NativeBaseComponents/"),
 		components: [
 			{
-				component: require(`${baseUrl}/composites/Fab/Basic`),
+				component: require("../nb/components/composites/Fab/Basic"),
 				title: "Basic",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/composites/Fab/CustomPosition`),
+				component: require("../nb/components/composites/Fab/CustomPosition"),
 				title: "Custom Position",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/composites/Fab/Placement`),
+				component: require("../nb/components/composites/Fab/Placement"),
 				title: "Placement",
 				description: "",
 			},
@@ -353,12 +353,12 @@ export const mapping = {
 		basic: require("../components/NativeBaseComponents/Flex"),
 		components: [
 			{
-				component: require(`${baseUrl}/primitives/Flex/basic`),
+				component: require("../nb/components/primitives/Flex/basic"),
 				title: "Basic",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/primitives/Flex/spacer`),
+				component: require("../nb/components/primitives/Flex/spacer"),
 				title: "Spacer",
 				description: "",
 			},
@@ -370,27 +370,27 @@ export const mapping = {
 		basic: require("../components/NativeBaseComponents/Heading"),
 		components: [
 			{
-				component: require(`${baseUrl}/primitives/Heading/Basic`),
+				component: require("../nb/components/primitives/Heading/Basic"),
 				title: "Basic",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/primitives/Heading/Composition`),
+				component: require("../nb/components/primitives/Heading/Composition"),
 				title: "Composition",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/primitives/Heading/OverridenStyle`),
+				component: require("../nb/components/primitives/Heading/OverridenStyle"),
 				title: "OverridenStyle",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/primitives/Heading/Sizes`),
+				component: require("../nb/components/primitives/Heading/Sizes"),
 				title: "Sizes",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/primitives/Heading/Truncate`),
+				component: require("../nb/components/primitives/Heading/Truncate"),
 				title: "Truncate",
 				description: "",
 			},
@@ -402,7 +402,7 @@ export const mapping = {
 		basic: require("../components/NativeBaseComponents/HStack"),
 		components: [
 			{
-				component: require(`${baseUrl}/primitives/HStack/basic`),
+				component: require("../nb/components/primitives/HStack/basic"),
 				title: "Basic",
 				description: "",
 			},
@@ -414,22 +414,22 @@ export const mapping = {
 		basic: require("../components/NativeBaseComponents/Icon"),
 		components: [
 			{
-				component: require(`${baseUrl}/primitives/Icon/AllIcons`),
+				component: require("../nb/components/primitives/Icon/AllIcons"),
 				title: "Basic",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/primitives/Icon/Basic`),
+				component: require("../nb/components/primitives/Icon/Basic"),
 				title: "Basic",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/primitives/Icon/CreateIcon`),
+				component: require("../nb/components/primitives/Icon/CreateIcon"),
 				title: "Basic",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/primitives/Icon/CustomIcon`),
+				component: require("../nb/components/primitives/Icon/CustomIcon"),
 				title: "Basic",
 				description: "",
 			},
@@ -441,22 +441,22 @@ export const mapping = {
 		basic: require("../components/NativeBaseComponents/IconButton"),
 		components: [
 			{
-				component: require(`${baseUrl}/composites/IconButton/Basic`),
+				component: require("../nb/components/composites/IconButton/Basic"),
 				title: "Basic",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/composites/IconButton/Sizes`),
+				component: require("../nb/components/composites/IconButton/Sizes"),
 				title: "Sizes",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/composites/IconButton/SVGIcon`),
+				component: require("../nb/components/composites/IconButton/SVGIcon"),
 				title: "SVGIcon",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/composites/IconButton/Variant`),
+				component: require("../nb/components/composites/IconButton/Variant"),
 				title: "Variant",
 				description: "",
 			},
@@ -468,27 +468,27 @@ export const mapping = {
 		basic: require("../components/NativeBaseComponents/Image"),
 		components: [
 			{
-				component: require(`${baseUrl}/primitives/Image/Basic`),
+				component: require("../nb/components/primitives/Image/Basic"),
 				title: "Basic",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/primitives/Image/BorderRadius`),
+				component: require("../nb/components/primitives/Image/BorderRadius"),
 				title: "BorderRadius",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/primitives/Image/FallbackSupport`),
+				component: require("../nb/components/primitives/Image/FallbackSupport"),
 				title: "FallbackSupport",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/primitives/Image/Sizes`),
+				component: require("../nb/components/primitives/Image/Sizes"),
 				title: "Sizes",
 				description: "",
 			},
 			// {
-			// 	component: require(`${baseUrl}/primitives/Image/WithRef`),
+			// 	component: require("../nb/components/primitives/Image/WithRef"),
 			// 	title: "WithRef",
 			// 	description: "",
 			// },
@@ -500,42 +500,42 @@ export const mapping = {
 		basic: require("../components/NativeBaseComponents/Input"),
 		components: [
 			{
-				component: require(`${baseUrl}/primitives/Input/Basic`),
+				component: require("../nb/components/primitives/Input/Basic"),
 				title: "Basic Input",
 				description: "",
 			},
 			// {
-			// 	component: require(`${baseUrl}/primitives/Input/Controlled`),
+			// 	component: require("../nb/components/primitives/Input/Controlled"),
 			// 	title: "Controlled Input",
 			// 	description: "",
 			// },
 			{
-				component: require(`${baseUrl}/primitives/Input/Elements`),
+				component: require("../nb/components/primitives/Input/Elements"),
 				title: "Elements",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/primitives/Input/FormControlled`),
+				component: require("../nb/components/primitives/Input/FormControlled"),
 				title: "FormControlled",
 				description: "",
 			},
 			// {
-			// 	component: require(`${baseUrl}/primitives/Input/Masked`),
+			// 	component: require("../nb/components/primitives/Input/Masked"),
 			// 	title: "Masked",
 			// 	description: "",
 			// },
 			{
-				component: require(`${baseUrl}/primitives/Input/Size`),
+				component: require("../nb/components/primitives/Input/Size"),
 				title: "Size",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/primitives/Input/Variant`),
+				component: require("../nb/components/primitives/Input/Variant"),
 				title: "Variant",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/primitives/Input/Addons`),
+				component: require("../nb/components/primitives/Input/Addons"),
 				title: "Addons",
 				description: "",
 			},
@@ -547,27 +547,27 @@ export const mapping = {
 		basic: require("../components/NativeBaseComponents/Link"),
 		components: [
 			{
-				component: require(`${baseUrl}/primitives/Link/Basic`),
+				component: require("../nb/components/primitives/Link/Basic"),
 				title: "Basic",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/primitives/Link/CompositeLink`),
+				component: require("../nb/components/primitives/Link/CompositeLink"),
 				title: "Composite Link",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/primitives/Link/CustomOnPress`),
+				component: require("../nb/components/primitives/Link/CustomOnPress"),
 				title: "Custom Pressable link",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/primitives/Link/ExternalLink`),
+				component: require("../nb/components/primitives/Link/ExternalLink"),
 				title: "External link",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/primitives/Link/UnderlineLink`),
+				component: require("../nb/components/primitives/Link/UnderlineLink"),
 				title: "Underline Link",
 				description: "",
 			},
@@ -579,37 +579,37 @@ export const mapping = {
 		basic: require("../components/NativeBaseComponents/List"),
 		components: [
 			{
-				component: require(`${baseUrl}/primitives/List/Basic`),
+				component: require("../nb/components/primitives/List/Basic"),
 				title: "Basic",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/primitives/List/OrderedList`),
+				component: require("../nb/components/primitives/List/OrderedList"),
 				title: "Ordered list",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/primitives/List/UnorderedList`),
+				component: require("../nb/components/primitives/List/UnorderedList"),
 				title: "Unordered list",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/primitives/List/ListWithIcon`),
+				component: require("../nb/components/primitives/List/ListWithIcon"),
 				title: "ListWithIcon",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/primitives/List/PressableList`),
+				component: require("../nb/components/primitives/List/PressableList"),
 				title: "Pressable list",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/primitives/List/StylingList`),
+				component: require("../nb/components/primitives/List/StylingList"),
 				title: "Styling list",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/primitives/List/VirtualizedList`),
+				component: require("../nb/components/primitives/List/VirtualizedList"),
 				title: "Virtualized list",
 				description: "",
 			},
@@ -621,22 +621,22 @@ export const mapping = {
 		basic: require("../components/NativeBaseComponents/Menu"),
 		components: [
 			{
-				component: require(`${baseUrl}/composites/Menu/Basic`),
+				component: require("../nb/components/composites/Menu/Basic"),
 				title: "Basic",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/composites/Menu/Group`),
+				component: require("../nb/components/composites/Menu/Group"),
 				title: "Menu Group",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/composites/Menu/MenuOptionsGroup`),
+				component: require("../nb/components/composites/Menu/MenuOptionsGroup"),
 				title: "Menu options Group",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/composites/Menu/MenuPositions`),
+				component: require("../nb/components/composites/Menu/MenuPositions"),
 				title: "Menu Positions",
 				description: "",
 			},
@@ -648,32 +648,32 @@ export const mapping = {
 		basic: require("../components/NativeBaseComponents/Modal"),
 		components: [
 			{
-				component: require(`${baseUrl}/composites/Modal/Basic`),
+				component: require("../nb/components/composites/Modal/Basic"),
 				title: "Basic",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/composites/Modal/ModalPlacement`),
+				component: require("../nb/components/composites/Modal/ModalPlacement"),
 				title: "ModalPlacement",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/composites/Modal/ModalRefEg`),
+				component: require("../nb/components/composites/Modal/ModalRefEg"),
 				title: "Modal Ref",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/composites/Modal/ModalWithAvoidKeyboard`),
+				component: require("../nb/components/composites/Modal/ModalWithAvoidKeyboard"),
 				title: "Avoiding keyboard with Modal ",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/composites/Modal/MultipleModal`),
+				component: require("../nb/components/composites/Modal/MultipleModal"),
 				title: "Multiple Modal",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/composites/Modal/Size`),
+				component: require("../nb/components/composites/Modal/Size"),
 				title: "Size",
 				description: "",
 			},
@@ -685,17 +685,17 @@ export const mapping = {
 		basic: require("../components/NativeBaseComponents/Popover"),
 		components: [
 			{
-				component: require(`${baseUrl}/composites/Popover/Basic`),
+				component: require("../nb/components/composites/Popover/Basic"),
 				title: "Basic",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/composites/Popover/PopoverPositions`),
+				component: require("../nb/components/composites/Popover/PopoverPositions"),
 				title: "Popover Positions",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/composites/Popover/RefEg`),
+				component: require("../nb/components/composites/Popover/RefEg"),
 				title: "Ref Example",
 				description: "",
 			},
@@ -707,32 +707,32 @@ export const mapping = {
 		basic: require("../components/NativeBaseComponents/Progress"),
 		components: [
 			{
-				component: require(`${baseUrl}/composites/Progress/Basic`),
+				component: require("../nb/components/composites/Progress/Basic"),
 				title: "Basic",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/composites/Progress/ColorScheme`),
+				component: require("../nb/components/composites/Progress/ColorScheme"),
 				title: "Color schemes",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/composites/Progress/Composition`),
+				component: require("../nb/components/composites/Progress/Composition"),
 				title: "Composition",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/composites/Progress/CustomBgColor`),
+				component: require("../nb/components/composites/Progress/CustomBgColor"),
 				title: "Custom BgColor",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/composites/Progress/Flat`),
+				component: require("../nb/components/composites/Progress/Flat"),
 				title: "Flat",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/composites/Progress/Sizes`),
+				component: require("../nb/components/composites/Progress/Sizes"),
 				title: "Sizes",
 				description: "",
 			},
@@ -744,52 +744,52 @@ export const mapping = {
 		basic: require("../components/NativeBaseComponents/Radio"),
 		components: [
 			{
-				component: require(`${baseUrl}/primitives/Radio/controlledRadio`),
+				component: require("../nb/components/primitives/Radio/controlledRadio"),
 				title: "Controlled Radio",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/primitives/Radio/formControlled`),
+				component: require("../nb/components/primitives/Radio/formControlled"),
 				title: "Form Controlled",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/primitives/Radio/uncontrolledRadio`),
+				component: require("../nb/components/primitives/Radio/uncontrolledRadio"),
 				title: "Uncontrolled Radio",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/primitives/Radio/customColor`),
+				component: require("../nb/components/primitives/Radio/customColor"),
 				title: "Custom Color",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/primitives/Radio/customIcon`),
+				component: require("../nb/components/primitives/Radio/customIcon"),
 				title: "Custom con",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/primitives/Radio/disabled`),
+				component: require("../nb/components/primitives/Radio/disabled"),
 				title: "Disabled",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/primitives/Radio/invalid`),
+				component: require("../nb/components/primitives/Radio/invalid"),
 				title: "Invalid",
 				description: "",
 			},
 			// {
-			// 	component: require(`${baseUrl}/primitives/Radio/playground`),
+			// 	component: require("../nb/components/primitives/Radio/playground"),
 			// 	title: "Playground",
 			// 	description: "",
 			// },
 			{
-				component: require(`${baseUrl}/primitives/Radio/size`),
+				component: require("../nb/components/primitives/Radio/size"),
 				title: "Size",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/primitives/Radio/withRef`),
+				component: require("../nb/components/primitives/Radio/withRef"),
 				title: "with Ref",
 				description: "",
 			},
@@ -801,12 +801,12 @@ export const mapping = {
 		basic: require("../components/NativeBaseComponents/Select"),
 		components: [
 			{
-				component: require(`${baseUrl}/primitives/Select/Basic`),
+				component: require("../nb/components/primitives/Select/Basic"),
 				title: "Basic",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/primitives/Select/FormControlled`),
+				component: require("../nb/components/primitives/Select/FormControlled"),
 				title: "Form Controlled",
 				description: "",
 			},
@@ -818,42 +818,42 @@ export const mapping = {
 		basic: require("../components/NativeBaseComponents/Slider"),
 		components: [
 			{
-				component: require(`${baseUrl}/primitives/Slider/color`),
+				component: require("../nb/components/primitives/Slider/color"),
 				title: "Color",
 				description: "",
 			},
 			// {
-			// 	component: require(`${baseUrl}/primitives/Slider/Customized`),
+			// 	component: require("../nb/components/primitives/Slider/Customized"),
 			// 	title: "Customized",
 			// 	description: "",
 			// },
 			{
-				component: require(`${baseUrl}/primitives/Slider/FormControlled`),
+				component: require("../nb/components/primitives/Slider/FormControlled"),
 				title: "Form Controlled",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/primitives/Slider/Size`),
+				component: require("../nb/components/primitives/Slider/Size"),
 				title: "Size",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/primitives/Slider/Value`),
+				component: require("../nb/components/primitives/Slider/Value"),
 				title: "Value",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/primitives/Slider/Vertical`),
+				component: require("../nb/components/primitives/Slider/Vertical"),
 				title: "Vertical",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/primitives/Slider/usage`),
+				component: require("../nb/components/primitives/Slider/usage"),
 				title: "Usage",
 				description: "",
 			},
 			// {
-			// 	component: require(`${baseUrl}/primitives/Slider/Playground`),
+			// 	component: require("../nb/components/primitives/Slider/Playground"),
 			// 	title: "Playground",
 			// 	description: "",
 			// },
@@ -865,27 +865,27 @@ export const mapping = {
 		basic: require("../components/NativeBaseComponents/Spinner"),
 		components: [
 			{
-				component: require(`${baseUrl}/primitives/Spinner/color`),
+				component: require("../nb/components/primitives/Spinner/color"),
 				title: "Color",
 				description: "",
 			},
 			// {
-			// 	component: require(`${baseUrl}/primitives/Spinner/duration`),
+			// 	component: require("../nb/components/primitives/Spinner/duration"),
 			// 	title: "Duration",
 			// 	description: "",
 			// },
 			{
-				component: require(`${baseUrl}/primitives/Spinner/size`),
+				component: require("../nb/components/primitives/Spinner/size"),
 				title: "Size",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/primitives/Spinner/usage`),
+				component: require("../nb/components/primitives/Spinner/usage"),
 				title: "Usage",
 				description: "",
 			},
 			// {
-			// 	component: require(`${baseUrl}/primitives/Spinner/variant`),
+			// 	component: require("../nb/components/primitives/Spinner/variant"),
 			// 	title: "variant",
 			// 	description: "",
 			// },
@@ -897,32 +897,32 @@ export const mapping = {
 		basic: require("../components/NativeBaseComponents/Switch"),
 		components: [
 			{
-				component: require(`${baseUrl}/primitives/Switch/Basic`),
+				component: require("../nb/components/primitives/Switch/Basic"),
 				title: "Basic",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/primitives/Switch/Accessibility`),
+				component: require("../nb/components/primitives/Switch/Accessibility"),
 				title: "Accessibility",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/primitives/Switch/ColorSchemes`),
+				component: require("../nb/components/primitives/Switch/ColorSchemes"),
 				title: "Color Schemes",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/primitives/Switch/Sizes`),
+				component: require("../nb/components/primitives/Switch/Sizes"),
 				title: "Sizes",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/primitives/Switch/SwitchBgColor`),
+				component: require("../nb/components/primitives/Switch/SwitchBgColor"),
 				title: "Switch BgColor",
 				description: "",
 			},
 			// {
-			// 	component: require(`${baseUrl}/primitives/Switch/example`),
+			// 	component: require("../nb/components/primitives/Switch/example"),
 			// 	title: "Composite Example",
 			// 	description: "",
 			// },
@@ -934,52 +934,52 @@ export const mapping = {
 		basic: require("../components/NativeBaseComponents/Tabs"),
 		components: [
 			{
-				component: require(`${baseUrl}/composites/Tabs/Colors`),
+				component: require("../nb/components/composites/Tabs/Colors"),
 				title: "Colored Tabs",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/composites/Tabs/Composition`),
+				component: require("../nb/components/composites/Tabs/Composition"),
 				title: "Composition",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/composites/Tabs/Controlled`),
+				component: require("../nb/components/composites/Tabs/Controlled"),
 				title: "Controlled Tabs",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/composites/Tabs/FittedTab`),
+				component: require("../nb/components/composites/Tabs/FittedTab"),
 				title: "Fitted Tab",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/composites/Tabs/IconTabs`),
+				component: require("../nb/components/composites/Tabs/IconTabs"),
 				title: "Icon Tabs",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/composites/Tabs/Size`),
+				component: require("../nb/components/composites/Tabs/Size"),
 				title: "Sizes",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/composites/Tabs/TabAlignment`),
+				component: require("../nb/components/composites/Tabs/TabAlignment"),
 				title: "Tab Alignment",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/composites/Tabs/TabBarOnly`),
+				component: require("../nb/components/composites/Tabs/TabBarOnly"),
 				title: "Tab Bar Only",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/composites/Tabs/Usage`),
+				component: require("../nb/components/composites/Tabs/Usage"),
 				title: "Usage",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/composites/Tabs/Variants`),
+				component: require("../nb/components/composites/Tabs/Variants"),
 				title: "Variants",
 				description: "",
 			},
@@ -991,27 +991,27 @@ export const mapping = {
 		basic: require("../components/NativeBaseComponents/Text"),
 		components: [
 			{
-				component: require(`${baseUrl}/primitives/Text/Basic`),
+				component: require("../nb/components/primitives/Text/Basic"),
 				title: "Basic",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/primitives/Text/ChangingFontSize`),
+				component: require("../nb/components/primitives/Text/ChangingFontSize"),
 				title: "Changing Font Size",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/primitives/Text/Nested`),
+				component: require("../nb/components/primitives/Text/Nested"),
 				title: "Nested texts",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/primitives/Text/Overriden`),
+				component: require("../nb/components/primitives/Text/Overriden"),
 				title: "Overriden Text",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/primitives/Text/Truncated`),
+				component: require("../nb/components/primitives/Text/Truncated"),
 				title: "Truncated text",
 				description: "",
 			},
@@ -1023,22 +1023,22 @@ export const mapping = {
 		basic: require("../components/NativeBaseComponents/TextArea"),
 		components: [
 			{
-				component: require(`${baseUrl}/primitives/TextArea/basic`),
+				component: require("../nb/components/primitives/TextArea/basic"),
 				title: "Basic",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/primitives/TextArea/invalid`),
+				component: require("../nb/components/primitives/TextArea/invalid"),
 				title: "Invalid",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/primitives/TextArea/size`),
+				component: require("../nb/components/primitives/TextArea/size"),
 				title: "Size",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/primitives/TextArea/value`),
+				component: require("../nb/components/primitives/TextArea/value"),
 				title: "Value",
 				description: "",
 			},
@@ -1050,37 +1050,37 @@ export const mapping = {
 		basic: require("../components/NativeBaseComponents/Toast"),
 		components: [
 			{
-				component: require(`${baseUrl}/composites/Toast/Basic`),
+				component: require("../nb/components/composites/Toast/Basic"),
 				title: "Basic",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/composites/Toast/CloseToast`),
+				component: require("../nb/components/composites/Toast/CloseToast"),
 				title: "Close Toast",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/composites/Toast/CustomComponent`),
+				component: require("../nb/components/composites/Toast/CustomComponent"),
 				title: "Custom Component",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/composites/Toast/PreventDuplicate`),
+				component: require("../nb/components/composites/Toast/PreventDuplicate"),
 				title: "Prevent Duplicate",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/composites/Toast/ToastPositions`),
+				component: require("../nb/components/composites/Toast/ToastPositions"),
 				title: "Toast Positions",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/composites/Toast/ToastStatus`),
+				component: require("../nb/components/composites/Toast/ToastStatus"),
 				title: "Toast Status",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/composites/Toast/ToastVariants`),
+				component: require("../nb/components/composites/Toast/ToastVariants"),
 				title: "Toast Variants",
 				description: "",
 			},
@@ -1092,17 +1092,17 @@ export const mapping = {
 		basic: require("../components/NativeBaseComponents/ToolTip"),
 		components: [
 			{
-				component: require(`${baseUrl}/composites/Tooltip/Basic`),
+				component: require("../nb/components/composites/Tooltip/Basic"),
 				title: "Basic",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/composites/Tooltip/CustomTooltip`),
+				component: require("../nb/components/composites/Tooltip/CustomTooltip"),
 				title: "Custom Tooltip",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/composites/Tooltip/TooltipPositions`),
+				component: require("../nb/components/composites/Tooltip/TooltipPositions"),
 				title: "Tooltip Positions",
 				description: "",
 			},
@@ -1114,32 +1114,32 @@ export const mapping = {
 		basic: require("../components/NativeBaseComponents/Transitions"),
 		components: [
 			{
-				component: require(`${baseUrl}/composites/Transitions/Fade`),
+				component: require("../nb/components/composites/Transitions/Fade"),
 				title: "Fade",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/composites/Transitions/ScaleFade`),
+				component: require("../nb/components/composites/Transitions/ScaleFade"),
 				title: "ScaleFade",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/composites/Transitions/Slide`),
+				component: require("../nb/components/composites/Transitions/Slide"),
 				title: "Slide",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/composites/Transitions/SlideComposition`),
+				component: require("../nb/components/composites/Transitions/SlideComposition"),
 				title: "Slide Composition",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/composites/Transitions/SlideFade`),
+				component: require("../nb/components/composites/Transitions/SlideFade"),
 				title: "Slide Fade",
 				description: "",
 			},
 			{
-				component: require(`${baseUrl}/composites/Transitions/SlideWrapped`),
+				component: require("../nb/components/composites/Transitions/SlideWrapped"),
 				title: "Slide Wrapped",
 				description: "",
 			},
@@ -1150,7 +1150,7 @@ export const mapping = {
 	// 	description: "",
 	// 	components: [
 	// 		// {
-	// 		// 	component: require(`${baseUrl}/primitives/VStack/basic`),
+	// 		// 	component: require("../nb/components/primitives/VStack/basic"),
 	// 		// 	title: "Basic",
 	// 		// 	description: "",
 	// 		// },
@@ -1162,12 +1162,12 @@ export const mapping = {
 		basic: require("../components/NativeBaseComponents/ZStack"),
 		components: [
 			{
-				component: require(`${baseUrl}/primitives/ZStack/CenterStack`),
+				component: require("../nb/components/primitives/ZStack/CenterStack"),
 				title: "Center Stack",
 				description: "",
 			},
 			// {
-			// 	component: require(`${baseUrl}/primitives/ZStack/example`),
+			// 	component: require("../nb/components/primitives/ZStack/example"),
 			// 	title: "example",
 			// 	description: "",
 			// },

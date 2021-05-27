@@ -5,13 +5,18 @@ import {
 	Button,
 	Column,
 	Row,
-	Text,
 	useColorMode,
 	Center,
 	Heading,
+	HStack,
+	Text,
+	Fab,
+	Icon,
 } from "native-base";
+import { AntDesign } from "@expo/vector-icons";
 import { mapping } from "../../config/map";
 import { ScrollView } from "react-native";
+import { Logo } from "../../Icons/Logo";
 
 export function MasonLayout({
 	navigation,
@@ -58,14 +63,36 @@ export function MasonLayout({
 		}
 	});
 	return (
-		<Box
-			bg={colorMode === "dark" ? "black" : "white"}
-			pt={12}
-			_text={{ color: "white", bg: "transparent" }}
-		>
-			<ScrollView contentContainerStyle={{ width: "100%" }}>
-				<Row /* space={2}  mx={2}*/>
-					<Column w="50%">
+		// <Box
+		// 	// bg={colorMode === "dark" ? "black" : "white"}
+		// 	pt={12}
+		// 	_text={{ color: "white", bg: "transparent" }}
+		// >
+		<ScrollView contentContainerStyle={{ width: "100%" }}>
+			<Box bg="black">
+				<HStack
+					alignItems="center"
+					px={2}
+					backgroundColor="primary"
+					// border={2}
+					borderRadius="lg"
+					m={2}
+					// mb={2}
+					// mx={2}
+					bg="blueGray.300"
+					// bg="white"
+				>
+					<Logo size="xl" />
+					<Heading p={3}>NativeBase@3.0.0</Heading>
+				</HStack>
+				<Row space={2} ml={0} mr={6}>
+					<Fab
+						bg="blue.600"
+						icon={
+							<Icon color="white" as={<AntDesign name="plus" />} size="lg" />
+						}
+					/>
+					<Column w="50%" space={2}>
 						{
 							//@ts-ignore
 							leftElements.map((component, index) => {
@@ -74,14 +101,14 @@ export function MasonLayout({
 										variant="unstyled"
 										bg={leftcolors[index % 10]}
 										py={4}
-										rounded={0}
+										// rounded={0}
 										onPress={() =>
 											navigation.navigate("component", {
 												name: component.title,
 											})
 										}
 									>
-										<Center py={8} px={2} w="100%">
+										<Center py={8} px={1} w="100%">
 											<Heading color="white">{component.title}</Heading>
 											{component.basic ? <component.basic.Example /> : <></>}
 										</Center>
@@ -91,10 +118,7 @@ export function MasonLayout({
 							})
 						}
 					</Column>
-					<Column
-						w="50%"
-						// space={2}
-					>
+					<Column w="50%" space={2}>
 						{
 							//@ts-ignore
 							rightElements.map((component, index) => {
@@ -103,14 +127,14 @@ export function MasonLayout({
 										variant="unstyled"
 										bg={rightColors[index % 10]}
 										py={4}
-										rounded={0}
+										// rounded={0}
 										onPress={() =>
 											navigation.navigate("component", {
 												name: component.title,
 											})
 										}
 									>
-										<Center py={8} px={2}>
+										<Center py={8} px={1}>
 											<Heading color="white">{component.title}</Heading>
 											{component.basic ? <component.basic.Example /> : <></>}
 										</Center>
@@ -120,7 +144,7 @@ export function MasonLayout({
 						}
 					</Column>
 				</Row>
-			</ScrollView>
-		</Box>
+			</Box>
+		</ScrollView>
 	);
 }

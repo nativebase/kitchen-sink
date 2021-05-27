@@ -8,6 +8,8 @@ import {
 	Box,
 	useColorMode,
 	Divider,
+	Center,
+	Flex,
 } from "../../../nb/NativeBase/src";
 import { mapping } from "../../config/map";
 import { StackNavigationProp } from "@react-navigation/stack";
@@ -26,27 +28,29 @@ export function Examples({
 	console.log(component);
 	const { colorMode, toggleColorMode } = useColorMode();
 	return (
-		<Box bg="warmGray.100">
+		<Box bg="slateGray.50">
 			<Header title={component.title} navigation={navigation} />
 
 			<ScrollView>
-				<VStack space={2} p={2} mb={24}>
+				<VStack mx={2} space={2} p={2} mb={24}>
 					<Text fontSize="xl">{component.description}</Text>
 					{component.components.map((element: any, index: number) => (
 						<Box
-							shadow={6}
+							shadow={1}
 							bg="white"
-							py={6}
-							my={6}
-							mx={2}
-							px={2}
-							borderRadius="xl"
+							// py={2}
+							my={2}
+							mx={3}
+							// p={4}
+							borderRadius={16}
 						>
-							<VStack space={4} key={index} p={2}>
-								<Heading>{element.title}</Heading>
+							<VStack key={index}>
+								<Heading p={4}>{element.title}</Heading>
 								<Divider />
-								<element.component.Example />
-								<Text>{element.description}</Text>
+								{/* <Box flexWrap="wrap" bg="red.200"> */}
+								<Flex alignItems="center" p={4} justifyContent="center">
+									<element.component.Example />
+								</Flex>
 							</VStack>
 						</Box>
 					))}
