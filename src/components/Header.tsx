@@ -5,8 +5,7 @@ import {
 	Icon,
 	HStack,
 	Heading,
-	Divider,
-	Text,
+	useColorMode,
 } from "../../nb/NativeBase/src";
 
 import { Ionicons } from "@expo/vector-icons";
@@ -19,8 +18,15 @@ export function Header({
 	title: string;
 	navigation: StackNavigationProp<any>;
 }) {
+	const { colorMode, toggleColorMode } = useColorMode();
 	return (
-		<HStack alignItems="center" w="100%" py={2} backgroundColor="white" mb={8}>
+		<HStack
+			alignItems="center"
+			w="100%"
+			py={2}
+			backgroundColor={colorMode == "dark" ? "black" : "white"}
+			mb={8}
+		>
 			<IconButton
 				position="absolute"
 				// left={0}

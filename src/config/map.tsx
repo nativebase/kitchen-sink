@@ -573,48 +573,48 @@ export const mapping = {
 			},
 		],
 	},
-	List: {
-		title: "List",
-		description: "",
-		// basic: require("../components/NativeBaseComponents/List"),
-		components: [
-			{
-				component: require("../nb/components/primitives/List/Basic"),
-				title: "Basic",
-				description: "",
-			},
-			{
-				component: require("../nb/components/primitives/List/OrderedList"),
-				title: "Ordered list",
-				description: "",
-			},
-			{
-				component: require("../nb/components/primitives/List/UnorderedList"),
-				title: "Unordered list",
-				description: "",
-			},
-			{
-				component: require("../nb/components/primitives/List/ListWithIcon"),
-				title: "ListWithIcon",
-				description: "",
-			},
-			{
-				component: require("../nb/components/primitives/List/PressableList"),
-				title: "Pressable list",
-				description: "",
-			},
-			{
-				component: require("../nb/components/primitives/List/StylingList"),
-				title: "Styling list",
-				description: "",
-			},
-			{
-				component: require("../nb/components/primitives/List/VirtualizedList"),
-				title: "Virtualized list",
-				description: "",
-			},
-		],
-	},
+	// List: {
+	// 	title: "List",
+	// 	description: "",
+	// 	// basic: require("../components/NativeBaseComponents/List"),
+	// 	components: [
+	// 		{
+	// 			component: require("../nb/components/primitives/List/Basic"),
+	// 			title: "Basic",
+	// 			description: "",
+	// 		},
+	// 		{
+	// 			component: require("../nb/components/primitives/List/OrderedList"),
+	// 			title: "Ordered list",
+	// 			description: "",
+	// 		},
+	// 		{
+	// 			component: require("../nb/components/primitives/List/UnorderedList"),
+	// 			title: "Unordered list",
+	// 			description: "",
+	// 		},
+	// 		{
+	// 			component: require("../nb/components/primitives/List/ListWithIcon"),
+	// 			title: "ListWithIcon",
+	// 			description: "",
+	// 		},
+	// 		{
+	// 			component: require("../nb/components/primitives/List/PressableList"),
+	// 			title: "Pressable list",
+	// 			description: "",
+	// 		},
+	// 		{
+	// 			component: require("../nb/components/primitives/List/StylingList"),
+	// 			title: "Styling list",
+	// 			description: "",
+	// 		},
+	// 		{
+	// 			component: require("../nb/components/primitives/List/VirtualizedList"),
+	// 			title: "Virtualized list",
+	// 			description: "",
+	// 		},
+	// 	],
+	// },
 	Menu: {
 		title: "Menu",
 		description: "",

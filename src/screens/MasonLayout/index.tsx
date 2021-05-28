@@ -13,7 +13,7 @@ import {
 	Fab,
 	Icon,
 } from "native-base";
-import { AntDesign } from "@expo/vector-icons";
+import { Ionicons } from "@expo/vector-icons";
 import { mapping } from "../../config/map";
 import { ScrollView } from "react-native";
 import { Logo } from "../../Icons/Logo";
@@ -87,10 +87,20 @@ export function MasonLayout({
 				</HStack>
 				<Row space={2} ml={0} mr={6}>
 					<Fab
-						bg="blue.600"
+						bg={colorMode == "dark" ? "black" : "white"}
 						icon={
-							<Icon color="white" as={<AntDesign name="plus" />} size="lg" />
+							<Icon
+								as={
+									colorMode == "dark" ? (
+										<Ionicons name="sunny" size={24} color="white" />
+									) : (
+										<Ionicons name="moon" size={24} color="black" />
+									)
+								}
+								size="lg"
+							/>
 						}
+						onPress={toggleColorMode}
 					/>
 					<Column w="50%" space={2}>
 						{

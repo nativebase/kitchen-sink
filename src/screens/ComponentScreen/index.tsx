@@ -1,5 +1,5 @@
 import React from "react";
-import { ScrollView } from "react-native";
+import { ScrollView, StatusBar } from "react-native";
 import { Header } from "../../components/Header";
 import {
 	Heading,
@@ -10,7 +10,7 @@ import {
 	Divider,
 	Center,
 	Flex,
-} from "../../../nb/NativeBase/src";
+} from "native-base";
 import { mapping } from "../../config/map";
 import { StackNavigationProp } from "@react-navigation/stack";
 
@@ -27,8 +27,10 @@ export function Examples({
 	const component = mapping[name];
 	console.log(component);
 	const { colorMode, toggleColorMode } = useColorMode();
+	StatusBar.setBackgroundColor("", true);
 	return (
-		<Box bg="slateGray.50">
+		<Box bg={colorMode == "dark" ? "gray.600" : "slateGray.50"}>
+			<StatusBar backgroundColor={colorMode == "dark" ? "#000000" : "#fff"} />
 			<Header title={component.title} navigation={navigation} />
 
 			<ScrollView>
@@ -38,7 +40,7 @@ export function Examples({
 					{component.components.map((element: any, index: number) => (
 						<Box
 							shadow={1}
-							bg="white"
+							bg={colorMode == "dark" ? "black" : "white"}
 							// py={2}
 							my={2}
 							mx={3}
@@ -46,7 +48,7 @@ export function Examples({
 							borderRadius={16}
 						>
 							<VStack key={index}>
-								<Heading p={6}>{element.title}</Heading>
+								<Heading p={4}>{element.title}</Heading>
 								<Divider />
 								{/* <Box flexWrap="wrap" bg="red.200"> */}
 								{/* mx={{ base: "auto", md: 0 }} */}
