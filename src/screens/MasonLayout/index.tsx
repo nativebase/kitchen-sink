@@ -9,14 +9,10 @@ import {
 	Center,
 	Heading,
 	HStack,
-	Text,
-	Fab,
-	Icon,
 } from "native-base";
 import { Ionicons } from "@expo/vector-icons";
 import { mapping } from "../../config/map";
 import { ScrollView } from "react-native";
-import { Logo } from "../../Icons/Logo";
 
 export function MasonLayout({
 	navigation,
@@ -63,45 +59,19 @@ export function MasonLayout({
 		}
 	});
 	return (
-		// <Box
-		// 	// bg={colorMode === "dark" ? "black" : "white"}
-		// 	pt={12}
-		// 	_text={{ color: "white", bg: "transparent" }}
-		// >
 		<ScrollView contentContainerStyle={{ width: "100%" }}>
 			<Box bg="black">
 				<HStack
 					alignItems="center"
 					px={2}
 					backgroundColor="primary"
-					// border={2}
 					borderRadius="lg"
 					m={2}
-					// mb={2}
-					// mx={2}
 					bg="blueGray.300"
-					// bg="white"
 				>
-					<Logo size="xl" />
 					<Heading p={3}>NativeBase@3.0.0</Heading>
 				</HStack>
-				<Row space={2} ml={0} mr={6}>
-					<Fab
-						bg={colorMode == "dark" ? "black" : "white"}
-						icon={
-							<Icon
-								as={
-									colorMode == "dark" ? (
-										<Ionicons name="sunny" size={24} color="white" />
-									) : (
-										<Ionicons name="moon" size={24} color="black" />
-									)
-								}
-								size="lg"
-							/>
-						}
-						onPress={toggleColorMode}
-					/>
+				<Row space={2} mx={2} mr={4}>
 					<Column w="50%" space={2}>
 						{
 							//@ts-ignore
@@ -123,7 +93,6 @@ export function MasonLayout({
 											{component.basic ? <component.basic.Example /> : <></>}
 										</Center>
 									</Button>
-									// </Box>
 								);
 							})
 						}
