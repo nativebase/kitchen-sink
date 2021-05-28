@@ -1,21 +1,21 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StatusBar } from "expo-status-bar";
+import React from "react";
+import { StyleSheet, Text, View } from "react-native";
+import { NavigationContainer } from "@react-navigation/native";
+import { NativeBaseProvider, Box } from "native-base";
+import { DashboardTheme } from "./src/theme";
+import { Main } from "./src/components/Main";
+import { DashboardStack } from "./src/navigators/dashboardNavigator";
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+	return (
+		<NavigationContainer>
+			<NativeBaseProvider theme={DashboardTheme}>
+				{/* <Main /> */}
+				{/* <Box flex={1}> */}
+				<DashboardStack />
+				{/* </Box> */}
+			</NativeBaseProvider>
+		</NavigationContainer>
+	);
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
