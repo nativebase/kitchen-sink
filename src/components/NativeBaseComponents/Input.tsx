@@ -11,6 +11,9 @@ export const Example = () => {
 			shadow={6}
 			placeholderTextColor="white"
 			borderColor="white"
+			_onPress={{
+				borderColor: "white",
+			}}
 		/>
 	);
 };

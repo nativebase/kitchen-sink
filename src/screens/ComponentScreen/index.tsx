@@ -39,7 +39,7 @@ export function Examples({
 				barStyle={colorMode == "dark" ? "light-content" : "dark-content"}
 				translucent={false}
 			/>
-			<Box bg={useColorModeValue("slateGray.50", "blueGray.700")}>
+			<Box bg={useColorModeValue("slateGray.50", "blueGray.700")} flex={1}>
 				<Fab
 					bg={colorMode == "dark" ? "black" : "white"}
 					icon={
