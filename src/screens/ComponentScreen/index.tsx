@@ -37,6 +37,7 @@ export function Examples({
     >
       <StatusBar
         barStyle={colorMode == 'dark' ? 'light-content' : 'dark-content'}
+        backgroundColor={colorMode == 'dark' ? '#0f172a' : 'white'}
         translucent={false}
       />
       <Box bg={useColorModeValue('slateGray.50', 'blueGray.700')} flex={1}>
