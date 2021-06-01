@@ -2,10 +2,8 @@ import React from 'react';
 import { Menu, Button, VStack, HStack, Checkbox } from 'native-base';
 
 export function Example() {
-  const [
-    shouldOverlapWithTrigger,
-    setShouldOverlapWithTrigger,
-  ] = React.useState(false);
+  const [shouldOverlapWithTrigger, setShouldOverlapWithTrigger] =
+    React.useState(false);
 
   return (
     <VStack space={6} alignItems="center">
