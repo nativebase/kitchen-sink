@@ -74,12 +74,12 @@ export function MasonLayout({
         backgroundColor="#27272a"
       />
       <HStack
-        // alignItems=""
         px={2}
         backgroundColor=""
         borderRadius="lg"
         m={2}
         bg="gray.800"
+        space={2}
       >
         <Heading color="white">NativeBase</Heading>
         <Text color="white" alignSelf="flex-end" lineHeight={7}>
