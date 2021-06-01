@@ -9,7 +9,7 @@ export const Example = () => {
   return (
     <>
       <Button m={4} onPress={() => setIsOpenTop(!isOpenTop)}>
-        Click Me to {isOpenTop ? 'hide' : 'show'} Top Silder
+        {str1}
       </Button>
       <Button onPress={() => setIsOpenBottom(!isOpenBottom)}>
         {str2}

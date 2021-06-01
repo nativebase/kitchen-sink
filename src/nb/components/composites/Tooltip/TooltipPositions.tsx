@@ -36,7 +36,7 @@ export function Example() {
         </Tooltip>
       </HStack>
 
-      <HStack space={6}>
+      <HStack space={3}>
         <Tooltip label="Bottom left" placement="bottom left">
           <Button>Bottom left</Button>
         </Tooltip>

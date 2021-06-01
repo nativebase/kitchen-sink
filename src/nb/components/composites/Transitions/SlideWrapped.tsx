@@ -2,14 +2,14 @@ import React from 'react';
 import { Slide, Button, Box, Center, Heading } from 'native-base';
 export const Example = () => {
   const [isOpen, setIsOpen] = React.useState(false);
-
+  let btnStr = `Click Me to ${isOpen ? 'hide' : 'show'}`;
   return (
     <Box width="90%" alignItems="center" justifyContent="center">
       <Heading fontSize="xs">
         This is an example to show how slider can be used.
       </Heading>
       <Button my={2} onPress={() => setIsOpen(!isOpen)}>
-        Click Me to {isOpen ? 'hide' : 'show'}
+        {btnStr}
       </Button>
       <Center>
         The Force is strong with this one. I have you now. Look, I ain't in this
