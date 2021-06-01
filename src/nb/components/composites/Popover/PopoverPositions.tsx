@@ -17,7 +17,7 @@ export function Example() {
         </Popover.Content>
       </Popover>
 
-      <HStack space={6}>
+      <HStack space={2}>
         <Popover
           placement="top left"
           trigger={(triggerProps) => {
@@ -61,7 +61,7 @@ export function Example() {
         </Popover>
       </HStack>
 
-      <HStack space={6}>
+      <HStack space={2}>
         <Popover
           placement="right top"
           trigger={(triggerProps) => {
@@ -105,7 +105,7 @@ export function Example() {
         </Popover>
       </HStack>
 
-      <HStack space={6}>
+      <HStack space={2}>
         <Popover
           placement="bottom left"
           trigger={(triggerProps) => {
@@ -149,7 +149,7 @@ export function Example() {
         </Popover>
       </HStack>
 
-      <HStack space={6}>
+      <HStack space={2}>
         <Popover
           placement="left top"
           trigger={(triggerProps) => {
