@@ -1,5 +1,5 @@
 import React from 'react';
-import { Slide, Button, Box, Text } from 'native-base';
+import { Slide, Button, Box, Text, Center } from 'native-base';
 export const Example = () => {
   const [isOpenBottom, setIsOpenBottom] = React.useState(false);
   const [isOpenTop, setIsOpenTop] = React.useState(false);
@@ -8,6 +8,11 @@ export const Example = () => {
   let str2 = `Click Me to ${isOpenBottom ? 'hide' : 'show'} Bottom Slider`;
   return (
     <>
+      <Center my={4}>
+        The Force is strong with this one. I have you now. Look, I ain't in this
+        for your revolution, and I'm not in it for you, Princess. I expect to be
+        well paid.
+      </Center>
       <Button m={4} onPress={() => setIsOpenTop(!isOpenTop)}>
         {str1}
       </Button>
@@ -15,6 +20,11 @@ export const Example = () => {
         {str2}
         {/* Click Me to {isOpenBottom ? "hide" : "show"} Bottom Slider */}
       </Button>
+      <Center my={4}>
+        The Force is strong with this one. I have you now. Look, I ain't in this
+        for your revolution, and I'm not in it for you, Princess. I expect to be
+        well paid.
+      </Center>
       <Slide in={isOpenBottom}>
         <Box p={10} color="white" bg="blue.400" rounded="md">
           I am comming from Bottom

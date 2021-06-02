@@ -1,24 +1,27 @@
 import React from 'react';
-import { Select, VStack, CheckIcon } from 'native-base';
+import { Select, Box, CheckIcon } from 'native-base';
 
 export const Example = () => {
   let [language, setLanguage] = React.useState('');
 
   return (
+    // <Box w="100%">
     <Select
       shadow={6}
       mt={4}
       selectedValue={language}
-      minWidth={120}
-      accessibilityLabel="Select your favorite programming language"
-      placeholder="Select your favorite programming language"
+      // minWidth={120}
+      accessibilityLabel="Select "
+      placeholder="Select "
       onValueChange={(itemValue) => setLanguage(itemValue)}
       _selectedItem={{
         bg: 'cyan.600',
         endIcon: <CheckIcon size={4} />,
       }}
-      placeholderTextColor="white"
-      color="white"
+      w="50%"
+      // placeholderTextColor="white"
+      // color="white"
+      isDisabled
     >
       <Select.Item label="JavaScript" value="js" />
       <Select.Item label="TypeScript" value="ts" />
@@ -26,5 +29,6 @@ export const Example = () => {
       <Select.Item label="Python" value="py" />
       <Select.Item label="Java" value="java" />
     </Select>
+    // </Box>
   );
 };

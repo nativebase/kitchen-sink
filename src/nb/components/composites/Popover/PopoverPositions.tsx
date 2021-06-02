@@ -1,5 +1,5 @@
 import React from 'react';
-import { Popover, Button, VStack, HStack } from 'native-base';
+import { Popover, Button, VStack, Stack } from 'native-base';
 
 export function Example() {
   return (
@@ -17,7 +17,7 @@ export function Example() {
         </Popover.Content>
       </Popover>
 
-      <HStack space={2}>
+      <Stack direction={{ base: 'column', md: 'row' }} space={2}>
         <Popover
           placement="top left"
           trigger={(triggerProps) => {
@@ -59,9 +59,9 @@ export function Example() {
             <Popover.Body>Your changes has been saved.</Popover.Body>
           </Popover.Content>
         </Popover>
-      </HStack>
+      </Stack>
 
-      <HStack space={2}>
+      <Stack direction={{ base: 'column', md: 'row' }} space={2}>
         <Popover
           placement="right top"
           trigger={(triggerProps) => {
@@ -103,9 +103,9 @@ export function Example() {
             <Popover.Body>Your changes has been saved.</Popover.Body>
           </Popover.Content>
         </Popover>
-      </HStack>
+      </Stack>
 
-      <HStack space={2}>
+      <Stack direction={{ base: 'column', md: 'row' }} space={2}>
         <Popover
           placement="bottom left"
           trigger={(triggerProps) => {
@@ -147,9 +147,9 @@ export function Example() {
             <Popover.Body>Your changes has been saved.</Popover.Body>
           </Popover.Content>
         </Popover>
-      </HStack>
+      </Stack>
 
-      <HStack space={2}>
+      <Stack direction={{ base: 'column', md: 'row' }} space={2}>
         <Popover
           placement="left top"
           trigger={(triggerProps) => {
@@ -190,7 +190,7 @@ export function Example() {
             <Popover.Body>Your changes has been saved.</Popover.Body>
           </Popover.Content>
         </Popover>
-      </HStack>
+      </Stack>
     </VStack>
   );
 }

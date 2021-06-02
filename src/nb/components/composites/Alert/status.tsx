@@ -8,7 +8,9 @@ export function Example() {
         return (
           <Alert status={key}>
             <Alert.Icon />
-            <Alert.Title>{`This is an ${key} alert`}</Alert.Title>
+            <Alert.Title
+              flexShrink={1}
+            >{`This is an ${key} alert`}</Alert.Title>
           </Alert>
         );
       })}

@@ -15,6 +15,7 @@ export const Example = () => {
       <InputGroup>
         <InputLeftAddon children={'https://'} />
         <Input
+          w="50%"
           placeholder="nativebase"
           placeholderTextColor={useColorModeValue(
             'blueGray.400',

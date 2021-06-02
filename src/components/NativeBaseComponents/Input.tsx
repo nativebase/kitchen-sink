@@ -6,14 +6,15 @@ export const Example = () => {
     <Input
       mt={4}
       placeholder="Type"
-      color="white"
+      // color="white"
       w="100px"
       shadow={6}
-      placeholderTextColor="white"
-      borderColor="white"
+      // placeholderTextColor="white"
+      // borderColor="white"
       _onPress={{
         borderColor: 'white',
       }}
+      isDisabled
     />
   );
 };

@@ -5,11 +5,12 @@ export const Example = () => {
   return (
     <TextArea
       mt={4}
-      w="150px"
+      w="100px"
       h={20}
       placeholder="Type here.."
-      color="white"
-      placeholderTextColor="white"
+      // color="white"
+      // placeholderTextColor="white"
+      isDisabled
     />
   );
 };

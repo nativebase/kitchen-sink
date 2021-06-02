@@ -22,5 +22,6 @@ export const DashboardTheme = extendTheme({
         800: '#252525',
         900: '#0d0c0d',
       }
-    }
+    },
+    
 });

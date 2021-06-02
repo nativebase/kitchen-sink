@@ -14,7 +14,7 @@ export function Example() {
       >
         Should overlap with trigger
       </Checkbox>
-      <HStack space={6}>
+      <VStack space={6}>
         <Menu
           shouldOverlapWithTrigger={shouldOverlapWithTrigger}
           placement="top left"
@@ -62,9 +62,9 @@ export function Example() {
           <Menu.Item>Large Menu Item 2</Menu.Item>
           <Menu.Item>Large Menu Item 3</Menu.Item>
         </Menu>
-      </HStack>
+      </VStack>
 
-      <HStack space={6}>
+      <VStack space={6}>
         <Menu
           shouldOverlapWithTrigger={shouldOverlapWithTrigger}
           placement="right top"
@@ -112,9 +112,9 @@ export function Example() {
           <Menu.Item>Large Menu Item 2</Menu.Item>
           <Menu.Item>Large Menu Item 3</Menu.Item>
         </Menu>
-      </HStack>
+      </VStack>
 
-      <HStack space={6}>
+      <VStack space={6}>
         <Menu
           shouldOverlapWithTrigger={shouldOverlapWithTrigger}
           placement="bottom left"
@@ -162,9 +162,9 @@ export function Example() {
           <Menu.Item>Large Menu Item 2</Menu.Item>
           <Menu.Item>Large Menu Item 3</Menu.Item>
         </Menu>
-      </HStack>
+      </VStack>
 
-      <HStack space={6}>
+      <VStack space={6}>
         <Menu
           shouldOverlapWithTrigger={shouldOverlapWithTrigger}
           placement="left top"
@@ -211,7 +211,7 @@ export function Example() {
           <Menu.Item>Large Menu Item 2</Menu.Item>
           <Menu.Item>Large Menu Item 3</Menu.Item>
         </Menu>
-      </HStack>
+      </VStack>
     </VStack>
   );
 }

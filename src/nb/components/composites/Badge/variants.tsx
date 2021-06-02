@@ -4,9 +4,9 @@ import { Badge, HStack, VStack } from 'native-base';
 
 export function Example() {
   return (
-    <VStack space={4} mx={{ base: 'auto', md: 0 }}>
+    <HStack space={2} mx={{ base: 'auto', md: 0 }}>
       {['solid', 'outline', 'subtle'].map((key) => (
-        <HStack key={key} space={2}>
+        <VStack key={key} space={1}>
           <Badge variant={key}>DEFAULT</Badge>
           <Badge colorScheme="success" variant={key}>
             SUCCESS
@@ -17,8 +17,8 @@ export function Example() {
           <Badge colorScheme="info" variant={key}>
             INFO
           </Badge>
-        </HStack>
+        </VStack>
       ))}
-    </VStack>
+    </HStack>
   );
 }

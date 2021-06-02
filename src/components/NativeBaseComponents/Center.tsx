@@ -8,9 +8,10 @@ export function Example() {
       bg="green.800"
       _text={{ color: 'white', fontWeight: 'bold' }}
       height={100}
-      width={150}
+      // width={100}
+      px={2}
     >
-      This is Center
+      Text Center
     </Center>
   );
 }
