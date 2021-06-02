@@ -9,7 +9,9 @@ export const Example = () => {
       space={6}
       mx={{ base: 'auto', md: 0 }}
     >
-      <Button colorScheme="teal">Save</Button>
+      <Button colorScheme="teal" mr={2}>
+        Save
+      </Button>
       <Button colorScheme="danger">Cancel</Button>
     </Button.Group>
   );

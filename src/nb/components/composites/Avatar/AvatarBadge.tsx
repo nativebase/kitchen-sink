@@ -3,7 +3,7 @@ import { Avatar, Center, HStack } from 'native-base';
 
 export const Example = () => {
   return (
-    <HStack mx={{ base: 'auto', md: 0 }}>
+    <HStack mx={{ base: 'auto', md: 0 }} space={2}>
       <Avatar
         source={{
           uri: 'https://alpha.nativebase.io/img/native-base-icon.png',

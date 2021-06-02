@@ -28,7 +28,7 @@ export function Example() {
           <Alert.Description>description goes here</Alert.Description>
         </Alert>
       </Collapse>
-      <Button size={'sm'} onPress={() => setShow(true)} my={1} mx="auto">
+      <Button size={'sm'} onPress={() => setShow(true)} my={2} mx="auto">
         Re-Open
       </Button>
     </Box>

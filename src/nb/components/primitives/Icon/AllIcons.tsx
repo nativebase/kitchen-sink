@@ -57,7 +57,7 @@ export const Example = () => {
     <WarningTwoIcon />,
   ];
   return (
-    <SimpleGrid columns={5} space={8}>
+    <SimpleGrid columns={4} space={8}>
       {icons}
     </SimpleGrid>
   );

@@ -3,7 +3,7 @@ import { Avatar } from 'native-base';
 
 export const Example = () => {
   return (
-    <Avatar.Group size="lg" max={5}>
+    <Avatar.Group size="lg" max={3}>
       <Avatar
         source={{
           uri: 'https://pbs.twimg.com/profile_images/1369921787568422915/hoyvrUpc_400x400.jpg',

@@ -11,7 +11,7 @@ import {
 } from 'native-base';
 export const Example = () => {
   return (
-    <Box width={80} p={5} rounded="xl" shadow={4}>
+    <Box p={5} rounded="xl" shadow={4}>
       <Stack space={6}>
         <Avatar
           size={'sm'}
@@ -34,19 +34,24 @@ export const Example = () => {
             Design the new dressing room for the upcoming tour.
           </Text>
         </Stack>
-        <HStack justifyContent="space-between" alignItems="flex-end">
+        <HStack
+          justifyContent="space-between"
+          alignItems="flex-end"
+          flexShrink={1}
+        >
           <Stack space={3}>
-            <HStack space={3} alignItems="center">
+            <HStack space={3} alignItems="center" flexShrink={1}>
               <Icon
                 name="grid"
                 type="MaterialCommunityIcons"
                 color="blueGray.700"
               />
               <Text
+                flexShrink={1}
                 fontWeight="medium"
                 color={useColorModeValue('blueGray.500', 'blueGray.200')}
               >
-                Task: Commercial project
+                Task: KitchenSink
               </Text>
             </HStack>
             <HStack space={3} alignItems="center">
@@ -63,7 +68,7 @@ export const Example = () => {
               </Text>
             </HStack>
           </Stack>
-          <Avatar.Group size="sm" spacing={-3}>
+          {/* <Avatar.Group size="sm" spacing={-3}>
             <Avatar
               source={{
                 uri: 'https://pbs.twimg.com/profile_images/1309797238651060226/18cm6VhQ_400x400.jpg',
@@ -86,6 +91,7 @@ export const Example = () => {
               MR
             </Avatar>
           </Avatar.Group>
+        */}
         </HStack>
       </Stack>
       <HStack

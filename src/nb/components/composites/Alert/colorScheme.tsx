@@ -1,5 +1,5 @@
 import React from 'react';
-import { Stack, Alert, Box } from 'native-base';
+import { Stack, Alert, Box, Text } from 'native-base';
 
 export function Example() {
   return (
@@ -8,8 +8,8 @@ export function Example() {
         {['teal', 'red', 'yellow'].map((key: any) => (
           <Alert colorScheme={key} key={key}>
             <Alert.Icon />
-            <Alert.Title style={{ flexDirection: 'row' }}>
-              This is a {key} alert
+            <Alert.Title style={{ flexDirection: 'row' }} flexShrink={1}>
+              <Text>This is a {key} alert</Text>
             </Alert.Title>
           </Alert>
         ))}

@@ -1,14 +1,18 @@
 import React from 'react';
-import { Button, Divider, Heading, HStack, VStack } from 'native-base';
+import { Button, Divider, Heading, HStack, VStack, Stack } from 'native-base';
 
 export const Example = () => {
   return (
-    <VStack space={4} px={2}>
+    <VStack space={4} px={2} w="100%">
       {/* Solid */}
       <Heading size="xs" textAlign="left">
         Solid
       </Heading>
-      <HStack space={2}>
+      <Stack
+        direction={{ base: 'column', md: 'row' }}
+        space={2}
+        mx={{ base: 'auto', md: 0 }}
+      >
         <Button size="sm" onPress={() => console.log('hello world')}>
           PRIMARY
         </Button>
@@ -22,14 +26,18 @@ export const Example = () => {
         <Button size="sm" isDisabled onPress={() => console.log('hello world')}>
           DISABLED
         </Button>
-      </HStack>
+      </Stack>
 
       <Divider />
 
       <Heading size="xs">Outline</Heading>
 
       {/* Outline */}
-      <HStack space={2}>
+      <Stack
+        direction={{ base: 'column', md: 'row' }}
+        space={2}
+        mx={{ base: 'auto', md: 0 }}
+      >
         <Button
           size="sm"
           variant="outline"
@@ -53,13 +61,17 @@ export const Example = () => {
         >
           DISABLED
         </Button>
-      </HStack>
+      </Stack>
       <Divider />
 
       <Heading size="xs">Link</Heading>
 
       {/* Link */}
-      <HStack space={2}>
+      <Stack
+        direction={{ base: 'column', md: 'row' }}
+        space={2}
+        mx={{ base: 'auto', md: 0 }}
+      >
         <Button
           size="sm"
           variant="link"
@@ -83,13 +95,17 @@ export const Example = () => {
         >
           DISABLED
         </Button>
-      </HStack>
+      </Stack>
       <Divider />
 
       <Heading size="xs">Ghost</Heading>
 
       {/* Ghost */}
-      <HStack space={2}>
+      <Stack
+        direction={{ base: 'column', md: 'row' }}
+        space={2}
+        mx={{ base: 'auto', md: 0 }}
+      >
         <Button
           size="sm"
           variant="ghost"
@@ -113,18 +129,22 @@ export const Example = () => {
         >
           DISABLED
         </Button>
-      </HStack>
+      </Stack>
 
       <Divider />
 
       <Heading size="xs">Unstyled</Heading>
 
       {/* Unstyled */}
-      <HStack space={2}>
+      <Stack
+        direction={{ base: 'column', md: 'row' }}
+        space={2}
+        mx={{ base: 'auto', md: 0 }}
+      >
         <Button variant="unstyled" onPress={() => console.log('hello world')}>
           Unstyled
         </Button>
-      </HStack>
+      </Stack>
     </VStack>
   );
 };

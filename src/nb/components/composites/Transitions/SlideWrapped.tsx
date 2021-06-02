@@ -17,12 +17,7 @@ export const Example = () => {
         well paid. I'm in it for the money. What!? Hey, Luke! May the Force be
         with you. Remember, a Jedi can feel the Force flowing through him. All
         right. Well, take care of yourself, Han. I guess that's what you're best
-        at, ain't it? In my experience, there is no such thing as luck. Kid,
-        I've flown from one side of this galaxy to the other. I've seen a lot of
-        strange stuff, but I've never seen anything to make me believe there's
-        one all-powerful Force controlling everything. There's no mystical
-        energy field that controls my destiny. It's all a lot of simple tricks
-        and nonsense.
+        at, ain't it?
       </Center>
       <Slide in={isOpen}>
         <Box p="40px" color="white" mt="4" bg="teal.500" rounded="md">
