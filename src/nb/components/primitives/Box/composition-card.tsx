@@ -40,7 +40,7 @@ export const Example = () => {
           flexShrink={1}
         >
           <Stack space={3}>
-            <HStack space={3} alignItems="center">
+            <HStack space={3} alignItems="center" flexShrink={1}>
               <Icon
                 name="grid"
                 type="MaterialCommunityIcons"
@@ -51,7 +51,7 @@ export const Example = () => {
                 fontWeight="medium"
                 color={useColorModeValue('blueGray.500', 'blueGray.200')}
               >
-                Task: Commercial project
+                Task: KitchenSink
               </Text>
             </HStack>
             <HStack space={3} alignItems="center">

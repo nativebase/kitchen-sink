@@ -18,7 +18,8 @@ export const Example = () => {
         bg: 'cyan.600',
         endIcon: <CheckIcon size={4} />,
       }}
-      w="50%"
+      maxWidth="100%"
+      w={100}
       // placeholderTextColor="white"
       // color="white"
       isDisabled

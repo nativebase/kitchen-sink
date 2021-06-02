@@ -1,10 +1,141 @@
-import React from 'react';
-import { Popover, Button, VStack, Stack } from 'native-base';
+import React, { useState } from 'react';
+import { Popover, Button, VStack, Stack, Radio } from 'native-base';
 
 export function Example() {
+  const [position, setPosition] = useState('top left');
   return (
-    <VStack space={6}>
+    <VStack space={6} alignSelf="flex-start" w="100%">
       <Popover
+        placement={position == 'auto' ? undefined : position}
+        trigger={(triggerProps) => {
+          return (
+            <Button alignSelf="center" {...triggerProps}>
+              Trigger
+            </Button>
+          );
+        }}
+      >
+        <Popover.Content>
+          <Popover.Arrow />
+          <Popover.CloseButton />
+          <Popover.Header>Data Saved</Popover.Header>
+          <Popover.Body>Your changes has been saved.</Popover.Body>
+        </Popover.Content>
+      </Popover>
+      <Radio.Group
+        name="exampleGroup"
+        mt={4}
+        value={position}
+        onChange={(nextValue) => setPosition(nextValue)}
+      >
+        <Radio
+          value="auto"
+          colorScheme="green"
+          mb={2}
+          _text={{ fontWeight: 700 }}
+        >
+          Auto
+        </Radio>
+        <Radio
+          value="top left"
+          colorScheme="green"
+          mb={2}
+          _text={{ fontWeight: 700 }}
+        >
+          Top Left
+        </Radio>
+        <Radio
+          value="top"
+          colorScheme="green"
+          mb={2}
+          _text={{ fontWeight: 700 }}
+        >
+          Top
+        </Radio>
+        <Radio
+          value="top right"
+          colorScheme="green"
+          mb={2}
+          _text={{ fontWeight: 700 }}
+        >
+          Top Right
+        </Radio>
+        <Radio
+          value="right top"
+          colorScheme="green"
+          mb={2}
+          _text={{ fontWeight: 700 }}
+        >
+          Right Top
+        </Radio>
+        <Radio
+          value="right"
+          colorScheme="green"
+          mb={2}
+          _text={{ fontWeight: 700 }}
+        >
+          Right
+        </Radio>
+        <Radio
+          value="right bottom"
+          colorScheme="green"
+          mb={2}
+          _text={{ fontWeight: 700 }}
+        >
+          Right Bottom
+        </Radio>
+        <Radio
+          value="bottom left"
+          colorScheme="green"
+          mb={2}
+          _text={{ fontWeight: 700 }}
+        >
+          Bottom Left
+        </Radio>
+        <Radio
+          value="bottom"
+          colorScheme="green"
+          mb={2}
+          _text={{ fontWeight: 700 }}
+        >
+          Bottom
+        </Radio>
+        <Radio
+          value="bottom right"
+          colorScheme="green"
+          mb={2}
+          _text={{ fontWeight: 700 }}
+        >
+          Bottom Right
+        </Radio>
+        <Radio
+          value="left top"
+          colorScheme="green"
+          mb={2}
+          _text={{ fontWeight: 700 }}
+        >
+          Left Top
+        </Radio>
+        <Radio
+          value="left"
+          colorScheme="green"
+          mb={2}
+          _text={{ fontWeight: 700 }}
+        >
+          Left
+        </Radio>
+        <Radio
+          value="left bottom"
+          colorScheme="green"
+          mb={2}
+          _text={{ fontWeight: 700 }}
+        >
+          Left Bottom
+        </Radio>
+      </Radio.Group>
+
+      {/*  */}
+      {/* <Popover
         trigger={(triggerProps) => {
           return <Button {...triggerProps}>Auto</Button>;
         }}
@@ -190,7 +321,7 @@ export function Example() {
             <Popover.Body>Your changes has been saved.</Popover.Body>
           </Popover.Content>
         </Popover>
-      </Stack>
+      </Stack> */}
     </VStack>
   );
 }
