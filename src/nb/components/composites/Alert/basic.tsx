@@ -1,9 +1,9 @@
 import React from 'react';
-import { Alert, Box, VStack } from 'native-base';
+import { Alert } from 'native-base';
 
 export const Example = () => {
   return (
-    <Alert>
+    <Alert w="100%">
       <Alert.Icon />
       <Alert.Title>Alert Title</Alert.Title>
       <Alert.Description>

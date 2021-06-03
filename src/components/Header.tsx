@@ -7,6 +7,9 @@ import {
   Heading,
   useColorMode,
   useColorModeValue,
+  useBreakpointValue,
+  Switch,
+  Text,
 } from 'native-base';
 
 import { Ionicons } from '@expo/vector-icons';
@@ -20,6 +23,12 @@ export function Header({
   navigation: StackNavigationProp<any>;
 }) {
   const { colorMode, toggleColorMode } = useColorMode();
+  const isLargeScreen = useBreakpointValue({
+    base: false,
+    sm: false,
+    md: false,
+    lg: true,
+  });
   return (
     <HStack
       alignItems="center"
@@ -31,13 +40,17 @@ export function Header({
     >
       <IconButton
         position="absolute"
-        // left={0}
+        left={{ base: 0, md: 1 }}
         icon={
-          <Icon
-            as={<Ionicons name="arrow-back-outline" />}
-            color="blueGray.400"
-            size="sm"
-          />
+          !isLargeScreen ? (
+            <Icon
+              as={<Ionicons name="arrow-back-outline" />}
+              color="blueGray.400"
+              size="sm"
+            />
+          ) : (
+            <Text>Home</Text>
+          )
         }
         _pressed={{ bg: 'transparent' }}
         colorScheme="coolGray"
@@ -52,6 +65,27 @@ export function Header({
       >
         {title}
       </Heading>
+      {isLargeScreen ? (
+        <IconButton
+          size="md"
+          icon={
+            <Icon
+              as={
+                colorMode == 'dark' ? (
+                  <Ionicons name="sunny" color="white" />
+                ) : (
+                  <Ionicons name="moon" color="black" />
+                )
+              }
+              size="lg"
+            />
+          }
+          onPress={toggleColorMode}
+          mr={3}
+        />
+      ) : (
+        <></>
+      )}
     </HStack>
   );
 }

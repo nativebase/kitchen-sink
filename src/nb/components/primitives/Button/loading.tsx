@@ -7,6 +7,7 @@ export const Example = () => {
       direction={{ base: 'column', md: 'row' }}
       space={2}
       alignItems={{ base: 'center', md: 'flex-start' }}
+      alignSelf={{ base: 'center', md: 'flex-start' }}
     >
       <Button isLoading>Button</Button>
       <Button isLoading isLoadingText="Submitting">

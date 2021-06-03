@@ -11,11 +11,11 @@ import {
 
 export const Example = () => {
   return (
-    <Stack alignItems="center" mx={3}>
-      <InputGroup>
+    <Stack alignItems="center" w="100%">
+      <InputGroup w="100%">
         <InputLeftAddon children={'https://'} />
         <Input
-          w="50%"
+          w={{ base: '50%', md: '100%' }}
           placeholder="nativebase"
           placeholderTextColor={useColorModeValue(
             'blueGray.400',

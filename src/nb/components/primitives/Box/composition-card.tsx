@@ -11,7 +11,7 @@ import {
 } from 'native-base';
 export const Example = () => {
   return (
-    <Box p={5} rounded="xl" shadow={4}>
+    <Box p={5} rounded="xl" shadow={4} w="100%">
       <Stack space={6}>
         <Avatar
           size={'sm'}
