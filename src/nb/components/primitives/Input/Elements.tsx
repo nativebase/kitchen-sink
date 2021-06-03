@@ -4,7 +4,7 @@ import { MaterialIcons } from '@expo/vector-icons';
 
 export const Example = () => {
   return (
-    <Box w="70%">
+    <Box w="100%">
       <Input
         InputLeftElement={
           <Icon

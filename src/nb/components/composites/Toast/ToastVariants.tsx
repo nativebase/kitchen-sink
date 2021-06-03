@@ -18,6 +18,7 @@ export const Example = () => {
             })
           }
           mr={2}
+          mb={2}
         >
           {`Show ${variant} toast`}
         </Button>

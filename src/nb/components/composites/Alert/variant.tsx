@@ -3,7 +3,7 @@ import { Alert, Stack, Box } from 'native-base';
 
 export function Example() {
   return (
-    <Stack space={4} mx={3}>
+    <Stack space={4} mx={3} w="100%">
       <Alert variant="solid" colorScheme="teal">
         <Alert.Icon />
         <Alert.Title flexShrink={1}>Alert Solid Variant</Alert.Title>

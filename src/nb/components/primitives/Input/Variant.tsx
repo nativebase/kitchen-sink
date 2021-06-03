@@ -3,7 +3,7 @@ import { Input, Stack, Center, Heading, useColorModeValue } from 'native-base';
 
 export const Example = () => {
   return (
-    <Stack space={4} w="80%">
+    <Stack space={4} w="100%">
       <Center>
         <Heading>Input Variants</Heading>
       </Center>

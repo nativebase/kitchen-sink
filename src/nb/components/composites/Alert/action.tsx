@@ -11,7 +11,7 @@ import {
 export function Example() {
   const [show, setShow] = React.useState(true);
   return (
-    <Box>
+    <Box w="100%">
       <Collapse isOpen={show}>
         <Alert
           status="error"

@@ -3,8 +3,8 @@ import { Input, Stack, FormControl, useColorModeValue } from 'native-base';
 
 export const Example = () => {
   return (
-    <FormControl isRequired isInvalid p={2}>
-      <Stack mx={4}>
+    <FormControl isRequired isInvalid>
+      <Stack mx={2}>
         <FormControl.Label>Form Controlled Input</FormControl.Label>
         <Input
           placeholder="FormControl is providing me isInvalid prop"

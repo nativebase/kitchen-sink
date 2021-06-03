@@ -14,6 +14,7 @@ export const Example = () => {
       shadow={4}
       rounded="xl"
       overflow="hidden"
+      w="100%"
     >
       <Box width={{ md: 24 }} height={{ base: 32, md: '100%' }}>
         <Image
