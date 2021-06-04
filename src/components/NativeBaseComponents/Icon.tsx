@@ -5,7 +5,7 @@ import { Ionicons } from '@expo/vector-icons';
 
 export const Example = () => {
   return (
-    <Stack space={8} mt={6} shadow={{ base: 6, md: 2 }}>
+    <Stack space={8} mt={6} shadow={{ base: 4, md: 2 }}>
       <MoonIcon />
       <Icon as={<Ionicons name="md-checkmark-circle" />} color="blueGray.200" />
       <Icon viewBox="0 0 870 873">
