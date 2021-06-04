@@ -74,7 +74,7 @@ export function Examples({
           <VStack
             mx={2}
             space={2}
-            p={2}
+            p={{ base: 2, md: 8 }}
             mb={24}
             alignItems={{ base: 'stretch', lg: 'center' }}
           >

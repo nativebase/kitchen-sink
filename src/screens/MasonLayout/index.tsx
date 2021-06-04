@@ -10,6 +10,7 @@ import {
   Fab,
   Icon,
   useColorModeValue,
+  IconButton,
 } from 'native-base';
 import { Ionicons } from '@expo/vector-icons';
 import { mapping } from '../../config/map';
@@ -62,17 +63,46 @@ export function MasonLayout({
           onPress={toggleColorMode}
         />
       )}
-      <HStack px={4} borderRadius="lg" mb={4} py={2} space={2}>
+      <HStack
+        px={4}
+        borderRadius="lg"
+        mb={4}
+        py={2}
+        space={2}
+        alignItems="center"
+      >
         <Heading color={colorMode == 'dark' ? 'white' : 'gray.800'}>
           NativeBase
         </Heading>
         <Text
           color={colorMode == 'dark' ? 'white' : 'gray.800'}
           alignSelf="flex-end"
-          lineHeight={7}
+          lineHeight={{ base: 8, md: '44px' }}
         >
           v3.0
         </Text>
+        {isLargeScreen ? (
+          <IconButton
+            ml="auto"
+            size="md"
+            icon={
+              <Icon
+                as={
+                  colorMode == 'dark' ? (
+                    <Ionicons name="sunny" color="white" />
+                  ) : (
+                    <Ionicons name="moon" color="black" />
+                  )
+                }
+                size="lg"
+              />
+            }
+            onPress={toggleColorMode}
+            mr={3}
+          />
+        ) : (
+          <></>
+        )}
       </HStack>
       <ScrollView contentContainerStyle={{ width: '100%' }}>
         {isLargeScreen ? (
