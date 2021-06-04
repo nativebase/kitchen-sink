@@ -35,8 +35,7 @@ export function Header({
       w="100%"
       py={2}
       bg={useColorModeValue('white', 'blueGray.900')}
-      // backgroundColor={colorMode == "dark" ? "black" : "gray.900"}
-      mb={8}
+      mb={{ base: 8, md: 0 }}
     >
       <IconButton
         position="absolute"

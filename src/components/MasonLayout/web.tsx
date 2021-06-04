@@ -10,6 +10,7 @@ import {
 import React from 'react';
 import { StackNavigationProp } from '@react-navigation/stack';
 import { mapping } from '../../config/map';
+import { Dimensions } from 'react-native';
 
 export const MasonWeb = ({
   navigation,
@@ -17,8 +18,15 @@ export const MasonWeb = ({
   navigation: StackNavigationProp<any>;
 }) => {
   const { colorMode, toggleColorMode } = useColorMode();
+  const { width, height } = Dimensions.get('window');
+
   return (
-    <Row space={4} m={4}>
+    <Row
+      space={4}
+      m={4}
+      alignSelf={width > 1800 ? 'center' : 'strech'}
+      width={width > 1800 ? '1800px' : 'auto'}
+    >
       <Column flex={1} space={4}>
         <Box
           rounded="xl"
