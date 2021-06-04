@@ -504,6 +504,34 @@ export const MasonMobile = ({
             </Center>
           </Button>
         </Box>
+        <Box
+          rounded="xl"
+          bg={{
+            linearGradient: {
+              colors: ['blue.400', 'pink.400'],
+              start: [0, 0],
+              end: [0, 1],
+            },
+          }}
+        >
+          <Button
+            variant="unstyled"
+            py={4}
+            onPress={() =>
+              navigation.navigate('component', {
+                name: 'ZStack',
+              })
+            }
+          >
+            <Center py={8} px={1} w="100%">
+              <Heading color="white" size="sm">
+                ZStack
+              </Heading>
+
+              <mapping.ZStack.basic.Example />
+            </Center>
+          </Button>
+        </Box>
       </Column>
 
       <Column flex={1} space={4}>
@@ -964,35 +992,6 @@ export const MasonMobile = ({
               </Heading>
 
               <mapping.Tooltip.basic.Example />
-            </Center>
-          </Button>
-        </Box>
-
-        <Box
-          rounded="xl"
-          bg={{
-            linearGradient: {
-              colors: ['blue.400', 'pink.400'],
-              start: [0, 0],
-              end: [0, 1],
-            },
-          }}
-        >
-          <Button
-            variant="unstyled"
-            py={4}
-            onPress={() =>
-              navigation.navigate('component', {
-                name: 'ZStack',
-              })
-            }
-          >
-            <Center py={8} px={1} w="100%">
-              <Heading color="white" size="sm">
-                ZStack
-              </Heading>
-
-              <mapping.ZStack.basic.Example />
             </Center>
           </Button>
         </Box>

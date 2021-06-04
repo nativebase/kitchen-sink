@@ -2,15 +2,14 @@ import React from 'react';
 import { StackNavigationProp } from '@react-navigation/stack';
 import {
   Box,
-  Button,
-  Column,
-  Row,
   useColorMode,
-  Center,
   Heading,
   HStack,
   Text,
   useBreakpointValue,
+  Fab,
+  Icon,
+  useColorModeValue,
 } from 'native-base';
 import { Ionicons } from '@expo/vector-icons';
 import { mapping } from '../../config/map';
@@ -33,22 +32,45 @@ export function MasonLayout({
   });
 
   return (
-    <Box safeAreaTop flex={1} bg="gray.800">
+    <Box
+      safeAreaTop
+      flex={1}
+      bg={useColorModeValue('slateGray.50', 'gray.800')}
+    >
       <StatusBar
-        barStyle="light-content"
+        barStyle={colorMode == 'dark' ? 'light-content' : 'dark-content'}
+        backgroundColor={colorMode == 'dark' ? '#27272a' : '#f3f2f2'}
         translucent={false}
-        backgroundColor="#27272a"
       />
-      <HStack
-        px={2}
-        backgroundColor=""
-        borderRadius="lg"
-        m={2}
-        bg="gray.800"
-        space={2}
-      >
-        <Heading color="white">NativeBase</Heading>
-        <Text color="white" alignSelf="flex-end" lineHeight={7}>
+      {isLargeScreen ? (
+        <></>
+      ) : (
+        <Fab
+          bg={colorMode == 'dark' ? 'black' : 'white'}
+          icon={
+            <Icon
+              as={
+                colorMode == 'dark' ? (
+                  <Ionicons name="sunny" size={24} color="white" />
+                ) : (
+                  <Ionicons name="moon" size={24} color="black" />
+                )
+              }
+              size="lg"
+            />
+          }
+          onPress={toggleColorMode}
+        />
+      )}
+      <HStack px={4} borderRadius="lg" mb={4} py={2} space={2}>
+        <Heading color={colorMode == 'dark' ? 'white' : 'gray.800'}>
+          NativeBase
+        </Heading>
+        <Text
+          color={colorMode == 'dark' ? 'white' : 'gray.800'}
+          alignSelf="flex-end"
+          lineHeight={7}
+        >
           v3.0
         </Text>
       </HStack>

@@ -772,7 +772,7 @@ export const MasonWeb = ({
           rounded="xl"
           bg={{
             linearGradient: {
-              colors: ['blue.400', 'pink.400'],
+              colors: ['green.700', 'lime.200'],
               start: [0, 0],
               end: [0, 1],
             },
@@ -783,16 +783,16 @@ export const MasonWeb = ({
             py={4}
             onPress={() =>
               navigation.navigate('component', {
-                name: 'ZStack',
+                name: 'Transitions',
               })
             }
           >
             <Center py={8} px={1} w="100%">
               <Heading color="white" size="sm">
-                ZStack
+                Transitions
               </Heading>
 
-              <mapping.ZStack.basic.Example />
+              <mapping.Transitions.basic.Example />
             </Center>
           </Button>
         </Box>
@@ -1003,12 +1003,11 @@ export const MasonWeb = ({
           </Button>
         </Box>
 
-        {/*  */}
         <Box
           rounded="xl"
           bg={{
             linearGradient: {
-              colors: ['green.700', 'lime.200'],
+              colors: ['blue.400', 'pink.400'],
               start: [0, 0],
               end: [0, 1],
             },
@@ -1019,19 +1018,21 @@ export const MasonWeb = ({
             py={4}
             onPress={() =>
               navigation.navigate('component', {
-                name: 'Transitions',
+                name: 'ZStack',
               })
             }
           >
             <Center py={8} px={1} w="100%">
               <Heading color="white" size="sm">
-                Transitions
+                ZStack
               </Heading>
 
-              <mapping.Transitions.basic.Example />
+              <mapping.ZStack.basic.Example />
             </Center>
           </Button>
         </Box>
+
+        {/*  */}
       </Column>
     </Row>
   );
