@@ -14,9 +14,10 @@ import {
 } from 'native-base';
 import { Ionicons } from '@expo/vector-icons';
 import { mapping } from '../../config/map';
-import { ScrollView, StatusBar } from 'react-native';
+import { Dimensions, ScrollView, StatusBar } from 'react-native';
 import { MasonMobile } from '../../components/MasonLayout/mobile';
 import { MasonWeb } from '../../components/MasonLayout/web';
+import { Logo } from '../../icons/Logo';
 
 export function MasonLayout({
   navigation,
@@ -24,6 +25,7 @@ export function MasonLayout({
   navigation: StackNavigationProp<any>;
 }) {
   const { colorMode, toggleColorMode } = useColorMode();
+  const { width, height } = Dimensions.get('window');
 
   const isLargeScreen = useBreakpointValue({
     base: false,
@@ -36,7 +38,6 @@ export function MasonLayout({
     <Box
       safeAreaTop
       flex={1}
-      // bg={useColorModeValue('slateGray.50', 'gray.800')}
       bg={useColorModeValue('slateGray.50', 'blueGray.700')}
     >
       <StatusBar
@@ -65,20 +66,24 @@ export function MasonLayout({
         />
       )}
       <HStack
-        px={4}
+        px={{ base: 4, md: 0 }}
         borderRadius="lg"
         mb={4}
+        ml={{ base: 0, md: '-25px' }}
         py={2}
         space={2}
         alignItems="center"
+        width={width > 1152 ? 1152 : 'auto'}
+        alignSelf={width > 1152 ? 'center' : 'flex-start'}
       >
+        <Logo size={{ base: 12, md: 16 }} />
         <Heading color={colorMode == 'dark' ? 'white' : 'gray.800'}>
           NativeBase
         </Heading>
         <Text
           color={colorMode == 'dark' ? 'white' : 'gray.800'}
           alignSelf="flex-end"
-          lineHeight={{ base: 8, md: '44px' }}
+          lineHeight={{ base: 8, md: '50px' }}
         >
           v3.0
         </Text>
@@ -99,7 +104,7 @@ export function MasonLayout({
               />
             }
             onPress={toggleColorMode}
-            mr={3}
+            mr={{ base: 3, md: 0 }}
           />
         ) : (
           <></>

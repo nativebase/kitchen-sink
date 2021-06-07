@@ -8,7 +8,6 @@ import {
   useColorMode,
   useColorModeValue,
   useBreakpointValue,
-  Switch,
   Text,
 } from 'native-base';
 
@@ -30,61 +29,64 @@ export function Header({
     lg: true,
   });
   return (
-    <HStack
-      alignItems="center"
-      w="100%"
-      py={2}
-      bg={useColorModeValue('white', 'blueGray.900')}
-      mb={{ base: 8, md: 0 }}
-    >
-      <IconButton
-        position="absolute"
-        left={{ base: 0, md: 1 }}
-        icon={
-          !isLargeScreen ? (
-            <Icon
-              as={<Ionicons name="arrow-back-outline" />}
-              color="blueGray.400"
-              size="sm"
-            />
-          ) : (
-            <Text>Home</Text>
-          )
-        }
-        _pressed={{ bg: 'transparent' }}
-        colorScheme="coolGray"
-        onPress={() => navigation.navigate('masonlayout')}
-      ></IconButton>
-
-      <Heading
-        alignSelf="center"
-        justifyContent="center"
-        mx="auto"
-        color={colorMode == 'dark' ? 'gray.100' : 'trueGray.700'}
+    <Box bg={useColorModeValue('white', 'blueGray.900')}>
+      <HStack
+        alignItems="center"
+        py={2}
+        mb={{ base: 8, md: 0 }}
+        width={{ base: '100%', lg: '768px' }}
+        alignSelf={{ base: 'stretch', md: 'center' }}
+        ml={{ base: 0, md: '-16px' }}
       >
-        {title}
-      </Heading>
-      {isLargeScreen ? (
         <IconButton
-          size="md"
+          position="absolute"
+          left={{ base: 0, md: 1 }}
           icon={
-            <Icon
-              as={
-                colorMode == 'dark' ? (
-                  <Ionicons name="sunny" color="white" />
-                ) : (
-                  <Ionicons name="moon" color="black" />
-                )
-              }
-              size="lg"
-            />
+            !isLargeScreen ? (
+              <Icon
+                as={<Ionicons name="arrow-back-outline" />}
+                color="blueGray.400"
+                size="sm"
+              />
+            ) : (
+              <Text>Home</Text>
+            )
           }
-          onPress={toggleColorMode}
-          mr={3}
-        />
-      ) : (
-        <></>
-      )}
-    </HStack>
+          _pressed={{ bg: 'transparent' }}
+          colorScheme="coolGray"
+          onPress={() => navigation.navigate('masonlayout')}
+        ></IconButton>
+
+        <Heading
+          alignSelf="center"
+          justifyContent="center"
+          mx="auto"
+          color={colorMode == 'dark' ? 'gray.100' : 'trueGray.700'}
+        >
+          {title}
+        </Heading>
+        {isLargeScreen ? (
+          <IconButton
+            size="md"
+            icon={
+              <Icon
+                as={
+                  colorMode == 'dark' ? (
+                    <Ionicons name="sunny" color="white" />
+                  ) : (
+                    <Ionicons name="moon" color="black" />
+                  )
+                }
+                size="lg"
+              />
+            }
+            onPress={toggleColorMode}
+            mr={{ base: 3, md: 0 }}
+          />
+        ) : (
+          <></>
+        )}
+      </HStack>
+    </Box>
   );
 }
