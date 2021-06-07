@@ -23,5 +23,7 @@ export const DashboardTheme = extendTheme({
         900: '#0d0c0d',
       }
     },
-    
+    Pressable: {
+      cursor:'pointer',
+    }
 });

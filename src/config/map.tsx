@@ -339,7 +339,7 @@ export const mapping = {
   Fab: {
     title: 'Fab',
     description: '',
-    // basic: require("../components/NativeBaseComponents/"),
+    basic: require('../components/NativeBaseComponents/Fab'),
     components: [
       {
         component: require('../nb/components/composites/Fab/Basic'),
