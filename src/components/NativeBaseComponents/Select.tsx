@@ -19,7 +19,7 @@ export const Example = () => {
         endIcon: <CheckIcon size={4} />,
       }}
       maxWidth="100%"
-      w={100}
+      w={{ base: 100, md: 'auto' }}
       // placeholderTextColor="white"
       // color="white"
       isDisabled

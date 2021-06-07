@@ -7,7 +7,7 @@ export const Example = () => {
       mt={4}
       placeholder="Type"
       // color="white"
-      w="100px"
+      w={{ base: '100px', md: 'auto' }}
       shadow={6}
       // placeholderTextColor="white"
       // borderColor="white"

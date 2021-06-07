@@ -8,6 +8,9 @@ export const Example = () => {
       mt={3}
       value="test"
       accessibilityLabel="This is a dummy checkbox"
+      isChecked={true}
+      isDisabled
+      colorScheme="red"
     />
   );
 };

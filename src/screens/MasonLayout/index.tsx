@@ -36,7 +36,8 @@ export function MasonLayout({
     <Box
       safeAreaTop
       flex={1}
-      bg={useColorModeValue('slateGray.50', 'gray.800')}
+      // bg={useColorModeValue('slateGray.50', 'gray.800')}
+      bg={useColorModeValue('slateGray.50', 'blueGray.700')}
     >
       <StatusBar
         barStyle={colorMode == 'dark' ? 'light-content' : 'dark-content'}
