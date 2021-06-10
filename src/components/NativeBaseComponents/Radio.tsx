@@ -1,15 +1,22 @@
 import React from 'react';
-import { Radio } from 'native-base';
+import { Box, Radio } from 'native-base';
 
 export const Example = () => {
-  return (
-    <Radio.Group name="exampleGroup" mt={4}>
-      <Radio value="1" colorScheme="red" my={2} _text={{ color: 'white' }}>
-        Radio 1
-      </Radio>
-      <Radio value="2" colorScheme="green" _text={{ color: 'white' }}>
-        Radio 2
-      </Radio>
-    </Radio.Group>
-  );
+	return (
+		<Box
+			p={4}
+			rounded="full"
+			_light={{
+				bg: 'orange.200',
+			}}
+			_dark={{
+				bg: 'orange.600',
+			}}
+			opacity={0.5}
+		>
+			<Radio.Group name="exampleGroup" value="1">
+				<Radio value="1" colorScheme="orange" />
+			</Radio.Group>
+		</Box>
+	);
 };

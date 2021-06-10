@@ -1,16 +1,20 @@
 import React from 'react';
-import { HStack, Checkbox } from 'native-base';
+import { Box, Checkbox } from 'native-base';
 
 export const Example = () => {
-  return (
-    <Checkbox
-      shadow={3}
-      mt={3}
-      value="test"
-      accessibilityLabel="This is a dummy checkbox"
-      isChecked={true}
-      isDisabled
-      colorScheme="red"
-    />
-  );
+	return (
+		<Box
+			p={4}
+			rounded="full"
+			_light={{
+				bg: 'red.200',
+			}}
+			_dark={{
+				bg: 'red.600',
+			}}
+			opacity={0.5}
+		>
+			<Checkbox value="" isChecked={true} colorScheme="red" />
+		</Box>
+	);
 };

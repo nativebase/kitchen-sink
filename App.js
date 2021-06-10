@@ -9,14 +9,14 @@ import { DashboardStack } from './src/navigators/dashboardNavigator';
 import config from './nativebase.config';
 
 export default function App() {
-  return (
-    <NavigationContainer>
-      <NativeBaseProvider theme={DashboardTheme} config={config}>
-        {/* <Main /> */}
-        {/* <Box flex={1}> */}
-        <DashboardStack />
-        {/* </Box> */}
-      </NativeBaseProvider>
-    </NavigationContainer>
-  );
+	return (
+		<NavigationContainer>
+			<NativeBaseProvider theme={DashboardTheme} config={config}>
+				{/* <Main /> */}
+				{/* <Box flex={1}> */}
+				<DashboardStack />
+				{/* </Box> */}
+			</NativeBaseProvider>
+		</NavigationContainer>
+	);
 }

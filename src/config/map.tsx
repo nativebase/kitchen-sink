@@ -1,4 +1,4 @@
-import {} from '../components/NativeBaseComponents/Alert';
+// import {} from '../components/NativeBaseComponents/Alert';
 const baseUrl = '../nb/components';
 
 type mapping = {
@@ -302,18 +302,18 @@ export const mapping = {
       // },
     ],
   },
-  Column: {
-    title: 'Column',
-    description: 'Renders your data vertically',
-    basic: require('../components/NativeBaseComponents/Column'),
-    components: [
-      {
-        component: require('../nb/components/primitives/Column/Basic'),
-        title: 'Basic',
-        description: '',
-      },
-    ],
-  },
+  // Column: {
+  //   title: 'Column',
+  //   description: 'Renders your data vertically',
+  //   basic: require('../components/NativeBaseComponents/Column'),
+  //   components: [
+  //     {
+  //       component: require('../nb/components/primitives/Column/Basic'),
+  //       title: 'Basic',
+  //       description: '',
+  //     },
+  //   ],
+  // },
   Divider: {
     title: 'Divider',
     description: '',
@@ -1157,17 +1157,17 @@ export const mapping = {
       },
     ],
   },
-  // VStack: {
-  // 	title: "VStack",
-  // 	description: "",
-  // 	components: [
-  // 		// {
-  // 		// 	component: require("../nb/components/primitives/VStack/basic"),
-  // 		// 	title: "Basic",
-  // 		// 	description: "",
-  // 		// },
-  // 	],
-  // },
+  VStack: {
+  	title: "VStack",
+  	description: "",
+  	components: [
+  		// {
+  		// 	component: require("../nb/components/primitives/VStack/basic"),
+  		// 	title: "Basic",
+  		// 	description: "",
+  		// },
+  	],
+  },
   ZStack: {
     title: 'ZStack',
     description: '',

@@ -1,202 +1,310 @@
-import { useColorMode, Row, Column, Pressable } from 'native-base';
+import { useColorMode, HStack, VStack } from 'native-base';
 import React from 'react';
 import { StackNavigationProp } from '@react-navigation/stack';
-import { Dimensions } from 'react-native';
+import { mapping } from '../../config/map';
 import { StoryBook } from '../StoryBook';
 
 export const MasonWeb = ({
-  navigation,
+	navigation,
 }: {
-  navigation: StackNavigationProp<any>;
+	navigation: StackNavigationProp<any>;
 }) => {
-  const { colorMode, toggleColorMode } = useColorMode();
-  const { width, height } = Dimensions.get('window');
+	const { colorMode, toggleColorMode } = useColorMode();
+	return (
+		<HStack space={4} m={4}>
+			<VStack flex={1} space={4}>
+				<StoryBook
+					navigation={navigation}
+					name="Alert"
+					h={40}
+					_box={{
+						lightGrad: ['orange.400', 'amber.200'],
+						darkGrad: ['orange.600', 'amber.300'],
+					}}
+					_heading={{
+						color: 'amber.100',
+					}}
+				/>
+				<StoryBook
+					navigation={navigation}
+					name="Badge"
+					h={32}
+					_box={{
+						lightGrad: ['emerald.400', 'lime.200'],
+						darkGrad: ['emerald.600', 'lime.300'],
+					}}
+					_heading={{
+						color: 'lime.100',
+					}}
+					// colors={['red.400', 'amber.400']}
+				/>
+				<StoryBook
+					navigation={navigation}
+					name="Button"
+					// colors={['blue.400', 'pink.400']}
 
-  return (
-    <Row
-      space={6}
-      m={4}
-      alignSelf={width > 1152 ? 'center' : 'strech'}
-      width={width > 1152 ? 1152 : 'auto'}
-    >
-      <Column flex={1} space={6}>
-        <StoryBook
-          navigation={navigation}
-          name="Alert"
-          colors={['cyan.500', 'emerald.300']}
-        />
-        <StoryBook
-          navigation={navigation}
-          name="Box"
-          colors={['red.400', 'amber.400']}
-        />
-        <StoryBook
-          navigation={navigation}
-          name="CheckBox"
-          colors={['blue.400', 'pink.400']}
-        />
-        <StoryBook
-          navigation={navigation}
-          name="Fab"
-          colors={['green.700', 'lime.200']}
-        />
-        <StoryBook
-          navigation={navigation}
-          name="Flex"
-          colors={['blue.400', 'purple.400']}
-        />
-        <StoryBook
-          navigation={navigation}
-          name="Image"
-          colors={['fuchsia.400', 'pink.400']}
-        />
-        <StoryBook
-          navigation={navigation}
-          name="Menu"
-          colors={['rose.500', 'amber.500']}
-        />
-        <StoryBook
-          navigation={navigation}
-          name="Popover"
-          colors={['cyan.500', 'emerald.300']}
-        />
-        <StoryBook
-          navigation={navigation}
-          name="Slider"
-          colors={['red.400', 'amber.400']}
-        />
-        <StoryBook
-          navigation={navigation}
-          name="Tabs"
-          colors={['blue.400', 'pink.400']}
-        />
-        <StoryBook
-          navigation={navigation}
-          name="TextArea"
-          colors={['green.700', 'lime.200']}
-        />
-        <StoryBook
-          navigation={navigation}
-          name="ZStack"
-          colors={['blue.400', 'purple.400']}
-        />
-      </Column>
+					_box={{
+						lightGrad: ['emerald.400', 'lime.200'],
+						darkGrad: ['emerald.600', 'lime.300'],
+					}}
+					_heading={{
+						color: 'lime.100',
+					}}
+				/>
+				{/* 
 
-      <Column flex={1} space={6}>
-        <StoryBook
-          navigation={navigation}
-          name="Avatar"
-          colors={['green.700', 'lime.200']}
-        />
-        <StoryBook
-          navigation={navigation}
-          name="Button"
-          colors={['blue.400', 'pink.400']}
-        />
-        <StoryBook
-          navigation={navigation}
-          name="Column"
-          colors={['fuchsia.400', 'pink.600']}
-        />
-        <StoryBook
-          navigation={navigation}
-          name="HStack"
-          colors={['rose.500', 'amber.500']}
-        />
-        <StoryBook
-          navigation={navigation}
-          name="Icon"
-          colors={['cyan.500', 'emerald.300']}
-        />
-        <StoryBook
-          navigation={navigation}
-          name="Link"
-          colors={['red.400', 'amber.400']}
-        />
-        <StoryBook
-          navigation={navigation}
-          name="Progress"
-          colors={['blue.400', 'pink.400']}
-        />
-        <StoryBook
-          navigation={navigation}
-          name="Radio"
-          colors={['green.700', 'lime.200']}
-        />
-        <StoryBook
-          navigation={navigation}
-          name="Spinner"
-          colors={['blue.400', 'pink.400']}
-        />
-        <StoryBook
-          navigation={navigation}
-          name="Text"
-          colors={['fuchsia.400', 'pink.600']}
-        />
-        <StoryBook
-          navigation={navigation}
-          name="Transitions"
-          colors={['rose.500', 'amber.500']}
-        />
-      </Column>
+				<StoryBook
+					navigation={navigation}
+					name="CheckBox"
+					// colors={['green.700', 'lime.200']}
+				/>
+				<StoryBook
+					navigation={navigation}
+					name="Divider"
+					// colors={['blue.400', 'purple.400']}
+				/>
+				<StoryBook
+					navigation={navigation}
+					name="Flex"
+					// colors={['fuchsia.400', 'pink.400']}
+				/>
+				<StoryBook
+					navigation={navigation}
+					name="HStack"
+					// colors={['rose.500', 'amber.500']}
+				/>
+				<StoryBook
+					navigation={navigation}
+					name="IconButton"
+					// colors={['cyan.500', 'emerald.300']}
+				/>
+				<StoryBook
+					navigation={navigation}
+					name="Input"
+					// colors={['red.400', 'amber.400']}
+				/>
+				<StoryBook
+					navigation={navigation}
+					name="Link"
+					// colors={['blue.400', 'pink.400']}
+				/>
+				<StoryBook
+					navigation={navigation}
+					name="Modal"
+					// colors={['green.700', 'lime.200']}
+				/>
+				<StoryBook
+					navigation={navigation}
+					name="Progress"
+					// colors={['blue.400', 'purple.400']}
+				/>
+				<StoryBook
+					navigation={navigation}
+					name="Select"
+					// colors={['fuchsia.400', 'pink.400']}
+				/>
+				<StoryBook
+					navigation={navigation}
+					name="Spinner"
+					// colors={['rose.500', 'amber.500']}
+				/>
+				<StoryBook
+					navigation={navigation}
+					name="Tabs"
+					// colors={['cyan.500', 'emerald.300']}
+				/>
+				<StoryBook
+					navigation={navigation}
+					name="Toast"
+					// colors={['red.400', 'amber.400']}
+				/>
+				<StoryBook
+					navigation={navigation}
+					name="Transitions"
+					// colors={['blue.400', 'pink.400']}
+				/>
+				<StoryBook
+					navigation={navigation}
+					name="ZStack"
+					// colors={['green.700', 'lime.200']}
+				/> */}
+			</VStack>
+			<VStack flex={1} space={4}>
+				<StoryBook
+					navigation={navigation}
+					name="Avatar"
+					// colors={['green.700', 'lime.200']}
 
-      <Column flex={1} space={6}>
-        <StoryBook
-          navigation={navigation}
-          name="Badge"
-          colors={['cyan.500', 'emerald.300']}
-        />
-        <StoryBook
-          navigation={navigation}
-          name="Center"
-          colors={['red.400', 'amber.400']}
-        />
-        <StoryBook
-          navigation={navigation}
-          name="Divider"
-          colors={['blue.400', 'pink.400']}
-        />
-        <StoryBook
-          navigation={navigation}
-          name="Heading"
-          colors={['green.700', 'lime.200']}
-        />
-        <StoryBook
-          navigation={navigation}
-          name="IconButton"
-          colors={['blue.400', 'purple.400']}
-        />
-        <StoryBook
-          navigation={navigation}
-          name="Input"
-          colors={['fuchsia.400', 'pink.400']}
-        />
-        <StoryBook
-          navigation={navigation}
-          name="Modal"
-          colors={['rose.500', 'amber.500']}
-        />
-        <StoryBook
-          navigation={navigation}
-          name="Select"
-          colors={['cyan.500', 'emerald.300']}
-        />
-        <StoryBook
-          navigation={navigation}
-          name="Switch"
-          colors={['red.400', 'amber.400']}
-        />
-        <StoryBook
-          navigation={navigation}
-          name="Toast"
-          colors={['blue.400', 'pink.400']}
-        />
-        <StoryBook
-          navigation={navigation}
-          name="Tooltip"
-          colors={['green.700', 'lime.200']}
-        />
-      </Column>
-    </Row>
-  );
+					h={48}
+					_box={{
+						lightGrad: ['violet.800', 'lightBlue.300'],
+						darkGrad: ['violet.900', 'lightBlue.500'],
+					}}
+					_heading={{
+						color: 'lightBlue.100',
+					}}
+				/>
+
+				{/*
+
+				<StoryBook
+					navigation={navigation}
+					name="Center"
+					// colors={['fuchsia.400', 'pink.600']}
+				/>
+				<StoryBook
+					navigation={navigation}
+					name="VStack"
+					// colors={['rose.500', 'amber.500']}
+				/>
+				<StoryBook
+					navigation={navigation}
+					name="Fab"
+					// colors={['cyan.500', 'emerald.300']}
+				/>
+				<StoryBook
+					navigation={navigation}
+					name="Heading"
+					// colors={['red.400', 'amber.400']}
+				/>
+				<StoryBook
+					navigation={navigation}
+					name="Icon"
+					// colors={['blue.400', 'pink.400']}
+				/>
+				<StoryBook
+					navigation={navigation}
+					name="Image"
+					// colors={['green.700', 'lime.200']}
+				/>
+				<StoryBook
+					navigation={navigation}
+					name="Menu"
+					// colors={['blue.400', 'pink.400']}
+				/>
+				<StoryBook
+					navigation={navigation}
+					name="Popover"
+					// colors={['fuchsia.400', 'pink.600']}
+				/>
+				<StoryBook
+					navigation={navigation}
+					name="Radio"
+					// colors={['rose.500', 'amber.500']}
+				/>
+				<StoryBook
+					navigation={navigation}
+					name="Slider"
+					// colors={['cyan.500', 'emerald.300']}
+				/>
+				<StoryBook
+					navigation={navigation}
+					name="Switch"
+					// colors={['red.400', 'amber.400']}
+				/>
+				<StoryBook
+					navigation={navigation}
+					name="Text"
+					// colors={['blue.400', 'pink.400']}
+				/>
+				<StoryBook
+					navigation={navigation}
+					name="TextArea"
+					// colors={['green.700', 'lime.200']}
+				/>
+				<StoryBook
+					navigation={navigation}
+					name="Tooltip"
+					// colors={['blue.400', 'pink.400']}
+				/>*/}
+			</VStack>
+			<VStack flex={1} space={4}>
+				<StoryBook
+					navigation={navigation}
+					name="Box"
+					h={40}
+					_box={{
+						lightGrad: ['fuchsia.800', 'pink.300'],
+						darkGrad: ['fuchsia.900', 'pink.500'],
+					}}
+					_heading={{
+						color: 'pink.100',
+					}}
+					// colors={['blue.400', 'pink.400']}
+				/>
+				{/*
+
+				<StoryBook
+					navigation={navigation}
+					name="Center"
+					// colors={['fuchsia.400', 'pink.600']}
+				/>
+				<StoryBook
+					navigation={navigation}
+					name="VStack"
+					// colors={['rose.500', 'amber.500']}
+				/>
+				<StoryBook
+					navigation={navigation}
+					name="Fab"
+					// colors={['cyan.500', 'emerald.300']}
+				/>
+				<StoryBook
+					navigation={navigation}
+					name="Heading"
+					// colors={['red.400', 'amber.400']}
+				/>
+				<StoryBook
+					navigation={navigation}
+					name="Icon"
+					// colors={['blue.400', 'pink.400']}
+				/>
+				<StoryBook
+					navigation={navigation}
+					name="Image"
+					// colors={['green.700', 'lime.200']}
+				/>
+				<StoryBook
+					navigation={navigation}
+					name="Menu"
+					// colors={['blue.400', 'pink.400']}
+				/>
+				<StoryBook
+					navigation={navigation}
+					name="Popover"
+					// colors={['fuchsia.400', 'pink.600']}
+				/>
+				<StoryBook
+					navigation={navigation}
+					name="Radio"
+					// colors={['rose.500', 'amber.500']}
+				/>
+				<StoryBook
+					navigation={navigation}
+					name="Slider"
+					// colors={['cyan.500', 'emerald.300']}
+				/>
+				<StoryBook
+					navigation={navigation}
+					name="Switch"
+					// colors={['red.400', 'amber.400']}
+				/>
+				<StoryBook
+					navigation={navigation}
+					name="Text"
+					// colors={['blue.400', 'pink.400']}
+				/>
+				<StoryBook
+					navigation={navigation}
+					name="TextArea"
+					// colors={['green.700', 'lime.200']}
+				/>
+				<StoryBook
+					navigation={navigation}
+					name="Tooltip"
+					// colors={['blue.400', 'pink.400']}
+				/>*/}
+			</VStack>
+		</HStack>
+	);
 };

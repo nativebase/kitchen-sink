@@ -1,29 +1,14 @@
 import React from 'react';
-import { Fade, Button, Box } from 'native-base';
+import { Fade, Button, Box, HStack } from 'native-base';
 export const Example = () => {
-  const [isOpen, setIsOpen] = React.useState(false);
+	const [isOpen, setIsOpen] = React.useState(false);
 
-  return (
-    <>
-      <Button
-        onPress={() => setIsOpen(!isOpen)}
-        mt={4}
-        _text={{ color: 'white' }}
-      >
-        {isOpen ? 'hide' : 'show'}
-      </Button>
-      <Fade in={isOpen}>
-        <Box
-          p="40px"
-          color="white"
-          mt="4"
-          bg="teal.500"
-          rounded="md"
-          _text={{ color: 'white' }}
-        >
-          Fade
-        </Box>
-      </Fade>
-    </>
-  );
+	return (
+		<HStack ml={4}>
+			<Box bg="cyan.200" size={12} ml={-4} opacity={0.5} rounded="full" />
+			<Box bg="cyan.300" size={12} ml={-4} opacity={0.5} rounded="full" />
+			<Box bg="cyan.500" size={12} ml={-4} opacity={0.5} rounded="full" />
+			<Box bg="cyan.600" size={12} ml={-4} opacity={0.5} rounded="full" />
+		</HStack>
+	);
 };

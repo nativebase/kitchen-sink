@@ -1,16 +1,31 @@
 import React from 'react';
-import { Link } from 'native-base';
+import { Box } from 'native-base';
 
 export const Example = () => {
-  return (
-    <Link
-      mt={4}
-      fontSize="xl"
-      href="https://nativebase.io"
-      shadow={8}
-      _text={{ color: 'white' }}
-    >
-      Default Link
-    </Link>
-  );
+	return (
+		<Box
+			border={1}
+			borderColor="transparent"
+			_light={{
+				borderBottomColor: 'gray.600',
+			}}
+			_dark={{
+				borderBottomColor: 'gray.100',
+			}}
+			w="50%"
+		>
+			<Box
+				_light={{
+					bg: 'gray.600',
+				}}
+				_dark={{
+					bg: 'gray.100',
+				}}
+				rounded="pill"
+				h="11px"
+				mb={1}
+				w="100%"
+			/>
+		</Box>
+	);
 };

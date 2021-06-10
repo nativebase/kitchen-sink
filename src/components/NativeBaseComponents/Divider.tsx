@@ -1,12 +1,25 @@
 import React from 'react';
-import { Divider, Text, VStack } from 'native-base';
+import { Divider, Box, VStack, HStack } from 'native-base';
 
 export const Example = () => {
-  return (
-    <VStack mt={3} w="100%" space={2}>
-      <Text color="white">Text 1</Text>
-      <Divider />
-      <Text color="white">Text 2</Text>
-    </VStack>
-  );
+	return (
+		<VStack
+			h={20}
+			w={20}
+			divider={<Divider border={2} borderColor="gray.400" />}
+		>
+			<HStack
+				flex={1}
+				bg="lime.500"
+				h={20}
+				divider={<Divider border={2} borderColor="gray.400" />}
+			>
+				<Box flex={1} bg="violet.200" />
+
+				<Box flex={1} bg="violet.300" />
+			</HStack>
+
+			<Box flex={1} bg="violet.400" />
+		</VStack>
+	);
 };

@@ -1,51 +1,111 @@
 import React from 'react';
-import { Button, Modal } from 'native-base';
-import { useState } from 'react';
+import { Box, HStack, VStack, Divider } from 'native-base';
 
 export const Example = () => {
-  const [showModal, setShowModal] = useState(false);
+	return (
+		<VStack
+			w={32}
+			rounded="md"
+			_light={{
+				bg: 'cyan.600',
+			}}
+			_dark={{
+				bg: 'cyan.800',
+			}}
+			space={4}
+			p={4}
+			justifyContent="center"
+		>
+			<Box
+				_light={{
+					bg: 'gray.600',
+				}}
+				_dark={{
+					bg: 'gray.100',
+				}}
+				rounded="sm"
+				h="11px"
+				w="50%"
+			/>
+			<VStack space={1}>
+				<Box
+					_light={{
+						bg: 'gray.600',
+					}}
+					_dark={{
+						bg: 'gray.100',
+					}}
+					h="7px"
+					rounded="pill"
+					w="90%"
+				/>
 
-  return (
-    <>
-      <Button
-        mt={4}
-        shadow={6}
-        onPress={() => setShowModal(true)}
-        _text={{ color: 'white' }}
-      >
-        Button
-      </Button>
-      <Modal isOpen={showModal} onClose={() => setShowModal(false)}>
-        <Modal.Content maxWidth="400px">
-          <Modal.CloseButton />
-          <Modal.Header>Modal Title</Modal.Header>
-          <Modal.Body>
-            Sit nulla est ex deserunt exercitation anim occaecat. Nostrud
-            ullamco deserunt aute id consequat veniam incididunt duis in sint
-            irure nisi. Mollit officia cillum Lorem ullamco minim nostrud elit
-            officia tempor esse quis. Sunt ad dolore quis aute consequat. Magna
-            exercitation reprehenderit magna aute tempor cupidatat consequat
-            elit dolor adipisicing. Mollit dolor eiusmod sunt ex incididunt
-            cillum quis. Velit duis sit officia eiusmod Lorem aliqua enim
-            ullamco deserunt aute id consequat veniam incididunt duis in sint
-            irure nisi. Mollit officia cillum Lorem ullamco minim nostrud elit
-            officia tempor esse quis. Sunt ad dolore quis aute consequat.
-          </Modal.Body>
-          <Modal.Footer>
-            <Button.Group variant="ghost" space={2}>
-              <Button _text={{ color: 'white' }}>LEARN MORE</Button>
-              <Button
-                _text={{ color: 'white' }}
-                onPress={() => {
-                  setShowModal(false);
-                }}
-              >
-                ACCEPT
-              </Button>
-            </Button.Group>
-          </Modal.Footer>
-        </Modal.Content>
-      </Modal>
-    </>
-  );
+				<Box
+					_light={{
+						bg: 'gray.600',
+					}}
+					_dark={{
+						bg: 'gray.100',
+					}}
+					h="7px"
+					rounded="pill"
+					w="100%"
+				/>
+
+				<Box
+					_light={{
+						bg: 'gray.600',
+					}}
+					_dark={{
+						bg: 'gray.100',
+					}}
+					h="7px"
+					rounded="pill"
+					w="96%"
+				/>
+			</VStack>
+
+			<Box
+				// _text={{ color: 'white' }}
+				p={2}
+				px={3}
+				rounded="lg"
+				_light={{
+					bg: 'cyan.300',
+				}}
+				_dark={{
+					bg: 'cyan.400',
+				}}
+				position="relative"
+				overflow="hidden"
+				w="70%"
+			>
+				<Box
+					_light={{
+						bg: 'cyan.500',
+					}}
+					_dark={{
+						bg: 'cyan.700',
+					}}
+					rounded="full"
+					size={20}
+					right="-32"
+					top="-10"
+					opacity={0.6}
+					zIndex={-1}
+					position="absolute"
+				/>
+				<Box
+					_light={{
+						bg: 'gray.600',
+					}}
+					_dark={{
+						bg: 'gray.100',
+					}}
+					rounded="pill"
+					h="7px"
+				/>
+			</Box>
+		</VStack>
+	);
 };

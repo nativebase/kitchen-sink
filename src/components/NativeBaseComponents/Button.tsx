@@ -1,15 +1,48 @@
 import React from 'react';
-import { Button } from 'native-base';
+import { Button, Box } from 'native-base';
+import { borderColor } from 'styled-system';
 
 export const Example = () => {
-  return (
-    <Button
-      mt={2}
-      onPress={() => console.log('hello world')}
-      shadow={6}
-      _text={{ color: 'white' }}
-    >
-      PRIMARY
-    </Button>
-  );
+	return (
+		<Box
+			// _text={{ color: 'white' }}
+			p={4}
+			rounded="lg"
+			_light={{
+				bg: 'cyan.300',
+			}}
+			_dark={{
+				bg: 'cyan.400',
+			}}
+			position="relative"
+			overflow="hidden"
+			w="70%"
+		>
+			<Box
+				_light={{
+					bg: 'cyan.500',
+				}}
+				_dark={{
+					bg: 'cyan.700',
+				}}
+				rounded="full"
+				size={20}
+				right="-12%"
+				top="-120%"
+				opacity={0.6}
+				zIndex={-1}
+				position="absolute"
+			/>
+			<Box
+				_light={{
+					bg: 'gray.600',
+				}}
+				_dark={{
+					bg: 'gray.100',
+				}}
+				rounded="pill"
+				h="11px"
+			/>
+		</Box>
+	);
 };

@@ -1,16 +1,85 @@
 import React from 'react';
-import { Image } from 'native-base';
+import { Box } from 'native-base';
 export function Example() {
-  return (
-    <Image
-      shadow={6}
-      mt={4}
-      source={{
-        uri: 'https://wallpaperaccess.com/full/317501.jpg',
-      }}
-      alt="Alternate Text"
-      w={100}
-      h={100}
-    />
-  );
+	return (
+		<Box
+			// _text={{ color: 'white' }}
+			size={20}
+			rounded="lg"
+			_light={{
+				bg: 'cyan.300',
+			}}
+			_dark={{
+				bg: 'cyan.400',
+			}}
+			position="relative"
+			overflow="hidden"
+			w="70%"
+		>
+			<Box
+				_light={{
+					bg: 'cyan.500',
+				}}
+				_dark={{
+					bg: 'cyan.700',
+				}}
+				rounded="full"
+				size={10}
+				left={-1}
+				top={1}
+				opacity={0.6}
+				zIndex={-1}
+				position="absolute"
+			/>
+			<Box
+				_light={{
+					bg: 'cyan.500',
+				}}
+				_dark={{
+					bg: 'cyan.700',
+				}}
+				rounded="full"
+				size={7}
+				right={-3}
+				top={5}
+				zIndex={-1}
+				position="absolute"
+			/>
+
+			<Box
+				_light={{
+					bg: 'cyan.500',
+				}}
+				_dark={{
+					bg: 'cyan.700',
+				}}
+				size={40}
+				left={10}
+				top={1}
+				opacity={0.6}
+				zIndex={-1}
+				position="absolute"
+				style={{
+					transform: [{ rotate: '45deg' }],
+				}}
+			/>
+			<Box
+				_light={{
+					bg: 'cyan.300',
+				}}
+				_dark={{
+					bg: 'cyan.400',
+				}}
+				size={10}
+				right={5}
+				bottom={-20}
+				opacity={0.6}
+				zIndex={-1}
+				position="absolute"
+				style={{
+					transform: [{ rotate: '45deg' }],
+				}}
+			/>
+		</Box>
+	);
 }

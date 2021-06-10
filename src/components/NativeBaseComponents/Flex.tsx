@@ -1,25 +1,12 @@
 import React from 'react';
-import { Flex, Center, Heading, Button, Box } from 'native-base';
+import { Divider, Box, VStack, HStack } from 'native-base';
 
-export function Example() {
-  return (
-    <Box>
-      <Flex direction="row" my={3} shadow={8}>
-        <Box p={2} bg="primary.100" _text={{ color: 'gray.800' }}>
-          100
-        </Box>
-        <Box p={2} bg="primary.400" _text={{ color: 'white' }}>
-          200
-        </Box>
-      </Flex>
-      <Flex direction="column" shadow={8}>
-        <Box p={2} bg="primary.100" _text={{ color: 'gray.800' }}>
-          100
-        </Box>
-        <Box p={2} bg="primary.400" _text={{ color: 'white' }}>
-          200
-        </Box>
-      </Flex>
-    </Box>
-  );
-}
+export const Example = () => {
+	return (
+		<HStack h={10} w="70%">
+			<Box flex={1} bg="violet.200" />
+			<Box flex={1} bg="violet.300" />
+			<Box flex={1} bg="violet.400" />
+		</HStack>
+	);
+};
