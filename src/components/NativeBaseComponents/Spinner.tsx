@@ -1,6 +1,15 @@
 import React from 'react';
-import { Spinner, HStack } from 'native-base';
+import { CircularProgress } from 'native-base';
 
 export const Example = () => {
-	return <Spinner mt={4} color="white" />;
+	return (
+		<CircularProgress
+			size={12}
+			value={33}
+			trackColor="blue.100"
+			style={{
+				transform: [{ rotate: '77deg' }],
+			}}
+		/>
+	);
 };

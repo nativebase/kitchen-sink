@@ -67,7 +67,21 @@ export function StoryBook({
 						{name}
 					</Heading>
 
+					{/* <Center
+						position="absolute"
+						top={8}
+						right={1}
+						left={1}
+						bottom={1}
+						_light={{
+							bg: gradColors[1],
+						}}
+						_dark={{
+							bg: 'coolGray.800',
+						}}
+					> */}
 					<Example />
+					{/* </Center> */}
 				</Center>
 			</Box>
 		</Pressable>

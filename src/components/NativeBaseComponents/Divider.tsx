@@ -6,13 +6,25 @@ export const Example = () => {
 		<VStack
 			h={20}
 			w={20}
-			divider={<Divider border={2} borderColor="gray.400" />}
+			divider={
+				<Divider
+					border={2}
+					_light={{ borderColor: 'violet.100' }}
+					_dark={{ borderColor: 'violet.600' }}
+				/>
+			}
 		>
 			<HStack
 				flex={1}
 				bg="lime.500"
 				h={20}
-				divider={<Divider border={2} borderColor="gray.400" />}
+				divider={
+					<Divider
+						border={2}
+						_light={{ borderColor: 'violet.100' }}
+						_dark={{ borderColor: 'violet.600' }}
+					/>
+				}
 			>
 				<Box flex={1} bg="violet.200" />
 

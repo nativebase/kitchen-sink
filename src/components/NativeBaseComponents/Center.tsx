@@ -9,11 +9,10 @@ export function Example() {
 			_dark={{
 				bg: 'lightBlue.700',
 			}}
-			size={[10, 16, 24]}
-			p={12}
-			// rounded="md"
+			size={10}
+			p={10}
 		>
-			<Box rounded="lg" bg="yellow.300" size={[10, 16, 24]} />
+			<Box rounded="lg" bg="yellow.300" m={10} size={10} />
 		</Center>
 	);
 }

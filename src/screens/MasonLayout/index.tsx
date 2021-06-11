@@ -10,9 +10,12 @@ import {
 	Fab,
 	Icon,
 	useColorModeValue,
+	MoonIcon,
+	SunIcon,
+	Stagger,
 	IconButton,
 } from 'native-base';
-import { Ionicons } from '@expo/vector-icons';
+import { Ionicons, MaterialCommunityIcons } from '@expo/vector-icons';
 import { mapping } from '../../config/map';
 import { Dimensions, ScrollView, StatusBar } from 'react-native';
 import { MasonaryLayout } from '../../components/MasonLayout/MasonaryLayout';
@@ -29,101 +32,176 @@ export function MasonLayout({
 	const { colorMode, toggleColorMode } = useColorMode();
 	const { width, height } = Dimensions.get('window');
 
-	const isLargeScreen = useBreakpointValue({
-		base: false,
-		sm: false,
-		md: false,
-		lg: true,
-	});
+	// const isLargeScreen = useBreakpointValue({
+	// 	base: false,
+	// 	sm: false,
+	// 	md: false,
+	// 	lg: true,
+	// });
 
 	return (
 		<Box
 			safeAreaTop
 			flex={1}
 			bg={useColorModeValue('slateGray.50', 'blueGray.700')}
-			_web={{
-				px: '10vw',
+			// _web={{
+			// 	px: '10vw',
+			// }}
+			px={{
+				base: 4,
+				lg: '10%',
 			}}
-			testID="test"
 		>
 			<StatusBar
 				barStyle={colorMode == 'dark' ? 'light-content' : 'dark-content'}
 				backgroundColor={colorMode == 'dark' ? '#27272a' : '#f3f2f2'}
 				translucent={false}
 			/>
-			{isLargeScreen ? (
-				<></>
-			) : (
-				<Fab
-					bg={colorMode == 'dark' ? 'black' : 'white'}
-					icon={
-						<Icon
-							as={
-								colorMode == 'dark' ? (
-									<Ionicons name="sunny" size={24} color="white" />
-								) : (
-									<Ionicons name="moon" size={24} color="black" />
-								)
-							}
-							size="lg"
-						/>
-					}
-					onPress={toggleColorMode}
-				/>
-			)}
+			<Fab
+				shadow={7}
+				_light={{
+					bg: 'orange.100',
+					_hover: {
+						bg: 'orange.200',
+					},
+					_pressed: {
+						bg: 'orange.300',
+					},
+				}}
+				_dark={{
+					bg: 'violet.100',
+					_hover: {
+						bg: 'violet.200',
+					},
+					_pressed: {
+						bg: 'violet.300',
+					},
+				}}
+				p={3}
+				icon={
+					<Icon
+						as={Ionicons}
+						_light={{ name: 'sunny', color: 'orange.600' }}
+						_dark={{ name: 'moon', color: 'violet.900' }}
+						size="md"
+					/>
+				}
+				onPress={toggleColorMode}
+			>
+				<Stagger
+					visible={true}
+					initial={{
+						opacity: 0,
+						scale: 0,
+						translateY: 34,
+					}}
+					animate={{
+						translateY: 0,
+						scale: 1,
+						opacity: 1,
+						transition: {
+							type: 'spring',
+							mass: 0.8,
+							stagger: {
+								offset: 30,
+								reverse: true,
+							},
+						},
+					}}
+					exit={{
+						translateY: 34,
+						scale: 0.5,
+						opacity: 0,
+						transition: {
+							duration: 100,
+							stagger: {
+								offset: 30,
+								reverse: true,
+							},
+						},
+					}}
+				>
+					<IconButton
+						mb={4}
+						variant="solid"
+						rounded="full"
+						icon={<MaterialCommunityIcons size={24} name="share" />}
+					/>
+					<IconButton
+						mb={4}
+						variant="solid"
+						rounded="full"
+						icon={<MaterialCommunityIcons size={24} name="heart" />}
+					/>
+					<IconButton
+						mb={4}
+						variant="solid"
+						rounded="full"
+						icon={<MaterialCommunityIcons size={24} name="library" />}
+					/>
+					<IconButton
+						mb={4}
+						variant="solid"
+						rounded="full"
+						icon={<MaterialCommunityIcons size={24} name="lighthouse" />}
+					/>
+				</Stagger>
+			</Fab>
+
 			<HStack
-				px={{ base: 4, md: 0 }}
-				borderRadius="lg"
-				mb={4}
-				// ml={{ base: 0, md: '-25px' }}
-				py={2}
-				space={2}
-				alignItems="center"
-				width={width > 1152 ? 1152 : 'auto'}
-				alignSelf={width > 1152 ? 'center' : 'flex-start'}
-				w="100%"
-				position="relative"
+				px={{
+					base: 4,
+					lg: '10%',
+				}}
+				position="absolute"
+				top={0}
+				left={0}
+				right={0}
 			>
 				<Logo
-					size={{ base: 64, md: 512 }}
+					// size={{ base: 64, md: 512 }}
+					size={64}
 					position="absolute"
 					top={-120}
 					right={-60}
-					_web={{
-						top: -200,
-						right: isLargeScreen ? -280 : -160,
-					}}
+					// _web={{
+					// 	top: -200,
+					// 	right: -160,
+					// }}
 				/>
-				<HStack alignItems="flex-end">
-					<Heading color={colorMode == 'dark' ? 'white' : 'gray.800'}>
+				<HStack safeAreaTop alignItems="flex-end">
+					<Heading
+						color={colorMode == 'dark' ? 'white' : 'gray.800'}
+						// fontSize={{
+						// 	lg: '3xl',
+						// }}
+						_web={{ py: 2 }}
+					>
 						NativeBase
 					</Heading>
 					{/* <Text color={colorMode == 'dark' ? 'white' : 'gray.800'}>v3</Text> */}
 				</HStack>
-				{isLargeScreen ? (
-					<IconButton
-						ml="auto"
-						size="md"
-						icon={
-							<Icon
-								as={
-									colorMode == 'dark' ? (
-										<Ionicons name="sunny" />
-									) : (
-										<Ionicons name="moon" />
-									)
-								}
-								color="blueGray.700"
-								size="lg"
-							/>
-						}
-						onPress={toggleColorMode}
-						mr={{ base: 3, md: 0 }}
-					/>
-				) : (
-					<></>
-				)}
+				{/* <IconButton
+					ml="auto"
+					size="md"
+					icon={
+						<Icon
+							as={
+								colorMode == 'dark' ? (
+									<Ionicons name="sunny" />
+								) : (
+									<Ionicons name="moon" />
+								)
+							}
+							color="blueGray.700"
+							size="lg"
+						/>
+					}
+					onPress={toggleColorMode}
+					mr={{ base: 3, md: 0 }}
+				/> */}
 			</HStack>
+
 			<ScrollView contentContainerStyle={{ width: '100%' }}>
 				<MasonaryLayout
 					column={useBreakpointValue({
@@ -132,7 +210,7 @@ export function MasonLayout({
 						md: [1, 1, 1],
 						lg: [1, 1, 1, 1],
 					})}
-					_hStack={{ space: 4, m: 4 }}
+					_hStack={{ space: 4, mt: 16 }}
 					_vStack={{ space: 4 }}
 				>
 					<StoryBook
@@ -516,7 +594,7 @@ export function MasonLayout({
 						name="Popover"
 						// colors={['fuchsia.400', 'pink.600']}
 
-						minH={40}
+						minH={48}
 						_box={{
 							lightGrad: ['orange.400', 'amber.200'],
 							darkGrad: ['orange.600', 'amber.300'],

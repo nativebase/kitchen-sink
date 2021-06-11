@@ -5,7 +5,6 @@ import { borderColor } from 'styled-system';
 export const Example = () => {
 	return (
 		<Box
-			// _text={{ color: 'white' }}
 			p={4}
 			rounded="lg"
 			_light={{
@@ -27,8 +26,8 @@ export const Example = () => {
 				}}
 				rounded="full"
 				size={20}
-				right="-12%"
-				top="-120%"
+				right="-12"
+				top="-12"
 				opacity={0.6}
 				zIndex={-1}
 				position="absolute"
