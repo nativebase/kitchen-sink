@@ -4,7 +4,7 @@ import { Pressable } from 'react-native';
 
 export function Example() {
 	return (
-		<Box position="relative" alignItems="flex-end">
+		<Box position="relative" alignItems="flex-end" w="80%">
 			<Box
 				// _text={{ color: 'white' }}
 				p={2}

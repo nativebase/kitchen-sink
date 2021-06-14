@@ -7,10 +7,10 @@ export function Example() {
 			w="60%"
 			rounded="md"
 			_light={{
-				bg: 'cyan.600',
+				bg: 'violet.400',
 			}}
 			_dark={{
-				bg: 'cyan.800',
+				bg: 'violet.800',
 			}}
 			// space={4}
 			p={4}
@@ -30,10 +30,10 @@ export function Example() {
 
 			<Box
 				_light={{
-					bg: 'cyan.600',
+					bg: 'violet.400',
 				}}
 				_dark={{
-					bg: 'cyan.800',
+					bg: 'violet.800',
 				}}
 				size={4}
 				right={5}

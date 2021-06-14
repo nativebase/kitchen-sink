@@ -7,10 +7,10 @@ export function Example() {
 			size={20}
 			rounded="lg"
 			_light={{
-				bg: 'cyan.300',
+				bg: 'emerald.300',
 			}}
 			_dark={{
-				bg: 'cyan.400',
+				bg: 'emerald.400',
 			}}
 			position="relative"
 			overflow="hidden"
@@ -18,10 +18,10 @@ export function Example() {
 		>
 			<Box
 				_light={{
-					bg: 'cyan.500',
+					bg: 'emerald.500',
 				}}
 				_dark={{
-					bg: 'cyan.700',
+					bg: 'emerald.700',
 				}}
 				rounded="full"
 				size={10}
@@ -33,10 +33,10 @@ export function Example() {
 			/>
 			<Box
 				_light={{
-					bg: 'cyan.500',
+					bg: 'emerald.500',
 				}}
 				_dark={{
-					bg: 'cyan.700',
+					bg: 'emerald.700',
 				}}
 				rounded="full"
 				size={7}
@@ -48,10 +48,10 @@ export function Example() {
 
 			<Box
 				_light={{
-					bg: 'cyan.500',
+					bg: 'emerald.500',
 				}}
 				_dark={{
-					bg: 'cyan.700',
+					bg: 'emerald.700',
 				}}
 				size={40}
 				left={10}
@@ -65,10 +65,10 @@ export function Example() {
 			/>
 			<Box
 				_light={{
-					bg: 'cyan.300',
+					bg: 'emerald.300',
 				}}
 				_dark={{
-					bg: 'cyan.400',
+					bg: 'emerald.400',
 				}}
 				size={10}
 				right={5}

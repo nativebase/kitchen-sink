@@ -6,7 +6,6 @@ import {
 	Pressable,
 	useColorModeValue,
 } from 'native-base';
-import { StackNavigationProp } from '@react-navigation/stack';
 import { mapping } from '../../config/map';
 
 export function StoryBook({
@@ -17,10 +16,6 @@ export function StoryBook({
 	...props
 }: any) {
 	const Example = mapping[name].basic.Example;
-	// const gradColors = useColorModeValue(lightGrad, darkGrad) || [
-	// 	'gray.700',
-	// 	'white',
-	// ];
 	const gradColors = useColorModeValue(lightGrad, darkGrad) || [
 		'gray.700',
 		'white',
@@ -66,8 +61,8 @@ export function StoryBook({
 					>
 						{name}
 					</Heading>
-
-					{/* <Center
+					{/* 
+					<Center
 						position="absolute"
 						top={8}
 						right={1}

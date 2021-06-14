@@ -6,7 +6,8 @@ export const Example = () => {
 		<CircularProgress
 			size={12}
 			value={33}
-			trackColor="blue.100"
+			trackColor="green.100"
+			colorScheme="green"
 			style={{
 				transform: [{ rotate: '77deg' }],
 			}}

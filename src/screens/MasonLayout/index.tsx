@@ -21,187 +21,18 @@ import { Dimensions, ScrollView, StatusBar } from 'react-native';
 import { MasonaryLayout } from '../../components/MasonLayout/MasonaryLayout';
 import { MasonMobile } from '../../components/MasonLayout/mobile';
 import { MasonWeb } from '../../components/MasonLayout/web';
-import { Logo } from '../../icons/Logo';
+import { Logo } from '../../components/Logo';
 import { StoryBook } from '../../components/StoryBook';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { Layout } from '../../components/Layout';
 
 export function MasonLayout({
 	navigation,
 }: {
 	navigation: StackNavigationProp<any>;
 }) {
-	const { colorMode, toggleColorMode } = useColorMode();
-	const { width, height } = Dimensions.get('window');
-
-	// const isLargeScreen = useBreakpointValue({
-	// 	base: false,
-	// 	sm: false,
-	// 	md: false,
-	// 	lg: true,
-	// });
-
 	return (
-		<Box
-			safeAreaTop
-			flex={1}
-			bg={useColorModeValue('slateGray.50', 'blueGray.700')}
-			// _web={{
-			// 	px: '10vw',
-			// }}
-			px={{
-				base: 4,
-				lg: '10%',
-			}}
-		>
-			<StatusBar
-				barStyle={colorMode == 'dark' ? 'light-content' : 'dark-content'}
-				backgroundColor={colorMode == 'dark' ? '#27272a' : '#f3f2f2'}
-				translucent={false}
-			/>
-			<Fab
-				shadow={7}
-				_light={{
-					bg: 'orange.100',
-					_hover: {
-						bg: 'orange.200',
-					},
-					_pressed: {
-						bg: 'orange.300',
-					},
-				}}
-				_dark={{
-					bg: 'violet.100',
-					_hover: {
-						bg: 'violet.200',
-					},
-					_pressed: {
-						bg: 'violet.300',
-					},
-				}}
-				p={3}
-				icon={
-					<Icon
-						as={Ionicons}
-						_light={{ name: 'sunny', color: 'orange.600' }}
-						_dark={{ name: 'moon', color: 'violet.900' }}
-						size="md"
-					/>
-				}
-				onPress={toggleColorMode}
-			>
-				<Stagger
-					visible={true}
-					initial={{
-						opacity: 0,
-						scale: 0,
-						translateY: 34,
-					}}
-					animate={{
-						translateY: 0,
-						scale: 1,
-						opacity: 1,
-						transition: {
-							type: 'spring',
-							mass: 0.8,
-							stagger: {
-								offset: 30,
-								reverse: true,
-							},
-						},
-					}}
-					exit={{
-						translateY: 34,
-						scale: 0.5,
-						opacity: 0,
-						transition: {
-							duration: 100,
-							stagger: {
-								offset: 30,
-								reverse: true,
-							},
-						},
-					}}
-				>
-					<IconButton
-						mb={4}
-						variant="solid"
-						rounded="full"
-						icon={<MaterialCommunityIcons size={24} name="share" />}
-					/>
-					<IconButton
-						mb={4}
-						variant="solid"
-						rounded="full"
-						icon={<MaterialCommunityIcons size={24} name="heart" />}
-					/>
-					<IconButton
-						mb={4}
-						variant="solid"
-						rounded="full"
-						icon={<MaterialCommunityIcons size={24} name="library" />}
-					/>
-					<IconButton
-						mb={4}
-						variant="solid"
-						rounded="full"
-						icon={<MaterialCommunityIcons size={24} name="lighthouse" />}
-					/>
-				</Stagger>
-			</Fab>
-
-			<HStack
-				px={{
-					base: 4,
-					lg: '10%',
-				}}
-				position="absolute"
-				top={0}
-				left={0}
-				right={0}
-			>
-				<Logo
-					// size={{ base: 64, md: 512 }}
-					size={64}
-					position="absolute"
-					top={-120}
-					right={-60}
-					// _web={{
-					// 	top: -200,
-					// 	right: -160,
-					// }}
-				/>
-				<HStack safeAreaTop alignItems="flex-end">
-					<Heading
-						color={colorMode == 'dark' ? 'white' : 'gray.800'}
-						// fontSize={{
-						// 	lg: '3xl',
-						// }}
-						_web={{ py: 2 }}
-					>
-						NativeBase
-					</Heading>
-					{/* <Text color={colorMode == 'dark' ? 'white' : 'gray.800'}>v3</Text> */}
-				</HStack>
-				{/* <IconButton
-					ml="auto"
-					size="md"
-					icon={
-						<Icon
-							as={
-								colorMode == 'dark' ? (
-									<Ionicons name="sunny" />
-								) : (
-									<Ionicons name="moon" />
-								)
-							}
-							color="blueGray.700"
-							size="lg"
-						/>
-					}
-					onPress={toggleColorMode}
-					mr={{ base: 3, md: 0 }}
-				/> */}
-			</HStack>
-
+		<Layout>
 			<ScrollView contentContainerStyle={{ width: '100%' }}>
 				<MasonaryLayout
 					column={useBreakpointValue({
@@ -209,6 +40,7 @@ export function MasonLayout({
 						sm: [1, 1],
 						md: [1, 1, 1],
 						lg: [1, 1, 1, 1],
+						xl: [1, 1, 1, 1, 1],
 					})}
 					_hStack={{ space: 4, mt: 16 }}
 					_vStack={{ space: 4 }}
@@ -318,11 +150,11 @@ export function MasonLayout({
 
 						minH={40}
 						_box={{
-							lightGrad: ['rose.400', 'red.200'],
-							darkGrad: ['rose.600', 'red.300'],
+							lightGrad: ['fuchsia.400', 'violet.200'],
+							darkGrad: ['fuchsia.600', 'violet.300'],
 						}}
 						_heading={{
-							color: 'red.100',
+							color: 'violet.100',
 						}}
 					/>
 					<StoryBook
@@ -331,11 +163,11 @@ export function MasonLayout({
 						// colors={['fuchsia.400', 'pink.400']}
 						minH={32}
 						_box={{
-							lightGrad: ['rose.400', 'red.200'],
-							darkGrad: ['rose.600', 'red.300'],
+							lightGrad: ['cyan.400', 'teal.200'],
+							darkGrad: ['cyan.600', 'teal.300'],
 						}}
 						_heading={{
-							color: 'red.100',
+							color: 'teal.100',
 						}}
 					/>
 
@@ -345,8 +177,8 @@ export function MasonLayout({
 						// colors={['rose.500', 'amber.500']}
 						minH={32}
 						_box={{
-							lightGrad: ['rose.400', 'red.200'],
-							darkGrad: ['rose.600', 'red.300'],
+							lightGrad: ['orange.400', 'yellow.200'],
+							darkGrad: ['orange.600', 'yellow.300'],
 						}}
 						_heading={{
 							color: 'red.100',
@@ -359,11 +191,11 @@ export function MasonLayout({
 						// colors={['cyan.500', 'emerald.300']}
 						minH={32}
 						_box={{
-							lightGrad: ['rose.400', 'red.200'],
-							darkGrad: ['rose.600', 'red.300'],
+							lightGrad: ['blue.800', 'lightBlue.300'],
+							darkGrad: ['blue.900', 'lightBlue.500'],
 						}}
 						_heading={{
-							color: 'red.100',
+							color: 'lightBlue.100',
 						}}
 					/>
 
@@ -373,11 +205,11 @@ export function MasonLayout({
 						// colors={['red.400', 'amber.400']}
 						minH={32}
 						_box={{
-							lightGrad: ['rose.400', 'red.200'],
-							darkGrad: ['rose.600', 'red.300'],
+							lightGrad: ['emerald.400', 'teal.200'],
+							darkGrad: ['emerald.600', 'teal.300'],
 						}}
 						_heading={{
-							color: 'red.100',
+							color: 'teal.100',
 						}}
 					/>
 
@@ -387,11 +219,11 @@ export function MasonLayout({
 						// colors={['blue.400', 'pink.400']}
 						minH={24}
 						_box={{
-							lightGrad: ['rose.400', 'red.200'],
-							darkGrad: ['rose.600', 'red.300'],
+							lightGrad: ['rose.400', 'orange.300'],
+							darkGrad: ['rose.600', 'orange.400'],
 						}}
 						_heading={{
-							color: 'red.100',
+							color: 'orange.100',
 						}}
 					/>
 					<StoryBook
@@ -400,11 +232,11 @@ export function MasonLayout({
 						// colors={['green.700', 'lime.200']}
 						minH={48}
 						_box={{
-							lightGrad: ['rose.400', 'red.200'],
-							darkGrad: ['rose.600', 'red.300'],
+							lightGrad: ['yellow.800', 'orange.300'],
+							darkGrad: ['yellow.900', 'orange.500'],
 						}}
 						_heading={{
-							color: 'red.100',
+							color: 'orange.100',
 						}}
 					/>
 
@@ -414,11 +246,11 @@ export function MasonLayout({
 						// colors={['blue.400', 'purple.400']}
 						minH={24}
 						_box={{
-							lightGrad: ['rose.400', 'red.200'],
-							darkGrad: ['rose.600', 'red.300'],
+							lightGrad: ['darkBlue.400', 'teal.200'],
+							darkGrad: ['darkBlue.600', 'teal.300'],
 						}}
 						_heading={{
-							color: 'red.100',
+							color: 'teal.100',
 						}}
 					/>
 
@@ -429,8 +261,8 @@ export function MasonLayout({
 
 						minH={32}
 						_box={{
-							lightGrad: ['rose.400', 'red.200'],
-							darkGrad: ['rose.600', 'red.300'],
+							lightGrad: ['purple.400', 'red.200'],
+							darkGrad: ['purple.600', 'red.300'],
 						}}
 						_heading={{
 							color: 'red.100',
@@ -442,11 +274,11 @@ export function MasonLayout({
 						// colors={['rose.500', 'amber.500']}
 						minH={32}
 						_box={{
-							lightGrad: ['rose.400', 'red.200'],
-							darkGrad: ['rose.600', 'red.300'],
+							lightGrad: ['green.400', 'yellow.200'],
+							darkGrad: ['green.600', 'yellow.300'],
 						}}
 						_heading={{
-							color: 'red.100',
+							color: 'yellow.100',
 						}}
 					/>
 					{/* <StoryBook
@@ -468,11 +300,11 @@ export function MasonLayout({
 						// colors={['red.400', 'amber.400']}
 						minH={32}
 						_box={{
-							lightGrad: ['rose.400', 'red.200'],
-							darkGrad: ['rose.600', 'red.300'],
+							lightGrad: ['darkBlue.400', 'indigo.200'],
+							darkGrad: ['darkBlue.600', 'indigo.300'],
 						}}
 						_heading={{
-							color: 'red.100',
+							color: 'indigo.100',
 						}}
 					/>
 					<StoryBook
@@ -481,11 +313,11 @@ export function MasonLayout({
 						// colors={['blue.400', 'pink.400']}
 						minH={48}
 						_box={{
-							lightGrad: ['rose.400', 'red.200'],
-							darkGrad: ['rose.600', 'red.300'],
+							lightGrad: ['amber.400', 'yellow.200'],
+							darkGrad: ['amber.600', 'yellow.300'],
 						}}
 						_heading={{
-							color: 'red.100',
+							color: 'yellow.100',
 						}}
 					/>
 
@@ -496,11 +328,11 @@ export function MasonLayout({
 						// flex={4}
 						minH={48}
 						_box={{
-							lightGrad: ['rose.400', 'red.200'],
-							darkGrad: ['rose.600', 'red.300'],
+							lightGrad: ['cyan.400', 'lightBlue.200'],
+							darkGrad: ['cyan.600', 'lightBlue.300'],
 						}}
 						_heading={{
-							color: 'red.100',
+							color: 'lightBlue.100',
 						}}
 					/>
 					{/* 
@@ -525,11 +357,11 @@ export function MasonLayout({
 						// colors={['cyan.500', 'emerald.300']}
 						minH={40}
 						_box={{
-							lightGrad: ['rose.400', 'red.200'],
-							darkGrad: ['rose.600', 'red.300'],
+							lightGrad: ['fuchsia.400', 'violet.200'],
+							darkGrad: ['fuchsia.600', 'violet.300'],
 						}}
 						_heading={{
-							color: 'red.100',
+							color: 'violet.100',
 						}}
 					/>
 
@@ -568,11 +400,11 @@ export function MasonLayout({
 
 						minH={48}
 						_box={{
-							lightGrad: ['orange.400', 'amber.200'],
-							darkGrad: ['orange.600', 'amber.300'],
+							lightGrad: ['emerald.400', 'lime.200'],
+							darkGrad: ['emerald.600', 'lime.300'],
 						}}
 						_heading={{
-							color: 'amber.100',
+							color: 'lime.100',
 						}}
 					/>
 					<StoryBook
@@ -582,11 +414,11 @@ export function MasonLayout({
 
 						minH={64}
 						_box={{
-							lightGrad: ['orange.400', 'amber.200'],
-							darkGrad: ['orange.600', 'amber.300'],
+							lightGrad: ['cyan.300', 'yellow.200'],
+							darkGrad: ['cyan.400', 'yellow.300'],
 						}}
 						_heading={{
-							color: 'amber.100',
+							color: 'yellow.100',
 						}}
 					/>
 					<StoryBook
@@ -596,11 +428,11 @@ export function MasonLayout({
 
 						minH={48}
 						_box={{
-							lightGrad: ['orange.400', 'amber.200'],
-							darkGrad: ['orange.600', 'amber.300'],
+							lightGrad: ['darkBlue.400', 'blue.200'],
+							darkGrad: ['darkBlue.600', 'blue.300'],
 						}}
 						_heading={{
-							color: 'amber.100',
+							color: 'blue.100',
 						}}
 					/>
 					<StoryBook
@@ -624,11 +456,11 @@ export function MasonLayout({
 
 						minH={24}
 						_box={{
-							lightGrad: ['orange.400', 'amber.200'],
-							darkGrad: ['orange.600', 'amber.300'],
+							lightGrad: ['fuchsia.400', 'pink.200'],
+							darkGrad: ['fuchsia.600', 'pink.300'],
 						}}
 						_heading={{
-							color: 'amber.100',
+							color: 'pink.100',
 						}}
 					/>
 					<StoryBook
@@ -638,11 +470,11 @@ export function MasonLayout({
 
 						minH={32}
 						_box={{
-							lightGrad: ['orange.400', 'amber.200'],
-							darkGrad: ['orange.600', 'amber.300'],
+							lightGrad: ['lightBlue.400', 'cyan.200'],
+							darkGrad: ['lightBlue.600', 'cyan.300'],
 						}}
 						_heading={{
-							color: 'amber.100',
+							color: 'cyan.100',
 						}}
 					/>
 					<StoryBook
@@ -652,11 +484,11 @@ export function MasonLayout({
 
 						minH={32}
 						_box={{
-							lightGrad: ['orange.400', 'amber.200'],
-							darkGrad: ['orange.600', 'amber.300'],
+							lightGrad: ['rose.400', 'orange.300'],
+							darkGrad: ['rose.600', 'orange.400'],
 						}}
 						_heading={{
-							color: 'amber.100',
+							color: 'orange.100',
 						}}
 					/>
 					<StoryBook
@@ -666,11 +498,11 @@ export function MasonLayout({
 
 						minH={40}
 						_box={{
-							lightGrad: ['orange.400', 'amber.200'],
-							darkGrad: ['orange.600', 'amber.300'],
+							lightGrad: ['teal.400', 'lime.200'],
+							darkGrad: ['teal.600', 'lime.300'],
 						}}
 						_heading={{
-							color: 'amber.100',
+							color: 'lime.100',
 						}}
 					/>
 					<StoryBook
@@ -680,11 +512,11 @@ export function MasonLayout({
 
 						minH={40}
 						_box={{
-							lightGrad: ['orange.400', 'amber.200'],
-							darkGrad: ['orange.600', 'amber.300'],
+							lightGrad: ['violet.400', 'fuchsia.200'],
+							darkGrad: ['violet.600', 'fuchsia.300'],
 						}}
 						_heading={{
-							color: 'amber.100',
+							color: 'fuchsia.100',
 						}}
 					/>
 				</MasonaryLayout>
@@ -695,6 +527,6 @@ export function MasonLayout({
 					<MasonMobile navigation={navigation} />
 				)} */}
 			</ScrollView>
-		</Box>
+		</Layout>
 	);
 }

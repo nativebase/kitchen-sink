@@ -4,13 +4,13 @@ import { Box, HStack, VStack, Divider } from 'native-base';
 export const Example = () => {
 	return (
 		<VStack
-			w={32}
+			w="80%"
 			rounded="md"
 			_light={{
-				bg: 'cyan.600',
+				bg: 'orange.50',
 			}}
 			_dark={{
-				bg: 'cyan.800',
+				bg: 'blueGray.600',
 			}}
 			space={4}
 			p={4}
@@ -71,10 +71,10 @@ export const Example = () => {
 				px={3}
 				rounded="lg"
 				_light={{
-					bg: 'cyan.300',
+					bg: 'orange.300',
 				}}
 				_dark={{
-					bg: 'cyan.400',
+					bg: 'orange.400',
 				}}
 				position="relative"
 				overflow="hidden"
@@ -82,10 +82,10 @@ export const Example = () => {
 			>
 				<Box
 					_light={{
-						bg: 'cyan.500',
+						bg: 'orange.500',
 					}}
 					_dark={{
-						bg: 'cyan.700',
+						bg: 'orange.700',
 					}}
 					rounded="full"
 					size={20}

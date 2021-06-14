@@ -9,20 +9,20 @@ export const Example = () => {
 			p={4}
 			rounded="lg"
 			_light={{
-				bg: 'cyan.300',
+				bg: 'blue.300',
 			}}
 			_dark={{
-				bg: 'cyan.400',
+				bg: 'blue.400',
 			}}
 			position="relative"
 			overflow="hidden"
 		>
 			<Box
 				_light={{
-					bg: 'cyan.500',
+					bg: 'blue.500',
 				}}
 				_dark={{
-					bg: 'cyan.700',
+					bg: 'blue.700',
 				}}
 				rounded="full"
 				size={20}

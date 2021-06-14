@@ -10,10 +10,10 @@ export const Example = () => {
 				p={2}
 				rounded="md"
 				_light={{
-					bg: 'error.100',
+					bg: 'blue.100',
 				}}
 				_dark={{
-					bg: 'error.400',
+					bg: 'blue.400',
 				}}
 				zIndex={9}
 				w="70%"
@@ -21,10 +21,10 @@ export const Example = () => {
 				<Box
 					rounded="full"
 					_light={{
-						bg: 'error.500',
+						bg: 'blue.500',
 					}}
 					_dark={{
-						bg: 'error.200',
+						bg: 'blue.200',
 					}}
 					size="24px"
 				/>
@@ -61,10 +61,10 @@ export const Example = () => {
 				p={2}
 				rounded="md"
 				_light={{
-					bg: 'error.100',
+					bg: 'blue.100',
 				}}
 				_dark={{
-					bg: 'error.400',
+					bg: 'blue.400',
 				}}
 				w="60%"
 				opacity={0.5}
@@ -74,10 +74,10 @@ export const Example = () => {
 				<Box
 					rounded="full"
 					_light={{
-						bg: 'error.500',
+						bg: 'blue.500',
 					}}
 					_dark={{
-						bg: 'error.200',
+						bg: 'blue.200',
 					}}
 					size="24px"
 				/>
@@ -114,10 +114,10 @@ export const Example = () => {
 				p={2}
 				rounded="md"
 				_light={{
-					bg: 'error.100',
+					bg: 'blue.100',
 				}}
 				_dark={{
-					bg: 'error.400',
+					bg: 'blue.400',
 				}}
 				w="50%"
 				opacity={0.1}
@@ -127,10 +127,10 @@ export const Example = () => {
 				<Box
 					rounded="full"
 					_light={{
-						bg: 'error.500',
+						bg: 'blue.500',
 					}}
 					_dark={{
-						bg: 'error.200',
+						bg: 'blue.200',
 					}}
 					size="24px"
 				/>
