@@ -25,11 +25,11 @@ export const Layout = ({ children, _status, _logo, ...props }: any) => {
 	return (
 		<>
 			<Box
-				bg={useColorModeValue('slateGray.50', 'blueGray.700')}
 				{..._status}
+				bg={useColorModeValue('slateGray.50', 'blueGray.700')}
 				height={safeArea.top}
 				_web={{
-					mt: {
+					pt: {
 						base: 6,
 						sm: 6,
 						md: 0,
