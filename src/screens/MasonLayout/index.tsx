@@ -194,11 +194,11 @@ export function MasonLayout({
 
 						minH={32}
 						_box={{
-							lightGrad: ['orange.400', 'amber.200'],
-							darkGrad: ['orange.600', 'amber.300'],
+							lightGrad: ['teal.400', 'violet.200'],
+							darkGrad: ['teal.600', 'violet.300'],
 						}}
 						_heading={{
-							color: 'amber.100',
+							color: 'violet.100',
 						}}
 					/>
 					<StoryBook
