@@ -33,7 +33,10 @@ export function MasonLayout({
 }) {
 	return (
 		<Layout>
-			<ScrollView contentContainerStyle={{ width: '100%' }}>
+			<ScrollView
+				contentContainerStyle={{ width: '100%' }}
+				showsVerticalScrollIndicator={false}
+			>
 				<MasonaryLayout
 					column={useBreakpointValue({
 						base: [1, 1],
@@ -42,7 +45,7 @@ export function MasonLayout({
 						lg: [1, 1, 1, 1],
 						xl: [1, 1, 1, 1, 1],
 					})}
-					_hStack={{ space: 4, mt: 16 }}
+					_hStack={{ space: 4, mt: 16, mb: 4 }}
 					_vStack={{ space: 4 }}
 				>
 					<StoryBook

@@ -10,7 +10,13 @@ export default function App() {
 	return (
 		<NavigationContainer>
 			<NativeBaseProvider theme={DashboardTheme} config={config}>
-				<Box flex={1} bg={useColorModeValue('slateGray.50', 'blueGray.700')}>
+				<Box
+					flex={1}
+					bg={useColorModeValue('slateGray.50', 'blueGray.700')}
+					_web={{
+						overflowX: 'hidden',
+					}}
+				>
 					<RootStack />
 				</Box>
 			</NativeBaseProvider>
