@@ -1,40 +1,169 @@
 import React from 'react';
-import { Popover, Button } from 'native-base';
+import { VStack, Box, HStack } from 'native-base';
 
 export function Example() {
-  return (
-    <Popover
-      trigger={(triggerProps) => {
-        return (
-          <Button
-            mt={4}
-            {...triggerProps}
-            shadow={6}
-            _text={{ color: 'white' }}
-          >
-            Trigger
-          </Button>
-        );
-      }}
-    >
-      <Popover.Content accessibilityLabel="hello world" borderRadius={'xl'}>
-        <Popover.Arrow />
-        <Popover.CloseButton />
-        <Popover.Header>Confirmation</Popover.Header>
-        <Popover.Body>
-          Are you sure you want to continue with your action?
-        </Popover.Body>
-        <Popover.Footer justifyContent="flex-end">
-          <Button.Group>
-            <Button size="sm" variant="ghost" _text={{ color: 'white' }}>
-              Cancel
-            </Button>
-            <Button size="sm" _text={{ color: 'white' }}>
-              Apply
-            </Button>
-          </Button.Group>
-        </Popover.Footer>
-      </Popover.Content>
-    </Popover>
-  );
+	return (
+		<VStack
+			w="80%"
+			rounded="md"
+			_light={{
+				bg: 'darkBlue.100',
+			}}
+			_dark={{
+				bg: 'darkBlue.600',
+			}}
+			// space={4}
+			p={4}
+			justifyContent="center"
+		>
+			<HStack space={2} mb={4}>
+				<Box
+					_light={{
+						bg: 'gray.600',
+					}}
+					_dark={{
+						bg: 'gray.100',
+					}}
+					rounded="sm"
+					// h="11px"
+					w="30%"
+				/>
+				<VStack space={1} flex={1}>
+					<Box
+						_light={{
+							bg: 'gray.600',
+						}}
+						_dark={{
+							bg: 'gray.100',
+						}}
+						h="7px"
+						rounded="pill"
+						w="80%"
+					/>
+
+					<Box
+						_light={{
+							bg: 'gray.600',
+						}}
+						_dark={{
+							bg: 'gray.100',
+						}}
+						h="7px"
+						rounded="pill"
+						w="40%"
+					/>
+
+					<Box
+						_light={{
+							bg: 'gray.600',
+						}}
+						_dark={{
+							bg: 'gray.100',
+						}}
+						h="7px"
+						rounded="pill"
+						w="50%"
+					/>
+				</VStack>
+			</HStack>
+
+			<HStack justifyContent="space-between">
+				<Box
+					p={2}
+					px={3}
+					rounded="lg"
+					_light={{
+						bg: 'green.300',
+					}}
+					_dark={{
+						bg: 'green.400',
+					}}
+					overflow="hidden"
+					w="45%"
+				>
+					<Box
+						_light={{
+							bg: 'green.500',
+						}}
+						_dark={{
+							bg: 'green.700',
+						}}
+						rounded="full"
+						size={20}
+						right="-52"
+						top="-10"
+						opacity={0.6}
+						zIndex={-1}
+						position="absolute"
+					/>
+					<Box
+						_light={{
+							bg: 'gray.600',
+						}}
+						_dark={{
+							bg: 'gray.100',
+						}}
+						rounded="pill"
+						h="7px"
+					/>
+				</Box>
+				<Box
+					p={2}
+					px={3}
+					rounded="lg"
+					_light={{
+						bg: 'red.300',
+					}}
+					_dark={{
+						bg: 'red.400',
+					}}
+					overflow="hidden"
+					w="45%"
+				>
+					<Box
+						_light={{
+							bg: 'red.500',
+						}}
+						_dark={{
+							bg: 'red.700',
+						}}
+						rounded="full"
+						size={20}
+						right="-52"
+						top="-10"
+						opacity={0.6}
+						zIndex={-1}
+						position="absolute"
+					/>
+					<Box
+						_light={{
+							bg: 'gray.600',
+						}}
+						_dark={{
+							bg: 'gray.100',
+						}}
+						rounded="pill"
+						h="7px"
+					/>
+				</Box>
+			</HStack>
+
+			<Box
+				_light={{
+					bg: 'darkBlue.100',
+				}}
+				_dark={{
+					bg: 'darkBlue.600',
+				}}
+				size={4}
+				right={5}
+				bottom={-8}
+				// zIndex={-1}
+				position="absolute"
+				style={{
+					transform: [{ rotate: '45deg' }],
+				}}
+			/>
+		</VStack>
+	);
 }

@@ -1,12 +1,28 @@
-import { Fab, Icon } from 'native-base';
 import React from 'react';
-import { AntDesign } from '@expo/vector-icons';
+import { Box, AddIcon } from 'native-base';
 
 export const Example = () => {
-  return (
-    // <Fab
-    //   icon={<Icon color="white" as={<AntDesign name="plus" />} size="sm" />}
-    // />
-    <></>
-  );
+	return (
+		<Box
+			rounded="full"
+			_light={{
+				bg: 'violet.500',
+			}}
+			_dark={{
+				bg: 'violet.200',
+			}}
+			p={3}
+		>
+			<AddIcon
+				_light={{
+					color: 'violet.200',
+				}}
+				_dark={{
+					color: 'violet.500',
+				}}
+				color="violet.200"
+				size="sm"
+			/>
+		</Box>
+	);
 };

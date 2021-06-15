@@ -1,20 +1,23 @@
 import React from 'react';
-import { Input } from 'native-base';
+import { Input, VStack, Box } from 'native-base';
 
 export const Example = () => {
-  return (
-    <Input
-      mt={4}
-      placeholder="Type"
-      // color="white"
-      w={{ base: '100px', md: 'auto' }}
-      shadow={6}
-      // placeholderTextColor="white"
-      // borderColor="white"
-      _onPress={{
-        borderColor: 'white',
-      }}
-      isDisabled
-    />
-  );
+	return (
+		<VStack justifyContent="center" w="80%">
+			<Input size="xs" isDisabled />
+			<Box
+				position="absolute"
+				_light={{
+					bg: 'gray.600',
+				}}
+				_dark={{
+					bg: 'gray.100',
+				}}
+				h="8px"
+				rounded="pill"
+				w="40%"
+				mx={5}
+			/>
+		</VStack>
+	);
 };
