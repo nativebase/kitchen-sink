@@ -52,10 +52,10 @@ export function Example() {
 				w={32}
 				rounded="md"
 				_light={{
-					bg: 'cyan.600',
+					bg: 'cyan.50',
 				}}
 				_dark={{
-					bg: 'cyan.800',
+					bg: 'cyan.400',
 				}}
 				space={4}
 				divider={

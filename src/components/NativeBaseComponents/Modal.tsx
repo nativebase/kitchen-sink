@@ -7,10 +7,10 @@ export const Example = () => {
 			w="80%"
 			rounded="md"
 			_light={{
-				bg: 'orange.50',
+				bg: 'pink.100',
 			}}
 			_dark={{
-				bg: 'blueGray.600',
+				bg: 'pink.200',
 			}}
 			space={4}
 			p={4}
@@ -71,10 +71,10 @@ export const Example = () => {
 				px={3}
 				rounded="lg"
 				_light={{
-					bg: 'orange.300',
+					bg: 'pink.300',
 				}}
 				_dark={{
-					bg: 'orange.400',
+					bg: 'pink.400',
 				}}
 				position="relative"
 				overflow="hidden"
@@ -82,10 +82,10 @@ export const Example = () => {
 			>
 				<Box
 					_light={{
-						bg: 'orange.500',
+						bg: 'pink.500',
 					}}
 					_dark={{
-						bg: 'orange.700',
+						bg: 'pink.700',
 					}}
 					rounded="full"
 					size={20}
