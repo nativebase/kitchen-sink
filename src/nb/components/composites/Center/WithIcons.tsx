@@ -5,7 +5,7 @@ import { MaterialIcons } from '@expo/vector-icons';
 export function Example() {
   return (
     <HStack space={1}>
-      <Center w="40px" h="40px" bg="primary.400" color="white">
+      <Center w="40px" h="40px" bg="primary.400">
         <Icon as={<MaterialIcons name="audiotrack" />} color="white" size={6} />
       </Center>
       <Center w="40px" h="40px" bg="secondary.400">

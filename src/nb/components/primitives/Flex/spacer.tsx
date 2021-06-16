@@ -1,5 +1,5 @@
 import React from 'react';
-import { Flex, Spacer, Center, Heading } from 'native-base';
+import { Flex, Spacer, Center } from 'native-base';
 
 export const Example = () => {
   return (
