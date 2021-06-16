@@ -8,7 +8,6 @@ export const Example = () => {
         defaultValue={70}
         colorScheme="lime"
         orientation="vertical"
-        // minH="400px"
         h={48}
       >
         <Slider.Track>

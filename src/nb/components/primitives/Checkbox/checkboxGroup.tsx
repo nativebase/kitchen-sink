@@ -24,7 +24,6 @@ export const Example = () => {
         onChange={(values) => {
           setGroupValue(values || []);
         }}
-        space={3}
       >
         <Checkbox value="Item 1" my={1}>
           Item 1
