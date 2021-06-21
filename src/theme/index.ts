@@ -1,6 +1,6 @@
 import { extendTheme } from 'native-base';
 
-export const DashboardTheme = extendTheme({
+export const BaseTheme = extendTheme({
 	components: {
 		Text: {
 			defaultProps: {
@@ -24,5 +24,10 @@ export const DashboardTheme = extendTheme({
 	},
 	Pressable: {
 		cursor: 'pointer',
+	},
+
+	config: {
+		// Changing initialColorMode to 'dark'
+		initialColorMode: 'dark',
 	},
 });

@@ -4,7 +4,7 @@ import { Icon, IIconProps } from 'native-base';
 import { Path, G } from 'react-native-svg';
 export function Logo(props: IIconProps) {
 	return (
-		<Icon viewBox="0 0 602.339 681.729" {...props} opacity={0.8}>
+		<Icon viewBox="0 0 602.339 681.729" {...props}>
 			<G transform="translate(14575 1918.542)">
 				<Path
 					fill="#356290"

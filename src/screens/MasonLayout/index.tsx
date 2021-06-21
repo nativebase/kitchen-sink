@@ -42,10 +42,14 @@ export function MasonLayout({
 						base: [1, 1],
 						sm: [1, 1],
 						md: [1, 1, 1],
-						lg: [1, 1, 1, 1],
-						xl: [1, 1, 1, 1, 1],
+						// lg: [1, 1, 1, 1],
+						// xl: [1, 1, 1, 1, 1],
 					})}
-					_hStack={{ space: 4, mt: 16, mb: 4 }}
+					_hStack={{
+						space: 4,
+						mb: 4,
+						pt: '70px',
+					}}
 					_vStack={{ space: 4 }}
 				>
 					<StoryBook
@@ -166,11 +170,11 @@ export function MasonLayout({
 						// colors={['cyan.500', 'emerald.300']}
 						minH={40}
 						_box={{
-							lightGrad: ['fuchsia.400', 'violet.200'],
-							darkGrad: ['fuchsia.600', 'violet.300'],
+							lightGrad: ['green.400', 'lime.200'],
+							darkGrad: ['green.600', 'lime.300'],
 						}}
 						_heading={{
-							color: 'violet.100',
+							color: 'lime.100',
 						}}
 					/>
 					<StoryBook

@@ -12,13 +12,23 @@ import {
 	MoonIcon,
 	SunIcon,
 	Stagger,
+	Pressable,
+	ArrowBackIcon,
+	ChevronLeftIcon,
 	IconButton,
 } from 'native-base';
 import { Floaters } from '../components/Floaters';
-import { Logo } from './Logo';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-export const Layout = ({ children, _status, _logo, ...props }: any) => {
+export const Layout = ({
+	children,
+	navigation,
+	title,
+	navigateTo,
+	_status,
+	_hStack,
+	...props
+}: any) => {
 	const { colorMode, toggleColorMode } = useColorMode();
 	const safeArea = useSafeAreaInsets();
 
@@ -26,7 +36,6 @@ export const Layout = ({ children, _status, _logo, ...props }: any) => {
 		<>
 			<Box
 				{..._status}
-				bg={useColorModeValue('slateGray.50', 'blueGray.700')}
 				height={safeArea.top}
 				_web={{
 					pt: {
@@ -35,53 +44,59 @@ export const Layout = ({ children, _status, _logo, ...props }: any) => {
 						md: 0,
 					},
 				}}
+				// style={{
+				// 	backdropFilter: 'blur(10px)',
+				// }}
 			/>
-
 			<Box
 				{...props}
 				flex={1}
-				bg={useColorModeValue('slateGray.50', 'blueGray.700')}
-				px={{
-					base: 4,
-					lg: '10%',
-				}}
+				px={4}
+				mx="auto"
+				pt={navigation ? '70px' : 0}
+				w={{ base: '100%', md: '768px', lg: '1000px', xl: '1080px' }}
+				// style={{
+				// 	backdropFilter: 'blur(10px)',
+				// }}
 			>
 				<HStack
-					px={{
-						base: 4,
-						lg: '10%',
-					}}
 					position="absolute"
-					top={0}
 					left={0}
+					top={0}
 					right={0}
+					px={4}
 					zIndex={-1}
+					{..._hStack}
 				>
-					<Logo
-						// size={{ base: 64, md: 512 }}
-						{..._logo}
-						zIndex={-1}
-						size={64}
-						position="absolute"
-						top={-120}
-						right={-60}
-					/>
 					<HStack py={2} alignItems="flex-end">
-						<Heading
-							color={colorMode == 'dark' ? 'white' : 'gray.800'}
-							// fontSize={{
-							// 	lg: '3xl',
-							// }}
-							_web={{ py: 2 }}
+						<Pressable
+							onPress={() => {
+								navigation && navigation.navigate(navigateTo);
+							}}
+							_web={{
+								cursor: 'pointer',
+							}}
 						>
-							NativeBase
-						</Heading>
-						{/* <Text color={colorMode == 'dark' ? 'white' : 'gray.800'}>v3</Text> */}
+							<HStack alignItems="center" justifyContent="center">
+								{/* <ChevronLeftIcon /> */}
+								{title && <ArrowBackIcon mx={2} />}
+								<Heading
+									color={colorMode == 'dark' ? 'white' : 'gray.800'}
+									// fontSize={{
+									// 	lg: '3xl',
+									// }}
+									_web={{ py: 2 }}
+								>
+									{title ? title : 'NativeBase'}
+								</Heading>
+							</HStack>
+							{/* <Text color={colorMode == 'dark' ? 'white' : 'gray.800'}>v3</Text> */}
+						</Pressable>
 					</HStack>
 				</HStack>
-				<Floaters />
 				{children}
 			</Box>
+			<Floaters />
 		</>
 	);
 };

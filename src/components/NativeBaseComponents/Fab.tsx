@@ -6,21 +6,21 @@ export const Example = () => {
 		<Box
 			rounded="full"
 			_light={{
-				bg: 'violet.500',
+				bg: 'green.500',
 			}}
 			_dark={{
-				bg: 'violet.200',
+				bg: 'green.200',
 			}}
 			p={3}
 		>
 			<AddIcon
 				_light={{
-					color: 'violet.200',
+					color: 'green.200',
 				}}
 				_dark={{
-					color: 'violet.500',
+					color: 'green.500',
 				}}
-				color="violet.200"
+				color="green.200"
 				size="sm"
 			/>
 		</Box>

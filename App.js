@@ -1,25 +1,13 @@
 import React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
-import { NativeBaseProvider, Box, useColorModeValue } from 'native-base';
-import { DashboardTheme } from './src/theme';
-import { RootStack } from './src/navigators/rootNavigator';
-import { Floaters } from './src/components/Floaters';
+import { NativeBaseProvider } from 'native-base';
+import { BaseTheme } from './src/theme';
 import config from './nativebase.config';
+import { Root } from './src/components/RootComponent';
 
 export default function App() {
 	return (
-		<NavigationContainer>
-			<NativeBaseProvider theme={DashboardTheme} config={config}>
-				<Box
-					flex={1}
-					bg={useColorModeValue('slateGray.50', 'blueGray.700')}
-					_web={{
-						overflowX: 'hidden',
-					}}
-				>
-					<RootStack />
-				</Box>
-			</NativeBaseProvider>
-		</NavigationContainer>
+		<NativeBaseProvider theme={BaseTheme} config={config}>
+			<Root />
+		</NativeBaseProvider>
 	);
 }

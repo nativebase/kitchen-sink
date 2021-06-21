@@ -1,6 +1,6 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
-import { Home, Examples, MasonLayout, Test } from '../screens';
+import { Home, Examples, MasonLayout } from '../screens';
 
 const Stack = createStackNavigator();
 

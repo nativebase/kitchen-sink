@@ -35,7 +35,12 @@ export function StoryBook({
 			position="relative"
 			overflow="hidden"
 			w="100%"
-			bg={useColorModeValue('white', 'blueGray.900')}
+			// bg={useColorModeValue('white', 'blueGray.900')}
+			_web={{
+				style: { cursor: 'pointer' },
+				// cursor: 'pointer',
+			}}
+			testID={1212132}
 		>
 			<Box
 				flex={1}

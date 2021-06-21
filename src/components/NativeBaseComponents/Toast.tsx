@@ -1,9 +1,9 @@
 import React from 'react';
-import { Alert, HStack, VStack, Skeleton, Box } from 'native-base';
+import { Alert, HStack, VStack, Center, Box } from 'native-base';
 
 export const Example = () => {
 	return (
-		<VStack alignItems="center">
+		<VStack alignItems="center" w="80%">
 			<HStack
 				space={3}
 				alignItems="center"
@@ -16,7 +16,7 @@ export const Example = () => {
 					bg: 'blue.400',
 				}}
 				zIndex={9}
-				w="70%"
+				w="80%"
 			>
 				<Box
 					rounded="full"
@@ -66,7 +66,7 @@ export const Example = () => {
 				_dark={{
 					bg: 'blue.400',
 				}}
-				w="60%"
+				w="65%"
 				opacity={0.5}
 				position="absolute"
 				zIndex={1}
@@ -119,7 +119,7 @@ export const Example = () => {
 				_dark={{
 					bg: 'blue.400',
 				}}
-				w="50%"
+				w="40%"
 				opacity={0.1}
 				zIndex={-1}
 				position="absolute"
