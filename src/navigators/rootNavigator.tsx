@@ -6,7 +6,7 @@ const Stack = createStackNavigator();
 
 export function RootStack() {
 	return (
-		<Stack.Navigator initialRouteName="masonlayout">
+		<Stack.Navigator initialRouteName="Kitchensink | NativeBase">
 			<Stack.Screen
 				name="home"
 				component={Home}
@@ -15,14 +15,14 @@ export function RootStack() {
 				}}
 			/>
 			<Stack.Screen
-				name="component"
+				name="Component | NativeBase"
 				component={Examples}
 				options={{
 					headerShown: false,
 				}}
 			/>
 			<Stack.Screen
-				name="masonlayout"
+				name="Kitchensink | NativeBase"
 				component={MasonLayout}
 				options={{
 					headerShown: false,

@@ -33,7 +33,7 @@ export function Examples({
 		<Layout
 			title={component.title}
 			navigation={navigation}
-			navigateTo="masonlayout"
+			navigateTo="Kitchensink | NativeBase"
 		>
 			{/* <Header title={component.title} navigation={navigation} /> */}
 
