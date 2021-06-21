@@ -10,6 +10,7 @@ export const Example = () => {
     >
       {['xs', 'sm', 'md', 'lg'].map((size) => (
         <Box>
+          {/* @ts-ignore */}
           <Button key={size} size={size}>
             BUTTON
           </Button>

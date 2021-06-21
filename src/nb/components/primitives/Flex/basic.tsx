@@ -17,7 +17,8 @@ export function Example() {
         Change Flex Direction
       </Button>
       <Box>
-        <Flex flexDirection={direction}>
+        {/* @ts-ignore */}
+        <Flex direction={direction}>
           <Center size={16} bg="primary.100" _text={{ color: 'gray.800' }}>
             100
           </Center>

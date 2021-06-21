@@ -1,5 +1,5 @@
 import React from 'react';
-import { Alert, Box } from 'native-base';
+import { Alert } from 'native-base';
 export function Example() {
   return (
     <Alert w="100%">

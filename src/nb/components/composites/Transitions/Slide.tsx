@@ -26,12 +26,12 @@ export const Example = () => {
         well paid.
       </Center>
       <Slide in={isOpenBottom}>
-        <Box p={10} color="white" bg="blue.400" rounded="md">
+        <Box p={10} _text={{color:"white"}} bg="blue.400" rounded="md">
           I am comming from Bottom
         </Box>
       </Slide>
       <Slide in={isOpenTop} placement="top">
-        <Box p={10} color="white" bg="teal.400" rounded="md">
+        <Box p={10} _text={{color:"white"}} bg="teal.400" rounded="md">
           I am comming from Top
         </Box>
       </Slide>

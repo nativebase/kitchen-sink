@@ -12,7 +12,9 @@ export const Example = () => {
       <Button colorScheme="teal" mr={2}>
         Save
       </Button>
-      <Button colorScheme="danger">Cancel</Button>
+      <Button colorScheme="danger" _text={{ color: 'white' }}>
+        Cancel
+      </Button>
     </Button.Group>
   );
 };
