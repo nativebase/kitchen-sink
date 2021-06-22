@@ -6,6 +6,8 @@ A sample application that showcases various components that come built-in with N
 
 Here is a screenshot of the sample application:
 
+![Screenshot of NativeBase](demo.png)
+
 ## Running it on Android
 
 If you are on Android, you can run this in your `expo-go` app and scan the QR at this [link](https://expo.io/@geekyants/kitchensink-app-native-base).
