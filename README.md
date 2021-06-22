@@ -6,7 +6,7 @@ A sample application that showcases various components that come built-in with N
 
 Here is a screenshot of the sample application:
 
-![Screenshot of NativeBase](demo.png)
+![Screenshot of NativeBase](https://raw.githubusercontent.com/nativebase/kitchen-sink/master/assets/demo.png)
 
 ## Running it on Android
 
