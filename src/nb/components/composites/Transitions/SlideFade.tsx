@@ -7,7 +7,7 @@ export const Example = () => {
     <>
       <Button onPress={() => setIsOpen(!isOpen)}>{btnStr}</Button>
       <SlideFade in={isOpen}>
-        <Box p="40px" color="white" mt="4" bg="teal.500" rounded="md">
+        <Box p="40px" _text={{color:"white"}} mt="4" bg="teal.500" rounded="md">
           SlideFade
         </Box>
       </SlideFade>

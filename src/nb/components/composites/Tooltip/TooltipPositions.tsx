@@ -6,6 +6,7 @@ export function Example() {
 
   return (
     <VStack space={6} alignSelf="flex-start" w="100%">
+      {/* @ts-ignore */}
       <Tooltip label={position} placement={position}>
         <Button alignSelf="center">ToolTip</Button>
       </Tooltip>

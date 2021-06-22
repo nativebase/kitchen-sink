@@ -20,7 +20,7 @@ export const Example = () => {
         at, ain't it?
       </Center>
       <Slide in={isOpen}>
-        <Box p="40px" color="white" mt="4" bg="teal.500" rounded="md">
+        <Box p="40px" _text={{color:"white"}} mt="4" bg="teal.500" rounded="md">
           Slide
         </Box>
       </Slide>

@@ -9,6 +9,7 @@ import {
   Avatar,
   useColorModeValue,
 } from 'native-base';
+import { MaterialCommunityIcons, SimpleLineIcons } from '@expo/vector-icons';
 export const Example = () => {
   return (
     <Box p={5} rounded="xl" shadow={4} w="100%">
@@ -16,7 +17,8 @@ export const Example = () => {
         <Avatar
           size={'sm'}
           source={{
-            uri: 'https://i.pinimg.com/originals/4d/72/97/4d7297dad94265c0acbc3b677d418935.jpg',
+            uri:
+              'https://i.pinimg.com/originals/4d/72/97/4d7297dad94265c0acbc3b677d418935.jpg',
           }}
         />
         <Stack space={3}>
@@ -43,7 +45,7 @@ export const Example = () => {
             <HStack space={3} alignItems="center" flexShrink={1}>
               <Icon
                 name="grid"
-                type="MaterialCommunityIcons"
+                as={MaterialCommunityIcons}
                 color="blueGray.700"
               />
               <Text
@@ -57,7 +59,7 @@ export const Example = () => {
             <HStack space={3} alignItems="center">
               <Icon
                 name="calendar"
-                type="MaterialCommunityIcons"
+                as={MaterialCommunityIcons}
                 color="blueGray.700"
               />
               <Text
@@ -103,7 +105,7 @@ export const Example = () => {
       >
         <Icon
           name="star"
-          type="SimpleLineIcons"
+          as={SimpleLineIcons}
           size={4}
           color="blueGray.700"
         />

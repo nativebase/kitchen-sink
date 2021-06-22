@@ -10,6 +10,7 @@ export function Example() {
     <VStack space={6} alignSelf="flex-start" w="100%">
       <Menu
         shouldOverlapWithTrigger={shouldOverlapWithTrigger}
+        // @ts-ignore
         placement={position == 'auto' ? undefined : position}
         trigger={(triggerProps) => {
           return (
