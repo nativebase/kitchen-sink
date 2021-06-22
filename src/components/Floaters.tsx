@@ -30,7 +30,7 @@ export const Floaters = () => {
 			<Fab
 				shadow={7}
 				variant="unstyled"
-				_light={{
+				_dark={{
 					bg: 'orange.50',
 					_hover: {
 						bg: 'orange.100',
@@ -39,21 +39,21 @@ export const Floaters = () => {
 						bg: 'orange.100',
 					},
 				}}
-				_dark={{
-					bg: 'blueGray.100',
+				_light={{
+					bg: 'blueGray.900',
 					_hover: {
-						bg: 'blueGray.200',
+						bg: 'blueGray.800',
 					},
 					_pressed: {
-						bg: 'blueGray.300',
+						bg: 'blueGray.800',
 					},
 				}}
 				p={3}
 				icon={
 					<Icon
 						as={Ionicons}
-						_light={{ name: 'sunny', color: 'orange.400' }}
-						_dark={{ name: 'moon', color: 'blueGray.900' }}
+						_dark={{ name: 'sunny', color: 'orange.400' }}
+						_light={{ name: 'moon', color: 'blueGray.100' }}
 						size="md"
 					/>
 				}
