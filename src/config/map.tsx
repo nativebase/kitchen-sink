@@ -13,6 +13,33 @@ type mapping = {
 };
 
 export const mapping = {
+  Actionsheet: {
+    title: 'Actionsheet',
+    description: '',
+    basic: require('../components/NativeBaseComponents/Actionsheet'),
+    components: [
+      {
+        component: require('../nb/components/composites/Actionsheet/Composition'),
+        title: 'Basic',
+        description: '',
+      },
+      {
+        component: require('../nb/components/composites/Actionsheet/DisableOverlay'),
+        title: 'Basic',
+        description: '',
+      },
+      {
+        component: require('../nb/components/composites/Actionsheet/Icon'),
+        title: 'Basic',
+        description: '',
+      },
+      {
+        component: require('../nb/components/composites/Actionsheet/Usage'),
+        title: 'Basic',
+        description: '',
+      },
+    ]
+  },
   Alert: {
     title: 'Alert',
     description: '',
@@ -61,6 +88,23 @@ export const mapping = {
       {
         component: require('../nb/components/composites/Alert/usage'),
         title: 'Usage',
+        description: '',
+      },
+    ],
+  },
+  AlertDialog: {
+    title: 'AlertDialog',
+    description: '',
+    basic: require('../components/NativeBaseComponents/AlertDialog'),
+    components: [
+      {
+        component: require('../nb/components/composites/AlertDialog/Basic'),
+        title: 'Basic',
+        description: '',
+      },
+      {
+        component: require('../nb/components/composites/AlertDialog/Transition'),
+        title: 'Transition',
         description: '',
       },
     ],
@@ -375,6 +419,35 @@ export const mapping = {
       },
     ],
   },
+  FlatList: {
+    title: 'FlatList',
+    description: '',
+    basic: require('../components/NativeBaseComponents/FlatList'),
+    components: [
+      {
+        component: require('../nb/components/basic/FlatList/Basic'),
+        title: 'Basic',
+        description: '',
+      },
+    ]
+  },
+  FormControl: {
+    title: 'FormControl',
+    description: "",
+    basic: require('../components/NativeBaseComponents/Box'),
+    components: [
+      {
+        component: require('../nb/components/composites/FormControl/Usage'),
+        title: 'Basic',
+        description: '',
+      },
+      {
+        component: require('../nb/components/composites/FormControl/CustomStyle'),
+        title: 'Basic',
+        description: '',
+      },
+    ]
+  },
   Heading: {
     title: 'Heading',
     description: 'It shows the Title',
@@ -552,6 +625,18 @@ export const mapping = {
       },
     ],
   },
+  KeyboardAvoidingView: {
+      title: 'KeyboardAvoidingView',
+      description: '',
+      basic: require('../components/NativeBaseComponents/KeyboardAvoidingView'),
+      components: [
+        {
+          component: require('../nb/components/basic/KeyboardAvoidingView/Basic'),
+          title: 'Basic',
+          description: '',
+        },
+      ]
+    },
   Link: {
     title: 'Link',
     description: 'Used to navigate',
@@ -712,6 +797,23 @@ export const mapping = {
       },
     ],
   },
+  Pressable: {
+    title: 'Pressable',
+    description: '',
+    // basic: require('../components/NativeBaseComponents/Pressable'),
+    components: [
+      {
+        component: require('../nb/components/primitives/Pressable/Basic'),
+        title: 'Basic',
+        description: '',
+      },
+      {
+        component: require('../nb/components/primitives/Pressable/Events'),
+        title: 'Basic',
+        description: '',
+      },
+    ]
+  },
   Progress: {
     title: 'Progress',
     description: '',
@@ -805,6 +907,30 @@ export const mapping = {
         description: '',
       },
     ],
+  },
+  ScrollView: {
+    title: 'ScrollView',
+    description: '',
+    basic: require('../components/NativeBaseComponents/ScrollView'),
+    components: [
+      {
+        component: require('../nb/components/basic/ScrollView/Basic'),
+        title: 'Basic',
+        description: '',
+      },
+    ]
+  },
+  SectionList: {
+    title: 'SectionList',
+    description: '',
+    basic: require('../components/NativeBaseComponents/SectionList'),
+    components: [
+      {
+        component: require('../nb/components/basic/SectionList/Basic'),
+        title: 'Basic',
+        description: '',
+      },
+    ]
   },
   Select: {
     title: 'Select',
@@ -901,6 +1027,35 @@ export const mapping = {
       // 	description: "",
       // },
     ],
+  },
+  Stack:{
+    title: 'Stack',
+    description: '',
+    // basic: require('../components/NativeBaseComponents/Stack'),
+    components: [
+      {
+        component: require('../nb/components/primitives/Stack/basic'),
+        title: 'Basic',
+        description: '',
+      },
+      {
+        component: require('../nb/components/primitives/Stack/divider'),
+        title: 'Divider',
+        description: '',
+      },
+    ]
+  },
+  StatusBar: {
+    title: 'StatusBar',
+    description: '',
+    basic: require('../components/NativeBaseComponents/StatusBar'),
+    components: [
+      {
+        component: require('../nb/components/basic/StatusBar/Basic'),
+        title: 'Basic',
+        description: '',
+      },
+    ]
   },
   Switch: {
     title: 'Switch',
@@ -1156,6 +1311,18 @@ export const mapping = {
         description: '',
       },
     ],
+  },
+   View: {
+    title: 'View',
+    description: '',
+    basic: require('../components/NativeBaseComponents/View'),
+    components: [
+      {
+        component: require('../nb/components/basic/View/Basic'),
+        title: 'Basic',
+        description: '',
+      },
+    ]
   },
   VStack: {
   	title: "VStack",
