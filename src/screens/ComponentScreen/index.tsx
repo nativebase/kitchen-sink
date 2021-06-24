@@ -73,7 +73,7 @@ export function Examples({
 									{element.title}
 								</Heading>
 								<Divider
-									bg={colorMode == 'dark' ? 'blueGray.700' : 'warmGray.200'}
+									bg={colorMode == 'dark' ? 'blueGray.500' : 'warmGray.200'}
 								/>
 								<Flex
 									nativeID="1111"
