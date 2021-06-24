@@ -20,22 +20,22 @@ export const mapping = {
     components: [
       {
         component: require('../nb/components/composites/Actionsheet/Composition'),
-        title: 'Basic',
+        title: 'Composition',
         description: '',
       },
       {
         component: require('../nb/components/composites/Actionsheet/DisableOverlay'),
-        title: 'Basic',
+        title: 'DisableOverlay',
         description: '',
       },
       {
         component: require('../nb/components/composites/Actionsheet/Icon'),
-        title: 'Basic',
+        title: 'Icon',
         description: '',
       },
       {
         component: require('../nb/components/composites/Actionsheet/Usage'),
-        title: 'Basic',
+        title: 'Usage',
         description: '',
       },
     ]
@@ -800,7 +800,7 @@ export const mapping = {
   Pressable: {
     title: 'Pressable',
     description: '',
-    // basic: require('../components/NativeBaseComponents/Pressable'),
+    basic: require('../components/NativeBaseComponents/Pressable'),
     components: [
       {
         component: require('../nb/components/primitives/Pressable/Basic'),
@@ -1031,7 +1031,7 @@ export const mapping = {
   Stack:{
     title: 'Stack',
     description: '',
-    // basic: require('../components/NativeBaseComponents/Stack'),
+    basic: require('../components/NativeBaseComponents/Stack'),
     components: [
       {
         component: require('../nb/components/primitives/Stack/basic'),
@@ -1327,12 +1327,13 @@ export const mapping = {
   VStack: {
   	title: "VStack",
   	description: "",
+    basic: require('../components/NativeBaseComponents/VStack'),
   	components: [
-  		// {
-  		// 	component: require("../nb/components/primitives/VStack/basic"),
-  		// 	title: "Basic",
-  		// 	description: "",
-  		// },
+  		{
+  			component: require("../nb/components/primitives/VStack/basic"),
+  			title: "Basic",
+  			description: "",
+  		},
   	],
   },
   ZStack: {
