@@ -1,56 +1,81 @@
 import React from 'react';
-import { Alert, HStack, VStack, Skeleton, Box } from 'native-base';
+import { Alert, Divider, VStack, Skeleton, Box } from 'native-base';
 
 export const Example = () => {
 	return (
-		<HStack
-			space={3}
-			alignItems="center"
-			m={4}
-			p={2}
-			rounded="md"
-			_light={{
-				bg: 'error.100',
-			}}
-			_dark={{
-				bg: 'error.400',
-			}}
-			w="70%"
-		>
-			<Box
-				rounded="full"
+		<Box flex={1} w="100%" justifyContent="flex-end">
+			<VStack
 				_light={{
-					bg: 'error.500',
+					bg: 'cyan.50',
 				}}
 				_dark={{
-					bg: 'error.200',
+					bg: 'cyan.400',
 				}}
-				size="24px"
-			/>
-			<VStack space={1} flex={1}>
+				space={2}
+				divider={
+					<Divider
+						border={1}
+						_light={{
+							borderColor: 'cyan.300',
+						}}
+						_dark={{
+							borderColor: 'cyan.200',
+						}}
+					/>
+				}
+				py={2}
+				// alignItems="center"
+				justifyContent="center"
+			>
 				<Box
 					_light={{
-						bg: 'gray.600',
+						bg: 'cyan.300',
 					}}
 					_dark={{
-						bg: 'gray.100',
+						bg: 'cyan.200',
 					}}
-					rounded="sm"
-					h="11px"
+					h="8px"
+					rounded="pill"
+					mx={4}
+					w="40%"
+				/>
+				<Box
+					_light={{
+						bg: 'cyan.300',
+					}}
+					_dark={{
+						bg: 'cyan.200',
+					}}
+					h="8px"
+					rounded="pill"
+					mx={4}
 					w="50%"
 				/>
 				<Box
 					_light={{
-						bg: 'gray.600',
+						bg: 'cyan.300',
 					}}
 					_dark={{
-						bg: 'gray.100',
+						bg: 'cyan.200',
 					}}
 					h="8px"
 					rounded="pill"
-					w="100%"
+					mx={4}
+					w="37%"
+				/>
+				<Box
+					_light={{
+						bg: 'cyan.300',
+					}}
+					_dark={{
+						bg: 'cyan.200',
+					}}
+					h="8px"
+					rounded="pill"
+					mx={4}
+					w="47%"
 				/>
 			</VStack>
-		</HStack>
+		</Box>
 	);
 };

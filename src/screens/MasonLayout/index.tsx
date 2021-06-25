@@ -54,6 +54,18 @@ export function MasonLayout({
 				>
 					<StoryBook
 						navigation={navigation}
+						name="Actionsheet"
+						minH={40}
+						_box={{
+							lightGrad: ['orange.400', 'amber.200'],
+							darkGrad: ['orange.600', 'amber.300'],
+						}}
+						_heading={{
+							color: 'amber.100',
+						}}
+					/>
+					<StoryBook
+						navigation={navigation}
 						name="Alert"
 						minH={40}
 						_box={{
@@ -67,9 +79,20 @@ export function MasonLayout({
 
 					<StoryBook
 						navigation={navigation}
+						name="AlertDialog"
+						minH={40}
+						_box={{
+							lightGrad: ['orange.400', 'amber.200'],
+							darkGrad: ['orange.600', 'amber.300'],
+						}}
+						_heading={{
+							color: 'amber.100',
+						}}
+					/>
+					<StoryBook
+						navigation={navigation}
 						name="Avatar"
 						// colors={['green.700', 'lime.200']}
-
 						minH={48}
 						_box={{
 							lightGrad: ['violet.800', 'lightBlue.300'],
