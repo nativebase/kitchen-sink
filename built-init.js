@@ -19,13 +19,24 @@ try {
 
   const componentsPath = __dirname + '/src/nb/NativeBase/example/storybook/stories/components';
   const basicComponentsPath = __dirname +'/src/nb/components';
-  fsExtra.copy(componentsPath, basicComponentsPath, (err) => {
+  fs.rmdir(basicComponentsPath, { recursive: true }, (err) => {
+    if (err) {
+        throw err;
+    }
+    console.log(`deleted!`);
+    fs.mkdir(basicComponentsPath, (err) => {
+      if (err) throw err;
+
+      fsExtra.copy(componentsPath, basicComponentsPath, (err) => {
         if(err){
             console.log("Error occurred");
             return;
         }
         console.log('Copy completed');
-})
+      });
+    })
+  });
+    
 } catch(err) {
   console.error(err)
 }
