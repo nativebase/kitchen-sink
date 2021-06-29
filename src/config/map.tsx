@@ -346,18 +346,18 @@ export const mapping = {
 			// },
 		],
 	},
-	// Column: {
-	//   title: 'Column',
-	//   description: 'Renders your data vertically',
-	//   basic: require('../components/NativeBaseComponents/Column'),
-	//   components: [
-	//     {
-	//       component: require('../nb/components/primitives/Column/Basic'),
-	//       title: 'Basic',
-	//       description: '',
-	//     },
-	//   ],
-	// },
+	Column: {
+	  title: 'Column',
+	  description: 'Renders your data vertically',
+	  basic: require('../components/NativeBaseComponents/Column'),
+	  components: [
+	    {
+	      component: require('../nb/components/primitives/Column/Basic'),
+	      title: 'Basic',
+	      description: '',
+	    },
+	  ],
+	},
 	Divider: {
 		title: 'Divider',
 		description: '',
@@ -434,7 +434,7 @@ export const mapping = {
 	FormControl: {
 		title: 'FormControl',
 		description: '',
-		basic: require('../components/NativeBaseComponents/Box'),
+		basic: require('../components/NativeBaseComponents/FormControl'),
 		components: [
 			{
 				component: require('../nb/components/composites/FormControl/Usage'),

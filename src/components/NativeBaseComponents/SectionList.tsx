@@ -1,5 +1,6 @@
 import React from 'react';
-import { Box, SectionList } from 'native-base';
+import { Box, VStack } from 'native-base';
+
 export const Example = () => {
   const data = [
     {
@@ -21,26 +22,102 @@ export const Example = () => {
   ];
 
   return (
-    <SectionList
-      sections={data}
-      keyExtractor={(item, index) => item + index}
-      renderItem={({ item }) => (
-        <Box px={5} py={2} rounded="md" my={2} bg="secondary.200">
-          {item}
-        </Box>
-      )}
-      renderSectionHeader={({ section: { title } }) => (
+    <Box
+      _light={{
+        bg: 'violet.400',
+      }}
+      _dark={{
+        bg: 'violet.800',
+      }}
+      h={24}
+      w="80%"
+      mt={3}
+    >
+      <Box position="absolute" w={2} h="100%" right={0} bg="gray.500">
+        <Box position="absolute" w={2} h={4} right={0} top={2} bg="gray.300" />
+      </Box>
+      <VStack space={1} alignItems="flex-end" m={2}>
         <Box
-          px={5}
-          py={2}
-          rounded="md"
-          my={2}
-          bg="primary.200"
-          _text={{ fontWeight: 'bold' }}
-        >
-          {title}
-        </Box>
-      )}
-    />
+          w="80%"
+          _light={{
+            bg: 'gray.600',
+          }}
+          _dark={{
+            bg: 'gray.100',
+          }}
+          h={2}
+        />
+        <Box
+          w="50%"
+          _light={{
+            bg: 'gray.600',
+          }}
+          _dark={{
+            bg: 'gray.100',
+          }}
+          h={1}
+        />
+        <Box
+          w="30%"
+          _light={{
+            bg: 'gray.600',
+          }}
+          _dark={{
+            bg: 'gray.100',
+          }}
+          h={1}
+        />
+        <Box
+          w="40%"
+          _light={{
+            bg: 'gray.600',
+          }}
+          _dark={{
+            bg: 'gray.100',
+          }}
+          h={1}
+        />
+        <Box
+          w="80%"
+          _light={{
+            bg: 'gray.600',
+          }}
+          _dark={{
+            bg: 'gray.100',
+          }}
+          h={2}
+        />
+        <Box
+          w="50%"
+          _light={{
+            bg: 'gray.600',
+          }}
+          _dark={{
+            bg: 'gray.100',
+          }}
+          h={1}
+        />
+        <Box
+          w="30%"
+          _light={{
+            bg: 'gray.600',
+          }}
+          _dark={{
+            bg: 'gray.100',
+          }}
+          h={1}
+        />
+        <Box
+          w="40%"
+          _light={{
+            bg: 'gray.600',
+          }}
+          _dark={{
+            bg: 'gray.100',
+          }}
+          h={1}
+        />
+      </VStack>
+    </Box>
   );
 };

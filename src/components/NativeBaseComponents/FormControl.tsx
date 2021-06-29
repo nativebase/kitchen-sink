@@ -1,17 +1,70 @@
 import React from 'react';
-import { FormControl, Input, Stack } from 'native-base';
+import { Input, VStack, Box } from 'native-base';
 
 export const Example = () => {
   return (
-    <FormControl isRequired isInvalid>
-      <Stack mx={4}>
-        <FormControl.Label>Favorite framework</FormControl.Label>
-        <Input p={2} placeholder="Is it react?" />
-        <FormControl.HelperText>
-          We'll keep this between us.
-        </FormControl.HelperText>
-        <FormControl.ErrorMessage>Something is wrong.</FormControl.ErrorMessage>
-      </Stack>
-    </FormControl>
+    <VStack
+      justifyContent="center"
+      w="80%"
+      p={3}
+      _light={{
+        bg: 'lightBlue.400',
+      }}
+      _dark={{
+        bg: 'lightBlue.500',
+      }}
+    >
+      <Box
+        _light={{
+          bg: 'cyan.300',
+        }}
+        _dark={{
+          bg: 'cyan.200',
+        }}
+        h="8px"
+        // rounded="pill"
+        mx={4}
+        w="40%"
+        mb={2}
+      />
+      <Box
+        _light={{
+          bg: 'cyan.300',
+        }}
+        _dark={{
+          bg: 'cyan.200',
+        }}
+        h="16px"
+        rounded="pill"
+        mx={4}
+        w="50%"
+        mb={1}
+      />
+      <Box
+        _light={{
+          bg: 'red.300',
+        }}
+        _dark={{
+          bg: 'red.200',
+        }}
+        h="4px"
+        // rounded="pill"
+        mx={5}
+        w="37%"
+        mb={3}
+      />
+      <Box
+        _light={{
+          bg: 'cyan.500',
+        }}
+        _dark={{
+          bg: 'cyan.400',
+        }}
+        h="16px"
+        rounded="pill"
+        mx={16}
+        w="27%"
+      />
+    </VStack>
   );
 };

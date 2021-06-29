@@ -1,32 +1,27 @@
 import React from 'react';
-import { ScrollView, VStack, Center } from 'native-base';
+import { ScrollView, VStack, Center, Box } from 'native-base';
 export const Example = () => {
   return (
-    <ScrollView
-      flex={1}
-      px={90}
-      _contentContainerStyle={{ bg: 'lime.300', px: '44px', w: '100%' }}
-      // style={{ backgroundColor: 'blue' }}
+    <Box
+      _light={{
+        bg: 'pink.100',
+      }}
+      _dark={{
+        bg: 'pink.200',
+      }}
+      h={16}
+      w={100}
     >
-      <VStack flex={1}>
-        {[
-          'one',
-          'two',
-          'three',
-          'four',
-          'five',
-          'six',
-          'seven',
-          'eight',
-          'nine',
-          'ten',
-          'eleven',
-        ].map((val) => (
-          <Center rounded="lg" p={7} bg="primary.400" my={5} mb={3}>
-            {val}
-          </Center>
-        ))}
-      </VStack>
-    </ScrollView>
+      <Box position="absolute" w={2} h="100%" right={0} bg="gray.500">
+        <Box
+          position="absolute"
+          w={2}
+          h={3}
+          right={0}
+          top={2}
+          bg="gray.200"
+        ></Box>
+      </Box>
+    </Box>
   );
 };

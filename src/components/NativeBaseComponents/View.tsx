@@ -1,9 +1,17 @@
 import React from 'react';
-import { View, Text } from 'native-base';
+import { Box } from 'native-base';
 export const Example = () => {
   return (
-    <View ml={1}>
-      <Text>In View, text needs to be wrapper inside Text component</Text>
-    </View>
+    <Box
+      size={12}
+      w="80%"
+      h={20}
+      _light={{
+        bg: 'darkBlue.100',
+      }}
+      _dark={{
+        bg: 'darkBlue.600',
+      }}
+    />
   );
 };

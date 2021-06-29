@@ -19,11 +19,17 @@ export const Example = () => {
 
   return (
     <FlatList
+      mt={6}
       data={data}
       renderItem={({ item }) => (
-        <Box px={5} py={2} rounded="md" my={2} bg="primary.300">
-          {item.title}
-        </Box>
+        <Box
+          px={5}
+          py={2}
+          rounded="md"
+          my={1}
+          _light={{ bg: 'blue.300' }}
+          _dark={{ bg: 'blue.200' }}
+        ></Box>
       )}
       keyExtractor={(item) => item.id}
     />
