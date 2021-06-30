@@ -67,7 +67,12 @@ export function Example() {
 				</VStack>
 			</HStack>
 
-			<HStack justifyContent="space-between">
+			<HStack 
+			space={2}
+			mt={2}
+			// justifyContent="space-between"
+			justifyContent="flex-end"
+			>
 				<Box
 					p={2}
 					px={3}
@@ -79,7 +84,7 @@ export function Example() {
 						bg: 'green.400',
 					}}
 					overflow="hidden"
-					w="45%"
+					w="35%"
 				>
 					<Box
 						_light={{
@@ -118,7 +123,7 @@ export function Example() {
 						bg: 'red.400',
 					}}
 					overflow="hidden"
-					w="45%"
+					w="35%"
 				>
 					<Box
 						_light={{

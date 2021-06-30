@@ -14,12 +14,11 @@ export const Example = () => {
 				space={2}
 				divider={
 					<Divider
-						border={1}
 						_light={{
-							borderColor: 'cyan.300',
+							bg: 'cyan.300',
 						}}
 						_dark={{
-							borderColor: 'cyan.200',
+							bg: 'cyan.200',
 						}}
 					/>
 				}

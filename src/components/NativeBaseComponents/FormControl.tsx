@@ -22,7 +22,7 @@ export const Example = () => {
           bg: 'cyan.200',
         }}
         h="8px"
-        // rounded="pill"
+        rounded="pill"
         mx={4}
         w="40%"
         mb={2}
@@ -37,7 +37,7 @@ export const Example = () => {
         h="16px"
         rounded="pill"
         mx={4}
-        w="50%"
+        w="40%"
         mb={1}
       />
       <Box
@@ -48,10 +48,10 @@ export const Example = () => {
           bg: 'red.200',
         }}
         h="4px"
-        // rounded="pill"
+        rounded="pill"
         mx={5}
         w="37%"
-        mb={3}
+        mb={4}
       />
       <Box
         _light={{
@@ -62,8 +62,8 @@ export const Example = () => {
         }}
         h="16px"
         rounded="pill"
-        mx={16}
-        w="27%"
+         w="27%"
+         mx={4}
       />
     </VStack>
   );

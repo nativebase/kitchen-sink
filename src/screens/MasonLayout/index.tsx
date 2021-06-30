@@ -55,7 +55,7 @@ export function MasonLayout({
 					<StoryBook
 						navigation={navigation}
 						name="Actionsheet"
-						minH={40}
+						minH={32}
 						_box={{
 							lightGrad: ['cyan.400', 'teal.200'],
 							darkGrad: ['cyan.600', 'teal.300'],
@@ -489,7 +489,7 @@ export function MasonLayout({
 						navigation={navigation}
 						name="SectionList"
 						// colors={['rose.500', 'amber.500']}
-						minH={40}
+						minH={48}
 						_box={{
 							lightGrad: ['violet.400', 'fuchsia.200'],
 							darkGrad: ['violet.600', 'fuchsia.300'],

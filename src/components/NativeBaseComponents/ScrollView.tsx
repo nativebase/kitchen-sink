@@ -12,14 +12,15 @@ export const Example = () => {
       h={16}
       w={100}
     >
-      <Box position="absolute" w={2} h="100%" right={0} bg="gray.500">
+      <Box position="absolute" w={1} h="100%" right={0} bg="gray.500">
         <Box
           position="absolute"
-          w={2}
-          h={3}
+          w={1}
+          h={6}
           right={0}
           top={2}
           bg="gray.200"
+          borderRadius={4}
         ></Box>
       </Box>
     </Box>
