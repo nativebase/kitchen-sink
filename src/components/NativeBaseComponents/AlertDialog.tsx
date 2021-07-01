@@ -17,17 +17,6 @@ export function Example() {
 			justifyContent="center"
 		>
 			<HStack space={2} mb={4}>
-				<Box
-					_light={{
-						bg: 'gray.600',
-					}}
-					_dark={{
-						bg: 'gray.100',
-					}}
-					rounded="sm"
-					// h="11px"
-					w="30%"
-				/>
 				<VStack space={1} flex={1}>
 					<Box
 						_light={{
@@ -52,27 +41,10 @@ export function Example() {
 						rounded="pill"
 						w="40%"
 					/>
-
-					<Box
-						_light={{
-							bg: 'gray.600',
-						}}
-						_dark={{
-							bg: 'gray.100',
-						}}
-						h="7px"
-						rounded="pill"
-						w="50%"
-					/>
 				</VStack>
 			</HStack>
 
-			<HStack 
-			space={2}
-			mt={2}
-			// justifyContent="space-between"
-			justifyContent="flex-end"
-			>
+			<HStack justifyContent="space-between">
 				<Box
 					p={2}
 					px={3}
@@ -84,7 +56,7 @@ export function Example() {
 						bg: 'green.400',
 					}}
 					overflow="hidden"
-					w="35%"
+					w="45%"
 				>
 					<Box
 						_light={{
@@ -123,7 +95,7 @@ export function Example() {
 						bg: 'red.400',
 					}}
 					overflow="hidden"
-					w="35%"
+					w="45%"
 				>
 					<Box
 						_light={{
@@ -152,23 +124,6 @@ export function Example() {
 					/>
 				</Box>
 			</HStack>
-
-			<Box
-				_light={{
-					bg: 'darkBlue.100',
-				}}
-				_dark={{
-					bg: 'darkBlue.600',
-				}}
-				size={4}
-				right={5}
-				bottom={-8}
-				// zIndex={-1}
-				position="absolute"
-				style={{
-					transform: [{ rotate: '45deg' }],
-				}}
-			/>
 		</VStack>
 	);
 }
