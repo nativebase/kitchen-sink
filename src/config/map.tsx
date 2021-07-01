@@ -16,6 +16,7 @@ export const mapping = {
 	Actionsheet: {
 		title: 'Actionsheet',
 		description: '',
+		doclink: 'https://docs.nativebase.io/actionSheet',
 		basic: require('../components/NativeBaseComponents/Actionsheet'),
 		components: [
 			{
@@ -43,6 +44,7 @@ export const mapping = {
 	Alert: {
 		title: 'Alert',
 		description: '',
+		doclink: 'https://docs.nativebase.io/alert',
 		basic: require('../components/NativeBaseComponents/Alert'),
 		components: [
 			{
@@ -95,6 +97,7 @@ export const mapping = {
 	AlertDialog: {
 		title: 'AlertDialog',
 		description: '',
+		doclink: 'https://docs.nativebase.io/alertDialog',
 		basic: require('../components/NativeBaseComponents/AlertDialog'),
 		components: [
 			{
@@ -112,6 +115,7 @@ export const mapping = {
 	Avatar: {
 		title: 'Avatar',
 		description: '',
+		doclink: 'https://docs.nativebase.io/avatar',
 		basic: require('../components/NativeBaseComponents/Avatar'),
 		components: [
 			{
@@ -149,6 +153,7 @@ export const mapping = {
 	Badge: {
 		title: 'Badge',
 		description: '',
+		doclink: 'https://docs.nativebase.io/badge',
 		basic: require('../components/NativeBaseComponents/Badge'),
 		components: [
 			{
@@ -176,6 +181,7 @@ export const mapping = {
 	Button: {
 		title: 'Button',
 		description: 'Primitive Element',
+		doclink: 'https://docs.nativebase.io/button',
 		basic: require('../components/NativeBaseComponents/Button'),
 		components: [
 			{
@@ -223,6 +229,7 @@ export const mapping = {
 	Box: {
 		title: 'Box',
 		description: '',
+		doclink: 'https://docs.nativebase.io/box',
 		basic: require('../components/NativeBaseComponents/Box'),
 		components: [
 			{
@@ -260,6 +267,7 @@ export const mapping = {
 	Center: {
 		title: 'Center',
 		description: '',
+		doclink: 'https://docs.nativebase.io/center',
 		basic: require('../components/NativeBaseComponents/Center'),
 		components: [
 			{
@@ -282,6 +290,7 @@ export const mapping = {
 	CheckBox: {
 		title: 'CheckBox',
 		description: 'Primitive Element',
+		doclink: 'https://docs.nativebase.io/checkBox',
 		basic: require('../components/NativeBaseComponents/CheckBox'),
 		components: [
 			{
@@ -349,6 +358,7 @@ export const mapping = {
 	Column: {
 	  title: 'Column',
 	  description: 'Renders your data vertically',
+	  doclink: 'https://docs.nativebase.io/VStack',
 	  basic: require('../components/NativeBaseComponents/Column'),
 	  components: [
 	    {
@@ -361,6 +371,7 @@ export const mapping = {
 	Divider: {
 		title: 'Divider',
 		description: '',
+		doclink: 'https://docs.nativebase.io/divider',
 		basic: require('../components/NativeBaseComponents/Divider'),
 		components: [
 			{
@@ -383,6 +394,7 @@ export const mapping = {
 	Fab: {
 		title: 'Fab',
 		description: '',
+		doclink: 'https://docs.nativebase.io/FAB',
 		basic: require('../components/NativeBaseComponents/Fab'),
 		components: [
 			{
@@ -405,6 +417,7 @@ export const mapping = {
 	Flex: {
 		title: 'Flex',
 		description: "Box with display='Flex'",
+		doclink: 'https://docs.nativebase.io/flex',
 		basic: require('../components/NativeBaseComponents/Flex'),
 		components: [
 			{
@@ -422,6 +435,7 @@ export const mapping = {
 	FlatList: {
 		title: 'FlatList',
 		description: '',
+		doclink: 'https://docs.nativebase.io/flatList',
 		basic: require('../components/NativeBaseComponents/FlatList'),
 		components: [
 			{
@@ -434,6 +448,7 @@ export const mapping = {
 	FormControl: {
 		title: 'FormControl',
 		description: '',
+		doclink: 'https://docs.nativebase.io/formControl',
 		basic: require('../components/NativeBaseComponents/FormControl'),
 		components: [
 			{
@@ -451,6 +466,7 @@ export const mapping = {
 	Heading: {
 		title: 'Heading',
 		description: 'It shows the Title',
+		doclink: 'https://docs.nativebase.io/heading',
 		basic: require('../components/NativeBaseComponents/Heading'),
 		components: [
 			{
@@ -483,6 +499,7 @@ export const mapping = {
 	HStack: {
 		title: 'HStack',
 		description: 'Rows structure',
+		doclink: 'https://docs.nativebase.io/hStack',
 		basic: require('../components/NativeBaseComponents/HStack'),
 		components: [
 			{
@@ -495,6 +512,7 @@ export const mapping = {
 	Icon: {
 		title: 'Icon',
 		description: 'Show Icon in NativeBase',
+		doclink: 'https://docs.nativebase.io/icon',
 		basic: require('../components/NativeBaseComponents/Icon'),
 		components: [
 			{
@@ -522,6 +540,7 @@ export const mapping = {
 	IconButton: {
 		title: 'IconButton',
 		description: '',
+		doclink: 'https://docs.nativebase.io/iconButton',
 		basic: require('../components/NativeBaseComponents/IconButton'),
 		components: [
 			{
@@ -549,6 +568,7 @@ export const mapping = {
 	Image: {
 		title: 'Image',
 		description: 'Show image in NativeBase',
+		doclink: 'https://docs.nativebase.io/image',
 		basic: require('../components/NativeBaseComponents/Image'),
 		components: [
 			{
@@ -581,6 +601,7 @@ export const mapping = {
 	Input: {
 		title: 'Input',
 		description: '',
+		doclink: 'https://docs.nativebase.io/input',
 		basic: require('../components/NativeBaseComponents/Input'),
 		components: [
 			{
@@ -628,6 +649,7 @@ export const mapping = {
 	KeyboardAvoidingView: {
 		title: 'KeyboardAvoidingView',
 		description: '',
+		doclink: 'https://docs.nativebase.io/keyboardAvoidingView',
 		basic: require('../components/NativeBaseComponents/KeyboardAvoidingView'),
 		components: [
 			{
@@ -640,6 +662,7 @@ export const mapping = {
 	Link: {
 		title: 'Link',
 		description: 'Used to navigate',
+		doclink: 'https://docs.nativebase.io/link',
 		basic: require('../components/NativeBaseComponents/Link'),
 		components: [
 			{
@@ -672,6 +695,7 @@ export const mapping = {
 	// List: {
 	// 	title: "List",
 	// 	description: "",
+	// doclink: 'https://docs.nativebase.io/list',
 	// 	// basic: require("../components/NativeBaseComponents/List"),
 	// 	components: [
 	// 		{
@@ -714,6 +738,7 @@ export const mapping = {
 	Menu: {
 		title: 'Menu',
 		description: '',
+		doclink: 'https://docs.nativebase.io/menu',
 		basic: require('../components/NativeBaseComponents/Menu'),
 		components: [
 			{
@@ -741,6 +766,7 @@ export const mapping = {
 	Modal: {
 		title: 'Modal',
 		description: '',
+		doclink: 'https://docs.nativebase.io/modal',
 		basic: require('../components/NativeBaseComponents/Modal'),
 		components: [
 			{
@@ -778,6 +804,7 @@ export const mapping = {
 	Popover: {
 		title: 'Popover',
 		description: '',
+		doclink: 'https://docs.nativebase.io/popOver',
 		basic: require('../components/NativeBaseComponents/Popover'),
 		components: [
 			{
@@ -800,6 +827,7 @@ export const mapping = {
 	Pressable: {
 		title: 'Pressable',
 		description: '',
+		doclink: 'https://docs.nativebase.io/pressable',
 		basic: require('../components/NativeBaseComponents/Pressable'),
 		components: [
 			{
@@ -817,6 +845,7 @@ export const mapping = {
 	Progress: {
 		title: 'Progress',
 		description: '',
+		doclink: 'https://docs.nativebase.io/progress',
 		basic: require('../components/NativeBaseComponents/Progress'),
 		components: [
 			{
@@ -854,6 +883,7 @@ export const mapping = {
 	Radio: {
 		title: 'Radio',
 		description: '',
+		doclink: 'https://docs.nativebase.io/radio',
 		basic: require('../components/NativeBaseComponents/Radio'),
 		components: [
 			{
@@ -911,6 +941,7 @@ export const mapping = {
 	ScrollView: {
 		title: 'ScrollView',
 		description: '',
+		doclink: 'https://docs.nativebase.io/scrollview',
 		basic: require('../components/NativeBaseComponents/ScrollView'),
 		components: [
 			{
@@ -923,6 +954,7 @@ export const mapping = {
 	SectionList: {
 		title: 'SectionList',
 		description: '',
+		doclink: 'https://docs.nativebase.io/sectionList',
 		basic: require('../components/NativeBaseComponents/SectionList'),
 		components: [
 			{
@@ -935,6 +967,7 @@ export const mapping = {
 	Select: {
 		title: 'Select',
 		description: '',
+		doclink: 'https://docs.nativebase.io/select',
 		basic: require('../components/NativeBaseComponents/Select'),
 		components: [
 			{
@@ -952,6 +985,7 @@ export const mapping = {
 	Slider: {
 		title: 'Slider',
 		description: '',
+		doclink: 'https://docs.nativebase.io/slider',
 		basic: require('../components/NativeBaseComponents/Slider'),
 		components: [
 			{
@@ -999,6 +1033,7 @@ export const mapping = {
 	Spinner: {
 		title: 'Spinner',
 		description: '',
+		doclink: 'https://docs.nativebase.io/spinner',
 		basic: require('../components/NativeBaseComponents/Spinner'),
 		components: [
 			{
@@ -1031,6 +1066,7 @@ export const mapping = {
 	Stack: {
 		title: 'Stack',
 		description: '',
+		doclink: 'https://docs.nativebase.io/stack',
 		basic: require('../components/NativeBaseComponents/Stack'),
 		components: [
 			{
@@ -1048,6 +1084,7 @@ export const mapping = {
 	StatusBar: {
 		title: 'StatusBar',
 		description: '',
+		doclink: 'https://docs.nativebase.io/statusBar',
 		basic: require('../components/NativeBaseComponents/StatusBar'),
 		components: [
 			{
@@ -1060,6 +1097,7 @@ export const mapping = {
 	Switch: {
 		title: 'Switch',
 		description: '',
+		doclink: 'https://docs.nativebase.io/switch',
 		basic: require('../components/NativeBaseComponents/Switch'),
 		components: [
 			{
@@ -1097,6 +1135,7 @@ export const mapping = {
 	Tabs: {
 		title: 'Tabs',
 		description: '',
+		doclink: 'https://docs.nativebase.io/tabs',
 		basic: require('../components/NativeBaseComponents/Tabs'),
 		components: [
 			{
@@ -1154,6 +1193,7 @@ export const mapping = {
 	Text: {
 		title: 'Text',
 		description: '',
+		doclink: 'https://docs.nativebase.io/text',
 		basic: require('../components/NativeBaseComponents/Text'),
 		components: [
 			{
@@ -1186,6 +1226,7 @@ export const mapping = {
 	TextArea: {
 		title: 'TextArea',
 		description: '',
+		doclink: 'https://docs.nativebase.io/textArea',
 		basic: require('../components/NativeBaseComponents/TextArea'),
 		components: [
 			{
@@ -1213,6 +1254,7 @@ export const mapping = {
 	Toast: {
 		title: 'Toast',
 		description: '',
+		doclink: 'https://docs.nativebase.io/toast',
 		basic: require('../components/NativeBaseComponents/Toast'),
 		components: [
 			{
@@ -1255,6 +1297,7 @@ export const mapping = {
 	Tooltip: {
 		title: 'Tooltip',
 		description: '',
+		doclink: 'https://docs.nativebase.io/tooltip',
 		basic: require('../components/NativeBaseComponents/ToolTip'),
 		components: [
 			{
@@ -1274,10 +1317,10 @@ export const mapping = {
 			},
 		],
 	},
-
 	Transitions: {
 		title: 'Transitions',
 		description: '',
+		doclink: 'https://docs.nativebase.io/transition',
 		basic: require('../components/NativeBaseComponents/Transitions'),
 		components: [
 			{
@@ -1315,6 +1358,7 @@ export const mapping = {
 	View: {
 		title: 'View',
 		description: '',
+		doclink: 'https://docs.nativebase.io/view',
 		basic: require('../components/NativeBaseComponents/View'),
 		components: [
 			{
@@ -1327,6 +1371,7 @@ export const mapping = {
 	VStack: {
 		title: 'VStack',
 		description: '',
+		doclink: 'https://docs.nativebase.io/VStack',
 		basic: require('../components/NativeBaseComponents/VStack'),
 		components: [
 			{
@@ -1339,6 +1384,7 @@ export const mapping = {
 	ZStack: {
 		title: 'ZStack',
 		description: '',
+		doclink: 'https://docs.nativebase.io/ZStack',
 		basic: require('../components/NativeBaseComponents/ZStack'),
 		components: [
 			// {
