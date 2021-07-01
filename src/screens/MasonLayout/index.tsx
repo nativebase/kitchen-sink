@@ -241,7 +241,7 @@ export function MasonLayout({
 					<StoryBook
 						navigation={navigation}
 						name="FormControl"
-						minH={40}
+						minH={56}
 						_box={{
 							lightGrad: ['lightBlue.400', 'cyan.200'],
 							darkGrad: ['lightBlue.600', 'cyan.300'],
@@ -489,7 +489,7 @@ export function MasonLayout({
 						navigation={navigation}
 						name="SectionList"
 						// colors={['rose.500', 'amber.500']}
-						minH={48}
+						minH={56}
 						_box={{
 							lightGrad: ['violet.400', 'fuchsia.200'],
 							darkGrad: ['violet.600', 'fuchsia.300'],

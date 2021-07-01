@@ -23,101 +23,183 @@ export const Example = () => {
 
   return (
     <Box
-      mt={3}
-      _light={{
-        bg: 'violet.400',
-      }}
-      _dark={{
-        bg: 'violet.800',
-      }}
-      h={32}
-      w="70%"
+      mt={5}
+      bg="orange.100"
+      w="35%"
+      // alignItems="center"
+      // mx="auto"
     >
-      <Box position="absolute" w={2} h="100%" right={0} bg="gray.500">
+      {/* <Box position="absolute" w={2} h="100%" right={0} bg="gray.500">
         <Box position="absolute" w={2} h={6} right={0} top={2} bg="gray.300" borderRadius={4}/>
-      </Box>
-      <VStack space={2} alignItems="flex-end" m={2} mr={2}>
-        <Box
-          w="80%"
-          _light={{
-            bg: 'gray.600',
-          }}
-          _dark={{
-            bg: 'gray.100',
-          }}
-          h={2}
-        />
-        <Box
-          w="50%"
-          _light={{
-            bg: 'gray.600',
-          }}
-          _dark={{
-            bg: 'gray.100',
-          }}
-          h={1}
-        />
-        <Box
-          w="50%"
-          _light={{
-            bg: 'gray.600',
-          }}
-          _dark={{
-            bg: 'gray.100',
-          }}
-          h={1}
-        />
-        <Box
-          w="50%"
-          _light={{
-            bg: 'gray.600',
-          }}
-          _dark={{
-            bg: 'gray.100',
-          }}
-          h={1}
-        />
-        <Box
-          w="80%"
-          _light={{
-            bg: 'gray.600',
-          }}
-          _dark={{
-            bg: 'gray.100',
-          }}
-          h={2}
-          mt={1}
-        />
-        <Box
-          w="50%"
-          _light={{
-            bg: 'gray.600',
-          }}
-          _dark={{
-            bg: 'gray.100',
-          }}
-          h={1}
-        />
-        <Box
-          w="50%"
-          _light={{
-            bg: 'gray.600',
-          }}
-          _dark={{
-            bg: 'gray.100',
-          }}
-          h={1}
-        />
-        <Box
-          w="50%"
-          _light={{
-            bg: 'gray.600',
-          }}
-          _dark={{
-            bg: 'gray.100',
-          }}
-          h={1}
-        />
+      </Box> */}
+      <VStack space={3} m={2}  alignContent="center">
+        <VStack space={1} alignContent="center">
+          <Box
+            w="40%"
+            // _light={{
+            //   bg: 'gray.600',
+            // }}
+            // _dark={{
+            //   bg: 'gray.100',
+            // }}
+            bg="amber.500"
+            opacity="50%"
+            h={3}
+            mb={1}
+            borderRadius={3}
+          />
+          <Box
+            w="100%"
+            // _light={{
+            //   bg: 'gray.600',
+            // }}
+            // _dark={{
+            //   bg: 'gray.100',
+            // }}
+            bg="amber.500"
+            opacity="50%"
+            h={1}
+            borderRadius={6}
+          />
+          <Box
+            w="100%"
+            // _light={{
+            //   bg: 'gray.600',
+            // }}
+            // _dark={{
+            //   bg: 'gray.100',
+            // }}
+            bg="amber.500"
+            opacity="50%"
+            h={1}
+            borderRadius={6}
+          />
+          <Box
+            w="100%"
+            // _light={{
+            //   bg: 'gray.600',
+            // }}
+            // _dark={{
+            //   bg: 'gray.100',
+            // }}
+            bg="amber.500"
+            opacity="50%"
+            h={1}
+            borderRadius={6}
+          />
+        </VStack>
+
+        <VStack space={1} alignContent="center">
+          <Box
+            w="40%"
+            // _light={{
+            //   bg: 'gray.600',
+            // }}
+            // _dark={{
+            //   bg: 'gray.100',
+            // }}
+            bg="amber.500"
+            opacity="50%"
+            h={3}
+            mb={1}
+            borderRadius={3}
+          />
+          <Box
+            w="100%"
+            // _light={{
+            //   bg: 'gray.600',
+            // }}
+            // _dark={{
+            //   bg: 'gray.100',
+            // }}
+            bg="amber.500"
+            opacity="50%"
+            h={1}
+            borderRadius={6}
+          />
+          <Box
+            w="100%"
+            // _light={{
+            //   bg: 'gray.600',
+            // }}
+            // _dark={{
+            //   bg: 'gray.100',
+            // }}
+            bg="amber.500"
+            opacity="50%"
+            h={1}
+            borderRadius={6}
+          />
+          <Box
+            w="100%"
+            // _light={{
+            //   bg: 'gray.600',
+            // }}
+            // _dark={{
+            //   bg: 'gray.100',
+            // }}
+            bg="amber.500"
+            opacity="50%"
+            h={1}
+            borderRadius={6}
+          />
+        </VStack>
+
+        <VStack space={1} alignContent="center">
+          <Box
+            w="40%"
+            // _light={{
+            //   bg: 'gray.600',
+            // }}
+            // _dark={{
+            //   bg: 'gray.100',
+            // }}
+            bg="amber.500"
+            opacity="50%"
+            h={3}
+            mb={1}
+            borderRadius={3}
+          />
+          <Box
+            w="100%"
+            // _light={{
+            //   bg: 'gray.600',
+            // }}
+            // _dark={{
+            //   bg: 'gray.100',
+            // }}
+            bg="amber.500"
+            opacity="50%"
+            h={1}
+            borderRadius={6}
+          />
+          <Box
+            w="100%"
+            // _light={{
+            //   bg: 'gray.600',
+            // }}
+            // _dark={{
+            //   bg: 'gray.100',
+            // }}
+            bg="amber.500"
+            opacity="50%"
+            h={1}
+            borderRadius={6}
+          />
+          <Box
+            w="100%"
+            // _light={{
+            //   bg: 'gray.600',
+            // }}
+            // _dark={{
+            //   bg: 'gray.100',
+            // }}
+            bg="amber.500"
+            opacity="50%"
+            h={1}
+            borderRadius={6}
+          />
+        </VStack>
       </VStack>
     </Box>
   );

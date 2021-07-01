@@ -32,6 +32,7 @@ export function Examples({
 	return (
 		<Layout
 			title={component.title}
+			doclink={component.doclink}
 			navigation={navigation}
 			navigateTo="Kitchensink | NativeBase"
 		>

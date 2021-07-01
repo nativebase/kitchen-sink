@@ -14,16 +14,19 @@ import {
 	Stagger,
 	Pressable,
 	ArrowBackIcon,
+	Link,
 	ChevronLeftIcon,
 	IconButton,
 } from 'native-base';
 import { Floaters } from '../components/Floaters';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { EvilIcons } from '@expo/vector-icons';
 
 export const Layout = ({
 	children,
 	navigation,
 	title,
+	doclink,
 	navigateTo,
 	_status,
 	_hStack,
@@ -68,18 +71,24 @@ export const Layout = ({
 					zIndex={-1}
 					{..._hStack}
 				>
-					<HStack py={2} alignItems="flex-end">
-						<Pressable
-							onPress={() => {
-								navigation && navigation.navigate(navigateTo);
-							}}
-							_web={{
-								cursor: 'pointer',
-							}}
-						>
-							<HStack alignItems="center" justifyContent="center">
+					<HStack py={2} 
+					// alignItems="flex-end"
+					alignItems="center"
+					w="100%"
+					>
+						
+							{/* <HStack alignItems="center" justifyContent="center"> */}
 								{/* <ChevronLeftIcon /> */}
-								{title && <ArrowBackIcon mx={2} />}
+								<Pressable
+									onPress={() => {
+										navigation && navigation.navigate(navigateTo);
+									}}
+									_web={{
+										cursor: 'pointer',
+									}}
+								>
+									{title && <ArrowBackIcon mx={2} />}
+								</Pressable>
 								<Heading
 									color={colorMode == 'dark' ? 'white' : 'gray.800'}
 									// fontSize={{
@@ -89,9 +98,33 @@ export const Layout = ({
 								>
 									{title ? title : 'NativeBase'}
 								</Heading>
-							</HStack>
+							{/* </HStack> */}
 							{/* <Text color={colorMode == 'dark' ? 'white' : 'gray.800'}>v3</Text> */}
-						</Pressable>
+							{title && 
+								<Box ml="auto" mr={1} alignItems="center">
+									<Link
+										
+										_text={{
+										color: "blue.700",
+										}}
+										href={doclink}
+										isExternal
+										mt={4}
+										alignItems="center"
+										>
+										<Text>Docs</Text>
+										<Icon 
+											as={<EvilIcons name="external-link" size={24} />}
+											_light={{
+												color: 'black'
+											}}
+											_dark={{
+												color: 'white'
+											}}
+										/>
+									</Link>	
+								</Box>	
+							}
 					</HStack>
 				</HStack>
 				{children}
