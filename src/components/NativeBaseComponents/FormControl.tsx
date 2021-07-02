@@ -6,7 +6,7 @@ export const Example = () => {
   return (
     <Box 
       // justifyContent="center"
-      w="50%"
+      w={{ base: "80%", lg: "50%" }}
       mt= {3}
       alignSelf="center"
       p={3}

@@ -4,7 +4,7 @@ import { VStack, Box, HStack } from 'native-base';
 export function Example() {
 	return (
 		<VStack
-			w="80%"
+			w={{ base:"80%", lg:"60%" }}
 			rounded="md"
 			_light={{
 				bg: 'darkBlue.100',
@@ -84,7 +84,7 @@ export function Example() {
 						bg: 'green.400',
 					}}
 					overflow="hidden"
-					w="35%"
+					w={{base:"40%", lg:"30%"}}
 				>
 					<Box
 						_light={{
@@ -123,7 +123,7 @@ export function Example() {
 						bg: 'red.400',
 					}}
 					overflow="hidden"
-					w="35%"
+					w={{base:"40%", lg:"30%"}}
 				>
 					<Box
 						_light={{

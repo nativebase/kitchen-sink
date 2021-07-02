@@ -12,7 +12,7 @@ export function Example() {
       _dark={{
         bg: 'green.200',
       }}
-      w={250}
+      w={{ base:'80%', lg:'60%'}}
       h={10}
     ></Pressable>
   );
