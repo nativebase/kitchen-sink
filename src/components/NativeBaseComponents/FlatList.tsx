@@ -27,7 +27,7 @@ export const Example = () => {
           py={2}
           rounded="md"
           my={1}
-          _light={{ bg: 'blue.300' }}
+          _light={{ bg: 'lightBlue.400' }}
           _dark={{ bg: 'blue.200' }}
         ></Box>
       )}

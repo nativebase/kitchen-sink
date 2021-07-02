@@ -19,7 +19,7 @@ export function Example() {
 			<HStack space={2} mb={4}>
 				<Box
 					_light={{
-						bg: 'gray.600',
+						bg: 'darkBlue.600',
 					}}
 					_dark={{
 						bg: 'gray.100',
@@ -31,7 +31,7 @@ export function Example() {
 				<VStack space={1} flex={1}>
 					<Box
 						_light={{
-							bg: 'gray.600',
+							bg: 'darkBlue.600',
 						}}
 						_dark={{
 							bg: 'gray.100',
@@ -43,7 +43,7 @@ export function Example() {
 
 					<Box
 						_light={{
-							bg: 'gray.600',
+							bg: 'darkBlue.600',
 						}}
 						_dark={{
 							bg: 'gray.100',
@@ -55,7 +55,7 @@ export function Example() {
 
 					<Box
 						_light={{
-							bg: 'gray.600',
+							bg: 'darkBlue.600',
 						}}
 						_dark={{
 							bg: 'gray.100',
@@ -103,7 +103,7 @@ export function Example() {
 					/>
 					<Box
 						_light={{
-							bg: 'gray.600',
+							bg: 'darkBlue.600',
 						}}
 						_dark={{
 							bg: 'gray.100',
@@ -142,7 +142,7 @@ export function Example() {
 					/>
 					<Box
 						_light={{
-							bg: 'gray.600',
+							bg: 'darkBlue.600',
 						}}
 						_dark={{
 							bg: 'gray.100',

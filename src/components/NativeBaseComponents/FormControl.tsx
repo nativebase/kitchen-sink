@@ -35,7 +35,7 @@ export const Example = () => {
       >
         <Box
           _light={{
-            bg: 'cyan.300',
+            bg: 'cyan.100',
           }}
           _dark={{
             bg: 'cyan.200',
@@ -62,7 +62,7 @@ export const Example = () => {
 
         <Box
           _light={{
-            bg: 'cyan.300',
+            bg: 'cyan.100',
           }}
           _dark={{
             bg: 'cyan.200',
@@ -75,7 +75,7 @@ export const Example = () => {
         />
         <Box
           _light={{
-            bg: 'cyan.300',
+            bg: 'cyan.100',
           }}
           _dark={{
             bg: 'cyan.200',
@@ -92,7 +92,7 @@ export const Example = () => {
         >
         <Box
           _light={{
-            bg: 'cyan.500',
+            bg: 'cyan.300',
           }}
           _dark={{
             bg: 'cyan.400',

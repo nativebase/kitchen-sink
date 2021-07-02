@@ -20,7 +20,7 @@ export function Example() {
 				<VStack space={1} flex={1}>
 					<Box
 						_light={{
-							bg: 'gray.600',
+							bg: 'lightBlue.600',
 						}}
 						_dark={{
 							bg: 'gray.100',
@@ -32,7 +32,7 @@ export function Example() {
 
 					<Box
 						_light={{
-							bg: 'gray.600',
+							bg: 'lightBlue.600',
 						}}
 						_dark={{
 							bg: 'gray.100',
@@ -75,7 +75,7 @@ export function Example() {
 					/>
 					<Box
 						_light={{
-							bg: 'gray.600',
+							bg: 'lightBlue.600',
 						}}
 						_dark={{
 							bg: 'gray.100',
@@ -114,7 +114,7 @@ export function Example() {
 					/>
 					<Box
 						_light={{
-							bg: 'gray.600',
+							bg: 'lightBlue.600',
 						}}
 						_dark={{
 							bg: 'gray.100',
