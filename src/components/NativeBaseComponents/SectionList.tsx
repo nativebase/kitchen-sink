@@ -43,7 +43,7 @@ export const Example = () => {
             //   bg: 'gray.100',
             // }}
             bg="amber.500"
-            opacity="50%"
+            opacity={0.5}
             h={3}
             mb={1}
             borderRadius={3}
@@ -57,7 +57,7 @@ export const Example = () => {
             //   bg: 'gray.100',
             // }}
             bg="amber.500"
-            opacity="50%"
+            opacity={0.5}
             h={1}
             borderRadius={6}
           />
@@ -70,7 +70,7 @@ export const Example = () => {
             //   bg: 'gray.100',
             // }}
             bg="amber.500"
-            opacity="50%"
+            opacity={0.5}
             h={1}
             borderRadius={6}
           />
@@ -83,7 +83,7 @@ export const Example = () => {
             //   bg: 'gray.100',
             // }}
             bg="amber.500"
-            opacity="50%"
+            opacity={0.5}
             h={1}
             borderRadius={6}
           />
@@ -99,7 +99,7 @@ export const Example = () => {
             //   bg: 'gray.100',
             // }}
             bg="amber.500"
-            opacity="50%"
+            opacity={0.5}
             h={3}
             mb={1}
             borderRadius={3}
@@ -113,7 +113,7 @@ export const Example = () => {
             //   bg: 'gray.100',
             // }}
             bg="amber.500"
-            opacity="50%"
+            opacity={0.5}
             h={1}
             borderRadius={6}
           />
@@ -126,7 +126,7 @@ export const Example = () => {
             //   bg: 'gray.100',
             // }}
             bg="amber.500"
-            opacity="50%"
+            opacity={0.5}
             h={1}
             borderRadius={6}
           />
@@ -139,7 +139,7 @@ export const Example = () => {
             //   bg: 'gray.100',
             // }}
             bg="amber.500"
-            opacity="50%"
+            opacity={0.5}
             h={1}
             borderRadius={6}
           />
@@ -155,7 +155,7 @@ export const Example = () => {
             //   bg: 'gray.100',
             // }}
             bg="amber.500"
-            opacity="50%"
+            opacity={0.5}
             h={3}
             mb={1}
             borderRadius={3}
@@ -169,7 +169,7 @@ export const Example = () => {
             //   bg: 'gray.100',
             // }}
             bg="amber.500"
-            opacity="50%"
+            opacity={0.5}
             h={1}
             borderRadius={6}
           />
@@ -182,7 +182,7 @@ export const Example = () => {
             //   bg: 'gray.100',
             // }}
             bg="amber.500"
-            opacity="50%"
+            opacity={0.5}
             h={1}
             borderRadius={6}
           />
@@ -195,7 +195,7 @@ export const Example = () => {
             //   bg: 'gray.100',
             // }}
             bg="amber.500"
-            opacity="50%"
+            opacity={0.5}
             h={1}
             borderRadius={6}
           />
