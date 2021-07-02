@@ -101,11 +101,12 @@ export const Layout = ({
 							{/* </HStack> */}
 							{/* <Text color={colorMode == 'dark' ? 'white' : 'gray.800'}>v3</Text> */}
 							{title && 
-								<Box ml="auto" mr={2} alignItems="center">
+								<Box  mr={2} ml={6} mt={3}  alignItems="flex-end">
 									<Link
 										href={doclink}
 										isExternal
 										// mt={4}
+										
 										alignItems="center"
 										>
 										<Text bold>Docs</Text>
