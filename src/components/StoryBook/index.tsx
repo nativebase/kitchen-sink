@@ -64,6 +64,8 @@ export function StoryBook({
 							style={{ textTransform: 'uppercase' }}
 							color={gradColors[1]}
 							{..._heading}
+							// flexShrink={1}
+							mx={2}
 						>
 							{name}
 						</Heading>

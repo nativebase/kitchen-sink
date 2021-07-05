@@ -34,7 +34,7 @@ export const Example = () => {
 			/>
 			<Box
 				_light={{
-					bg: 'gray.600',
+					bg: 'cyan.900',
 				}}
 				_dark={{
 					bg: 'gray.100',

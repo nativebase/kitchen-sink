@@ -9,11 +9,12 @@ export function Example() {
 			}}
 			colorScheme="success"
 			p={2}
-			w="35%"
+			w={{base: "50%", lg: "35%"}}
 		>
 			<Box
 				_light={{
-					bg: 'info.900',
+					bg: 'green.800',
+					// bg: 'dark.200'
 				}}
 				_dark={{
 					bg: 'info.100',

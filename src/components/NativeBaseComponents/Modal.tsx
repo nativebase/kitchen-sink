@@ -4,7 +4,7 @@ import { Box, HStack, VStack, Divider } from 'native-base';
 export const Example = () => {
 	return (
 		<VStack
-			w="80%"
+			w="70%"
 			rounded="md"
 			_light={{
 				bg: 'pink.100',
@@ -15,10 +15,12 @@ export const Example = () => {
 			space={4}
 			p={4}
 			justifyContent="center"
+			mt={6}
 		>
 			<Box
 				_light={{
-					bg: 'gray.600',
+					bg: 'white',
+					opacity: 0.8
 				}}
 				_dark={{
 					bg: 'gray.100',
@@ -30,7 +32,8 @@ export const Example = () => {
 			<VStack space={1}>
 				<Box
 					_light={{
-						bg: 'gray.600',
+						bg: 'white',
+						opacity: 0.8
 					}}
 					_dark={{
 						bg: 'gray.100',
@@ -42,7 +45,8 @@ export const Example = () => {
 
 				<Box
 					_light={{
-						bg: 'gray.600',
+						bg: 'white',
+						opacity: 0.8
 					}}
 					_dark={{
 						bg: 'gray.100',
@@ -54,7 +58,8 @@ export const Example = () => {
 
 				<Box
 					_light={{
-						bg: 'gray.600',
+						bg: 'white',
+						opacity: 0.8
 					}}
 					_dark={{
 						bg: 'gray.100',
@@ -78,7 +83,8 @@ export const Example = () => {
 				}}
 				position="relative"
 				overflow="hidden"
-				w="70%"
+				w={{base: "65%", lg: "30%"}}
+				alignSelf="flex-end"
 			>
 				<Box
 					_light={{
@@ -97,13 +103,14 @@ export const Example = () => {
 				/>
 				<Box
 					_light={{
-						bg: 'gray.600',
+						bg: 'white',
 					}}
 					_dark={{
 						bg: 'gray.100',
 					}}
 					rounded="pill"
 					h="7px"
+					
 				/>
 			</Box>
 		</VStack>

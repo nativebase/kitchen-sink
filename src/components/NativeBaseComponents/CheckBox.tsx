@@ -7,10 +7,10 @@ export const Example = () => {
 			p={4}
 			rounded="full"
 			_light={{
-				bg: 'red.200',
+				bg: 'red.100',
 			}}
 			_dark={{
-				bg: 'red.600',
+				bg: 'red.800',
 			}}
 			opacity={0.5}
 		>

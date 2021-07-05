@@ -84,3 +84,5 @@ buck-out/
 web-build/
 
 # @end expo-cli
+
+src/nb

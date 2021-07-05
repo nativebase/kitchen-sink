@@ -4,7 +4,7 @@ import { VStack, Box, HStack } from 'native-base';
 export function Example() {
 	return (
 		<VStack
-			w={{ base:"80%", lg:"60%" }}
+			w={{base:'80%', lg:"60%"}}
 			rounded="md"
 			_light={{
 				bg: 'darkBlue.100',
@@ -17,62 +17,34 @@ export function Example() {
 			justifyContent="center"
 		>
 			<HStack space={2} mb={4}>
-				<Box
-					_light={{
-						bg: 'darkBlue.600',
-					}}
-					_dark={{
-						bg: 'gray.100',
-					}}
-					rounded="sm"
-					// h="11px"
-					w="30%"
-				/>
 				<VStack space={1} flex={1}>
 					<Box
 						_light={{
-							bg: 'darkBlue.600',
+							bg: 'lightBlue.600',
 						}}
 						_dark={{
 							bg: 'gray.100',
 						}}
-						h="7px"
+						h="9px"
 						rounded="pill"
 						w="80%"
 					/>
 
 					<Box
 						_light={{
-							bg: 'darkBlue.600',
+							bg: 'lightBlue.600',
 						}}
 						_dark={{
 							bg: 'gray.100',
 						}}
-						h="7px"
+						h="9px"
 						rounded="pill"
 						w="40%"
-					/>
-
-					<Box
-						_light={{
-							bg: 'darkBlue.600',
-						}}
-						_dark={{
-							bg: 'gray.100',
-						}}
-						h="7px"
-						rounded="pill"
-						w="50%"
 					/>
 				</VStack>
 			</HStack>
 
-			<HStack 
-			space={2}
-			mt={2}
-			// justifyContent="space-between"
-			justifyContent="flex-end"
-			>
+			<HStack justifyContent="flex-end" space={2} mt={4} >
 				<Box
 					p={2}
 					px={3}
@@ -103,7 +75,7 @@ export function Example() {
 					/>
 					<Box
 						_light={{
-							bg: 'darkBlue.600',
+							bg: 'lightBlue.600',
 						}}
 						_dark={{
 							bg: 'gray.100',
@@ -142,7 +114,7 @@ export function Example() {
 					/>
 					<Box
 						_light={{
-							bg: 'darkBlue.600',
+							bg: 'lightBlue.600',
 						}}
 						_dark={{
 							bg: 'gray.100',
@@ -152,23 +124,6 @@ export function Example() {
 					/>
 				</Box>
 			</HStack>
-
-			<Box
-				_light={{
-					bg: 'darkBlue.100',
-				}}
-				_dark={{
-					bg: 'darkBlue.600',
-				}}
-				size={4}
-				right={5}
-				bottom={-8}
-				// zIndex={-1}
-				position="absolute"
-				style={{
-					transform: [{ rotate: '45deg' }],
-				}}
-			/>
 		</VStack>
 	);
 }
