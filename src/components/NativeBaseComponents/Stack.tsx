@@ -8,12 +8,12 @@ export function Example() {
   return (
     <Box>
       <Stack direction="row" mt={3} shadow={6}>
-        <Box w={100} h={3} bg="tomato" />
-        <Box w={100} h={3} bg="red.300" />
-        <Box w={100} h={3} bg="purple.500" />
+        <Box w={{base:50, lg:100}} h={3} bg="warmGray.100" />
+        <Box w={{base:50, lg:100}} h={3} bg="red.300" />
+        <Box w={{base:50, lg:100}} h={3} bg="purple.500" />
       </Stack>
       <Stack direction="column" mt={3} shadow={6} w={100} alignSelf="center">
-        <Box w={100} h={3} bg="tomato" />
+        <Box w={100} h={3} bg="red.50" />
         <Box w={100} h={3} bg="red.300" />
         <Box w={100} h={3} bg="purple.500" />
       </Stack>

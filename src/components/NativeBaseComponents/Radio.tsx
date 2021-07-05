@@ -7,7 +7,7 @@ export const Example = () => {
 			p={4}
 			rounded="full"
 			_light={{
-				bg: 'orange.200',
+				bg: 'orange.50',
 			}}
 			_dark={{
 				bg: 'orange.600',

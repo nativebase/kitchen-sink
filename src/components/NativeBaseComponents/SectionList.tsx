@@ -25,7 +25,7 @@ export const Example = () => {
     <Box
       mt={5}
       bg="orange.100"
-      w="35%"
+      w={{ base:"60%", lg: "35%"}}
       // alignItems="center"
       // mx="auto"
     >

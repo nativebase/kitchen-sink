@@ -4,7 +4,7 @@ import { VStack, Box, HStack } from 'native-base';
 export function Example() {
 	return (
 		<VStack
-			w="80%"
+			w={{base:'80%', lg:"60%"}}
 			rounded="md"
 			_light={{
 				bg: 'darkBlue.100',
@@ -20,31 +20,31 @@ export function Example() {
 				<VStack space={1} flex={1}>
 					<Box
 						_light={{
-							bg: 'gray.600',
+							bg: 'lightBlue.600',
 						}}
 						_dark={{
 							bg: 'gray.100',
 						}}
-						h="7px"
+						h="9px"
 						rounded="pill"
 						w="80%"
 					/>
 
 					<Box
 						_light={{
-							bg: 'gray.600',
+							bg: 'lightBlue.600',
 						}}
 						_dark={{
 							bg: 'gray.100',
 						}}
-						h="7px"
+						h="9px"
 						rounded="pill"
 						w="40%"
 					/>
 				</VStack>
 			</HStack>
 
-			<HStack justifyContent="space-between">
+			<HStack justifyContent="flex-end" space={2} mt={4} >
 				<Box
 					p={2}
 					px={3}
@@ -56,7 +56,7 @@ export function Example() {
 						bg: 'green.400',
 					}}
 					overflow="hidden"
-					w="45%"
+					w={{base:"40%", lg:"30%"}}
 				>
 					<Box
 						_light={{
@@ -75,7 +75,7 @@ export function Example() {
 					/>
 					<Box
 						_light={{
-							bg: 'gray.600',
+							bg: 'lightBlue.600',
 						}}
 						_dark={{
 							bg: 'gray.100',
@@ -95,7 +95,7 @@ export function Example() {
 						bg: 'red.400',
 					}}
 					overflow="hidden"
-					w="45%"
+					w={{base:"40%", lg:"30%"}}
 				>
 					<Box
 						_light={{
@@ -114,7 +114,7 @@ export function Example() {
 					/>
 					<Box
 						_light={{
-							bg: 'gray.600',
+							bg: 'lightBlue.600',
 						}}
 						_dark={{
 							bg: 'gray.100',

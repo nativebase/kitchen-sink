@@ -95,17 +95,19 @@ export const Layout = ({
 									// 	lg: '3xl',
 									// }}
 									_web={{ py: 2 }}
+									isTruncated
 								>
 									{title ? title : 'NativeBase'}
 								</Heading>
 							{/* </HStack> */}
 							{/* <Text color={colorMode == 'dark' ? 'white' : 'gray.800'}>v3</Text> */}
 							{title && 
-								<Box ml="auto" mr={2} alignItems="center">
+								<Box  mr={2} ml={6} mt={{base:1, lg:3}}  alignItems="flex-end">
 									<Link
 										href={doclink}
 										isExternal
 										// mt={4}
+										
 										alignItems="center"
 										>
 										<Text bold>Docs</Text>
