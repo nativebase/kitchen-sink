@@ -19,7 +19,8 @@ export const Example = () => {
 		>
 			<Box
 				_light={{
-					bg: 'indigo.900',
+					bg: 'indigo.700',
+					opacity: 0.8
 				}}
 				_dark={{
 					bg: 'gray.100',
@@ -31,7 +32,8 @@ export const Example = () => {
 			<VStack space={1}>
 				<Box
 					_light={{
-						bg: 'indigo.900',
+						bg: 'indigo.700',
+						opacity: 0.8
 					}}
 					_dark={{
 						bg: 'gray.100',
@@ -43,7 +45,8 @@ export const Example = () => {
 
 				<Box
 					_light={{
-						bg: 'indigo.900',
+						bg: 'indigo.700',
+						opacity: 0.8
 					}}
 					_dark={{
 						bg: 'gray.100',
@@ -55,7 +58,8 @@ export const Example = () => {
 
 				<Box
 					_light={{
-						bg: 'indigo.900',
+						bg: 'indigo.700',
+						opacity: 0.8
 					}}
 					_dark={{
 						bg: 'gray.100',
@@ -99,7 +103,7 @@ export const Example = () => {
 				/>
 				<Box
 					_light={{
-						bg: 'gray.600',
+						bg: 'gray.500',
 					}}
 					_dark={{
 						bg: 'gray.100',
