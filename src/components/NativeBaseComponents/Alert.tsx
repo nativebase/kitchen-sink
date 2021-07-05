@@ -30,7 +30,7 @@ export const Example = () => {
 			<VStack space={1} flex={1}>
 				<Box
 					_light={{
-						bg: 'amber.800',
+						bg: 'red.400',
 					}}
 					_dark={{
 						bg: 'gray.100',
@@ -41,7 +41,7 @@ export const Example = () => {
 				/>
 				<Box
 					_light={{
-						bg: 'amber.800',
+						bg: 'red.300',
 					}}
 					_dark={{
 						bg: 'gray.100',
