@@ -33,7 +33,7 @@ export const Example = () => {
 					mx={5}
 				/>
 			</Box>
-			<TextArea mt={4} w="100%" h={20}  zIndex={-1} borderWidth={0} 
+			<TextArea aria-label="textArea1" mt={4} w="100%" h={20}  zIndex={-1} borderWidth={0} 
 			_light={{
 				bg: 'teal.500',
 			}}

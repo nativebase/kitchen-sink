@@ -15,7 +15,6 @@ import {
 	Stagger,
 	IconButton,
 } from 'native-base';
-import { Ionicons, MaterialCommunityIcons } from '@expo/vector-icons';
 import { mapping } from '../../config/map';
 import { Dimensions, ScrollView, StatusBar } from 'react-native';
 import { MasonaryLayout } from '../../components/MasonLayout/MasonaryLayout';
