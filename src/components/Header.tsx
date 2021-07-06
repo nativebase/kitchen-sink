@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, IconButton, Icon, HStack } from 'native-base';
+import { Box, IconButton, Icon, HStack, ArrowBackIcon } from 'native-base';
 
 import { Ionicons } from '@expo/vector-icons';
 import { StackNavigationProp } from '@react-navigation/stack';
@@ -25,11 +25,7 @@ export function Header({
 					position="absolute"
 					left={{ base: 0, md: 1 }}
 					icon={
-						<Icon
-							as={<Ionicons name="arrow-back-outline" />}
-							color="blueGray.400"
-							size="sm"
-						/>
+						<ArrowBackIcon />
 					}
 					_pressed={{ bg: 'transparent' }}
 					colorScheme="coolGray"

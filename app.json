@@ -26,7 +26,8 @@
       "package": "com.geekyants.kitchensinkappnativebase"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "description": "A sample application that showcases various components that come built-in with NativeBase v3."
     },
     "description": ""
   }

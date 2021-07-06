@@ -15,7 +15,6 @@ import {
 } from 'native-base';
 import { mapping } from '../../config/map';
 import { StackNavigationProp } from '@react-navigation/stack';
-import { Ionicons } from '@expo/vector-icons';
 import { Layout } from '../../components/Layout';
 
 export function Examples({
